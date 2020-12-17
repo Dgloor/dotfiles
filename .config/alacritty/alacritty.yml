@@ -1,0 +1,173 @@
+env:
+  TERM: xterm-256color
+
+background_opacity: 0.90
+# background_opacity: 1
+
+font:
+  normal:
+    family: "FiraCode NF"
+    style: Regular
+  bold:
+    family: "FiraCode NF"
+    style: Bold
+  italic:
+    family: "FiraCode NF"
+    style: Italic
+  bold_italic:
+    family: "FiraCode NF"
+    style: Bold Italic
+
+  # Point size
+  size: 10
+
+  offset:
+    x: 0
+    y: 1
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 6
+    y: 6
+
+  title: Alacritty
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 5000
+  multiplier: 10
+
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+
+# # Material Ocean
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x0f101a'
+#     foreground: '0xc5c9de'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x181a29'
+#     red:     '0xF07178'
+#     green:   '0xcdea9f'
+#     yellow:  '0xffd47e'
+#     blue:    '0x93bbff'
+#     magenta: '0xd3a7ee'
+#     cyan:    '0x98e4ff'
+#     white:   '0xbfd5de'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x282a40'
+#     red:     '0xeb7f84'
+#     green:   '0xe0ffad'
+#     yellow:  '0xffee7e'
+#     blue:    '0xa3c5ff'
+#     magenta: '0xd6afed'
+#     cyan:    '0x98fffd'
+#     white:   '0xd1e5ed'
+
+# Ayu Dark
+colors:
+  # Default colors
+  primary:
+    background: "0x0f1419"
+    foreground: "0xe6e1cf"
+
+  # Normal colors
+  normal:
+    black: "0x000000"
+    red: "0xf34a4a"
+    green: "0xbae67e"
+    yellow: "0xffee99"
+    blue: "0x73d0ff"
+    magenta: "0xd4bfff"
+    cyan: "0x83CEC6"
+    white: "0xf2f2f2"
+
+  # Bright colors
+  bright:
+    black: "0x737d87"
+    red: "0xff3333"
+    green: "0xc2d94c"
+    yellow: "0xe7c547"
+    blue: "0x59c2ff"
+    magenta: "0xb77ee0"
+    cyan: "0x5ccfe6"
+    white: "0xffffff"
+
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+
+  selection:
+    text: "#191919"
+    background: "#d8dee9"
+
+cursor:
+  # style: Underline
+  unfocused_hollow: true
+  vi_mode_style: Block
+
+key_bindings:
+  # Vi Mode
+  - { key: Space, mods: Control, mode: Vi, action: ScrollToBottom }
+  - { key: Space, mods: Control, action: ToggleViMode }
+  - { key: I, mode: Vi, action: ScrollToBottom }
+  - { key: I, mode: Vi, action: ToggleViMode }
+  - { key: C, mods: Control, mode: Vi, action: ScrollToBottom }
+  - { key: C, mods: Control, mode: Vi, action: ToggleViMode }
+  - { key: Escape, mode: Vi, action: ClearSelection }
+  - { key: Y, mods: Control, mode: Vi, action: ScrollLineUp }
+  - { key: E, mods: Control, mode: Vi, action: ScrollLineDown }
+  - { key: G, mode: Vi, action: ScrollToTop }
+  - { key: G, mods: Shift, mode: Vi, action: ScrollToBottom }
+  - { key: B, mods: Control, mode: Vi, action: ScrollPageUp }
+  - { key: F, mods: Control, mode: Vi, action: ScrollPageDown }
+  - { key: U, mods: Control, mode: Vi, action: ScrollHalfPageUp }
+  - { key: D, mods: Control, mode: Vi, action: ScrollHalfPageDown }
+  - { key: Y, mode: Vi, action: Copy }
+  - { key: Y, mode: Vi, action: ClearSelection }
+  - { key: V, mode: Vi, action: ToggleNormalSelection }
+  - { key: V, mods: Shift, mode: Vi, action: ToggleLineSelection }
+  - { key: V, mods: Control, mode: Vi, action: ToggleBlockSelection }
+  - { key: V, mods: Alt, mode: Vi, action: ToggleSemanticSelection }
+  - { key: Return, mode: Vi, action: Open }
+  - { key: K, mode: Vi, action: Up }
+  - { key: J, mode: Vi, action: Down }
+  - { key: H, mode: Vi, action: Left }
+  - { key: L, mode: Vi, action: Right }
+  - { key: Up, mode: Vi, action: Up }
+  - { key: Down, mode: Vi, action: Down }
+  - { key: Left, mode: Vi, action: Left }
+  - { key: Right, mode: Vi, action: Right }
+  - { key: Key0, mode: Vi, action: First }
+  - { key: Key4, mode: Vi, action: Last }
+  - { key: Key6, mods: Shift, mode: Vi, action: FirstOccupied }
+  - { key: H, mods: Shift, mode: Vi, action: High }
+  - { key: M, mods: Shift, mode: Vi, action: Middle }
+  - { key: L, mods: Shift, mode: Vi, action: Low }
+  - { key: B, mode: Vi, action: SemanticLeft }
+  - { key: W, mode: Vi, action: SemanticRight }
+  - { key: E, mode: Vi, action: SemanticRightEnd }
+  - { key: B, mods: Shift, mode: Vi, action: WordLeft }
+  - { key: W, mods: Shift, mode: Vi, action: WordRight }
+  - { key: E, mods: Shift, mode: Vi, action: WordRightEnd }
+  - { key: Key5, mods: Shift, mode: Vi, action: Bracket }
+  - { key: Slash, mode: Vi, action: SearchForward }
+  - { key: Slash, mods: Shift, mode: Vi, action: SearchBackward }
+  - { key: N, mode: Vi, action: SearchNext }
+  - { key: N, mods: Shift, mode: Vi, action: SearchPrevious }

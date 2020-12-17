@@ -1,0 +1,17 @@
+
+set statusbar-h-padding 0 
+set statusbar-v-padding 0 
+
+set page-padding 1 
+
+map D toggle_page_mode
+
+map u scroll half-up 
+map d scroll half-down
+map K scroll full-up
+map J scroll full-down
+
+map <C-k> zoom in
+map <C-j> zoom out
+
+map P print
