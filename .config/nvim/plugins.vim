@@ -96,6 +96,9 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'gko/vim-coloresque'
 Plug 'tpope/vim-haml'
 
+" Start Scren
+Plug 'mhinz/vim-startify'
+
 
 call plug#end()
 
