@@ -19,6 +19,11 @@ def space(): return widget.Sep(
     **base(), linewidth=0, padding=5
 )
 
+def extra_space(): return widget.Sep(
+    **base(), linewidth=0, padding=100
+)
+
+
 
 def sep(): return (
     icon(bg="dark", fontsize=13, text='')
@@ -70,8 +75,7 @@ def workspaces(): return [
         **base(fg='title'), fontsize=12,
         margin_y=3, paddingy=8,),
 
-    space(),
-    space(),
+    extra_space(),
 ]
 
 

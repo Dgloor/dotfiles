@@ -217,12 +217,14 @@ source /usr/share/autojump/autojump.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
-
-
 eval "$(starship init zsh)"
 
+# fd
+export FZF_DEFAULT_COMMAND='fd --type file'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
 
-# ENABLE_CORRECTION="false"
 export EDITOR='nvim'
 unsetopt correct_all
 unsetopt correct 
