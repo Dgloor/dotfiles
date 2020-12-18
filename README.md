@@ -2,7 +2,7 @@
 
 ## Screenshots
 
-[1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
+![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
 
 ## Theming
 
