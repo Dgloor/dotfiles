@@ -1,18 +1,21 @@
 #!/bin/sh
 
-# wallpaper
+# Wallpaper
 feh --bg-scale ~/Documents/dotfiles/wallpapers/0031.jpg &
 
 # Transparency
 picom &
 
-# num lock
+# Num lock
 numlockx &
 
 # Nofications
 dunst &
 
-# systray
+# Typematic Delay
+xset r rate 200 30 &
+
+# Systray
 nm-applet & 
 copyq & 
 # volumeicon &

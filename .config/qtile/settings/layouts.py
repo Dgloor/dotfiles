@@ -13,10 +13,10 @@ layout_conf = {
 layouts = [
     layout.MonadTall(**layout_conf),
     layout.Max(),
-    # layout.Tile(**layout_conf),
+    layout.RatioTile(**layout_conf),
+    layout.Tile(add_after_last=True, **layout_conf),
     # layout.MonadWide(**layout_conf),
     # layout.Bsp(**layout_conf),
-    # layout.RatioTile(**layout_conf),
     # layout.Matrix(columns=2, **layout_conf),
     # layout.Columns(),
     # layout.TreeTab(),
