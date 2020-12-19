@@ -125,7 +125,7 @@ primary_widgets = [
     # -- TEMPERATURE --
 
     icon(bg="dark", fontsize=icon_size, text='🔥'),
-    widget.ThermalSensor(**base(bg='dark'), threshold=60),
+    widget.ThermalSensor(**base(bg='dark'), threshold=70),
     sep(),
 
 

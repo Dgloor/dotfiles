@@ -109,14 +109,16 @@ alias t='trash '
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias q='exit'
 alias ei='exit'
+alias off='systemctl poweroff '
 
 # ARCH
 alias pacin='sudo pacman -S ' 
 alias pacre='sudo pacman -R '
-alias yain='yay -S'
-alias yare='yay -R'
-alias yase='yay -Ss'
+alias yain='yay -S '
+alias yase='yay -s '
+alias yare='yay -R '
 
 
 alias nz='nvim ~/.zshrc'
@@ -247,4 +249,4 @@ r() {
 }
 
 # STARTUP
-neofetch
+# neofetch

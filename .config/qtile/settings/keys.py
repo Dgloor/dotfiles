@@ -65,6 +65,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Clipboard - CopyQ
     ([mod], "c", lazy.spawn("copyq toggle")),
 
+    # Gnome pomodoro
+    ([mod, "shift"], "p", lazy.spawn("gnome-pomodoro")),
+
     # Browser
     ([mod], "w", lazy.spawn("google-chrome-stable")),
 
