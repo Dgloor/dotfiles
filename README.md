@@ -11,7 +11,7 @@
 - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
-- [Feh](https://github.com/derf/feh) - change wallpaper 
+- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings 
 - [Picom](https://github.com/yshui/picom) - blur & Transparency
 
 ## Tiling Manager
@@ -31,6 +31,7 @@
 - [CopyQ](https://github.com/hluk/CopyQ) - clipboard tool
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
 - [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots
+- [Feh](https://github.com/derf/feh) - minimalist image viewer
 - [Geequie](https://github.com/BestImageViewer/geeqie) - image viewer
 - Google-chrome
 - [Nm-applet](https://www.archlinux.org/packages/?name=network-manager-applet) - internet manager
@@ -107,7 +108,7 @@
 - [DroidCam](https://www.dev47apps.com/)
 - Vlc
 
-### Referencias
+## References
 
 - [antoniosarosi](https://github.com/antoniosarosi/dotfiles)
 - [BrodieRobertson](https://github.com/BrodieRobertson/dotfiles)
