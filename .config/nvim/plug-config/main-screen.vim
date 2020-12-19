@@ -1,12 +1,13 @@
 
 let g:startify_custom_header = [
-        \ '        _   ___    ________          __   ',
-        \ '       / | / / |  / / ____/___  ____/ /__ ',
-        \ '      /  |/ /| | / / /   / __ \/ __  / _ \',
-        \ '     / /|  / | |/ / /___/ /_/ / /_/ /  __/',
-        \ '    /_/ |_/  |___/\____/\____/\__,_/\___/ ',
-        \]
-                                
+\ '         ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ',
+\ '         ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ',
+\ '         ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ',
+\ '         ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ',
+\ '         ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ',
+\ '         ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ',
+\]
+
 let g:startify_session_dir = '~/.config/nvim/session'
 
 
@@ -23,20 +24,29 @@ let g:startify_session_delete_buffers = 1
 let g:startify_change_to_vcs_root = 1
 let g:startify_fortune_use_unicode = 1
 let g:startify_session_persistence = 1
-
 let g:webdevicons_enable_startify = 1
+let g:startify_enable_special = 0
+" let g:startify_files_number = 10
 
 function! StartifyEntryFormat()
         return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
-    endfunction
+endfunction
 
 let g:startify_bookmarks = [
-            \ { 'c': '~/.config/qtile/' },
-            \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.zshrc' },
-            \ '~/Blog',
-            \ '~/Code',
-            \ '~/Pics',
-            \ ]
+        \ { 'p': '~/Prog/Python/' },
+        \ { 'd': '~/Documents/dotfiles/' },
+        \ { 'c': '~/.config/qtile/' },
+        \ { 'i': '~/.config/nvim/init.vim' },
+        \ { 'z': '~/.zshrc' },
+        \ ]
 
-let g:startify_enable_special = 0
+" Colors
+highlight StartifyHeader  ctermfg=0
+highlight StartifyPath    ctermfg=245
+" highlight StartifyNumber  ctermfg=215
+" highlight StartifyBracket ctermfg=240
+" highlight StartifyFile    ctermfg=240
+" highlight StartifySection ctermfg=240
+" highlight StartifySlash   ctermfg=240
+" highlight StartifySpecial ctermfg=240
+" highlight StartifyFooter  ctermfg=240

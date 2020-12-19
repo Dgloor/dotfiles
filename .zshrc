@@ -101,6 +101,7 @@ alias glog='git log --oneline --decorate --graph'
 
 # Apps 
 alias n='nvim '
+alias ttime='tty-clock -S -c -b -n'
 
 # Utils
 alias le='less'
@@ -118,6 +119,7 @@ alias yare='yay -R'
 alias yase='yay -Ss'
 
 
+alias nz='nvim ~/.zshrc'
 
 ### Bind keys
 #############
