@@ -11,7 +11,7 @@
 - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
-- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings 
+- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
 - [Picom](https://github.com/yshui/picom) - blur & Transparency
 
 ## Tiling Manager
@@ -31,6 +31,7 @@
 - [CopyQ](https://github.com/hluk/CopyQ) - clipboard tool
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
 - [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots
+- [Sxiv](https://github.com/muennich/sxiv) - simple image viewer
 - [Feh](https://github.com/derf/feh) - minimalist image viewer
 - [Geequie](https://github.com/BestImageViewer/geeqie) - image viewer
 - Google-chrome
@@ -55,14 +56,14 @@
   - [autojump](https://github.com/fdw/ranger-autojump)
 - [Starship](https://starship.rs/) - minimalist shell prompt
 - Ytop
-- [Zsh](https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol))
+- [Zsh](<https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol)>)
 
 ## Development
 
 - Color-picker
 - Figma-linux
 - Gluon-scene-builder11
-- [Lazygit](https://github.com/jesseduffield/lazygit) -  git gui
+- [Lazygit](https://github.com/jesseduffield/lazygit) - git gui
 - IntelliJ IDEA
 - [Ncdu](https://www.archlinux.org/packages/community/x86_64/ncdu/) - check file weight
 - Netbeans
@@ -101,12 +102,19 @@
 ## Keyboard stuff
 
 - [playerct](https://github.com/altdesktop/playerctl) - activate pause button
-- [numlockx](https://wiki.archlinux.org/index.php/Activating_numlock_on_bootup_(Espa%C3%B1ol)) - active num lock on start
+- [numlockx](<https://wiki.archlinux.org/index.php/Activating_numlock_on_bootup_(Espa%C3%B1ol)>) - active num lock on start
 
 ## Media
 
 - [DroidCam](https://www.dev47apps.com/)
 - Vlc
+-
+
+## System Info.
+
+- [Neofetch](https://github.com/dylanaraps/neofetch)
+- [Pfetch](https://github.com/dylanaraps/pfetch)
+- [Cpufetch](https://github.com/Dr-Noob/cpufetch)
 
 ## References
 

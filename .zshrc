@@ -250,3 +250,4 @@ r() {
 
 # STARTUP
 # neofetch
+pfetch

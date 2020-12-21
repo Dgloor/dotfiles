@@ -39,7 +39,7 @@ set noswapfile                          " Disable creating swap file
 set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
 set updatetime=300                      " Faster completion
-set timeoutlen=200                      " By default timeoutlen is 1000 ms
+set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
 set ignorecase                          " case insensitive search
@@ -55,6 +55,7 @@ set sidescroll=5
 " set guicursor+=n-v-c:blinkon0
 " set guicursor+=i:blinkwait10
 
+cmap w!! w !sudo tee %
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
