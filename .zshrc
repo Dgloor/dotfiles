@@ -39,7 +39,7 @@ zle -N history-beginning-search-forward-end history-search-end
 
 ### Set variables
 #################
-PATH="/usr/local/bin:/usr/local/sbin/:$PATH"
+PATH="/home/dgloor/.local/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000
@@ -60,14 +60,15 @@ done
 
 ### Set prompt
 ##############
-PR_NO_COLOR="%{$terminfo[sgr0]%}"
-PS1="[%(!.${PR_RED}%n.$PR_LIGHT_YELLOW%n)%(!.${PR_LIGHT_YELLOW}@.$PR_RED@)$PR_NO_COLOR%(!.${PR_LIGHT_RED}%U%m%u.${PR_LIGHT_GREEN}%U%m%u)$PR_NO_COLOR:%(!.${PR_RED}%2c.${PR_BLUE}%2c)$PR_NO_COLOR]%(?..[${PR_LIGHT_RED}%?$PR_NO_COLOR])%(!.${PR_LIGHT_RED}#.${PR_LIGHT_GREEN}$) "
-RPS1="$PR_LIGHT_YELLOW(%D{%m-%d %H:%M})$PR_NO_COLOR"
-unsetopt ALL_EXPORT
+# PR_NO_COLOR="%{$terminfo[sgr0]%}"
+# PS1="[%(!.${PR_RED}%n.$PR_LIGHT_YELLOW%n)%(!.${PR_LIGHT_YELLOW}@.$PR_RED@)$PR_NO_COLOR%(!.${PR_LIGHT_RED}%U%m%u.${PR_LIGHT_GREEN}%U%m%u)$PR_NO_COLOR:%(!.${PR_RED}%2c.${PR_BLUE}%2c)$PR_NO_COLOR]%(?..[${PR_LIGHT_RED}%?$PR_NO_COLOR])%(!.${PR_LIGHT_RED}#.${PR_LIGHT_GREEN}$) "
+# RPS1="$PR_LIGHT_YELLOW(%D{%m-%d %H:%M})$PR_NO_COLOR"
+# unsetopt ALL_EXPORT
 
 
 ### Set alias
 #############
+#
 alias l='ls -lFh'
 alias la='ls -lAFh'
 alias ll='ls -l'
@@ -112,6 +113,8 @@ alias mv='mv -i'
 alias q='exit'
 alias ei='exit'
 alias off='systemctl poweroff '
+
+alias nspeed='speedtest-cli --simple'
 
 # ARCH
 alias pacin='sudo pacman -S ' 
@@ -229,12 +232,25 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 export FZF_DEFAULT_OPTS="--ansi"
 
-export EDITOR='nvim'
 unsetopt correct_all
 unsetopt correct 
 DISABLE_CORRECTION="true"
 
+# Deafult Apps
+export EDITOR="nvim"
+export READER="zathura"
+export VISUAL="nvim"
+export TERMINAL="alacritty"
+export IMAGE="sxiv"
+export PAGER="less"
 
+export CM_SELECTIONS="clipboard"
+export CM_DEBUG=0 
+export CM_OUTPUT_CLIP=1 
+export CM_MAX_CLIPS=20
+export CM_LAUNCHER=rofi
+
+# Autjump into Ranger
 r() {
   if [ "$1" != "" ]; then
     if [ -d "$1" ]; then

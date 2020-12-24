@@ -1,0 +1,214 @@
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+; [colors]
+; background = #1d1f21
+; background-wm = #444444
+; background-alt = #2d2d2d
+; foreground = #d8dee9
+; foreground-alt = #555555
+; primary = #268bd2
+; alert = #640130
+
+[colors]
+background = #0f101a
+background-wm = #0f101a
+background-alt = #0f101a
+foreground = #d8dee9
+foreground-alt =  #555555
+primary = #268bd2
+alert = #640130
+
+[settings]
+format-foreground =
+format-underline = ${colors.primary}
+format-background = ${colors.background-alt}
+format-padding = 1
+format-overline =
+format-margin = 0
+format-offset =
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+[bar/bar]
+monitor = ${env:MONITOR:DisplayPort-0}
+monitor-fallback =
+monitor-strict = false
+monitor-exact = true
+override-redirect = false
+wm-restack = bspwm
+enable-ipc = true
+fixed-center = false bottom = false
+separator =
+width = 100%
+height = 18
+offset-x = 0
+offset-y = 0
+radius = 0.0
+underline-size = 2
+overline-size = 0
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 1
+
+font-0 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
+font-1 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
+
+; font-0 = UbuntuMono Nerd Font:weight=bold:pixelsize=9;
+; font-1 = UbuntuMono Nerd Font:weight=bold:pixelsize=9;
+; font-0 = JetBrainsMonoMedium:pixelsize=9;
+; font-1 = HackNerdFont:pixelsize=9;
+
+font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
+font-3 = IPAGothic:fontformat=truetype:pixelsize=12:antialias=false;
+
+modules-left = arch-logo bspwm xwindow
+modules-right = updates polytimer cpu-usage cpu-temperature polymemory pulseaudio polyweather date time
+
+tray-position = right
+tray-padding = 6
+tray-background = ${colors.background-alt}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1
+
+cursor-click = pointer
+cursor-scroll = default
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+format-underline =
+format-background =
+format-padding =
+
+[module/arch-logo]
+type = custom/text
+content = 
+
+click-left = rofi -show drun
+click-right = rofi -show run
+
+[module/bspwm]
+type = internal/bspwm
+enable-scroll = false
+
+label-focused = %name%
+label-focused-background = ${colors.background-wm}
+label-focused-underline = ${colors.primary}
+label-focused-padding = 1
+label-occupied = %name%
+label-occupied-padding = 1
+label-occupied-underline = ${colors.background}
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+label-empty = %name%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 1
+label-empty-underline = ${colors.background}
+
+format-underline =
+format-background =
+format-padding =
+
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+; label-separator = |
+label-separator = 
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/scripts/polyupdates
+interval = 600
+format-prefix = "📦 "
+click-left = alacritty -e sudo pacman -Syyu
+click-right = alacritty -e yay -Syua
+
+[module/cpu-usage]
+type = custom/script
+exec = ~/.config/polybar/scripts/polycpu
+label = "%output%"
+click-left = alacritty -e btm
+interval = 2
+format-prefix = "💻 "
+
+[module/cpu-temperature]
+type = custom/script
+exec = ~/.config/polybar/scripts/polytempamd
+label = "%output%"
+format-prefix="🔥 "
+interval = 5
+
+[module/polymemory]
+type = custom/script
+exec = ~/.config/polybar/scripts/polymemory
+label = "%output%"
+click-left = alacritty -e btm
+interval = 2
+format-prefix = "🧠 "
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 5
+format-volume = <ramp-volume> <label-volume>
+label-muted = 🔇 muted
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
+
+click-right = pavucontrol
+
+[module/polyweather]
+type = custom/script
+exec = ~/.config/polybar/scripts/polyweather
+label = "%output%"
+click-left = alacritty -e w3m wttr.in/Guayaquil
+interval = 1800
+
+
+[module/date]
+type = custom/script
+exec = date '+%d/%m/%Y'
+label = 📅 %output%
+interval = 86400
+click-left = alacritty -e calcurse
+
+[module/time]
+type = custom/script
+exec = date '+%H:%M'
+label = 🕓 %output%
+interval = 1
+
+[module/polytimer]
+type = custom/script
+exec = ~/.config/polybar/scripts/polytimer tail '🍅 25' 5
+tail = true
+
+click-left = ~/.config/polybar/scripts/polytimer new 25 '🍅 :' 'notify-send -u critial "Pomo Finalizado"' ; ~/.config/polybar/scripts/polytimer update %pid%
+click-right = ~/.config/polybar/scripts/polytimer cancel ; ~/.config/polybar/scripts/polytimer update %pid%
+scroll-up = ~/.config/polybar/scripts/polytimer increase 60 || ~/.config/polybar/scripts/polytimer new 1 '⏳ :' 'notify-send -u critical "Timer Finalizado"' ; ~/.config/polybar/scripts/polytimer update %pid%
+scroll-down = ~/.config/polybar/scripts/polytimer increase -60 ; ~/.config/polybar/scripts/polytimer update %pid%
+
+

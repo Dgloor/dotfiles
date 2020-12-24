@@ -9,8 +9,7 @@ from settings.keys import term
 
 icon_size = 9
 
-base = lambda fg="text", bg="dark": {
-    "foreground": colors[fg], "background": colors[bg]}
+base = lambda fg="text", bg="dark": {"foreground": colors[fg], "background": colors[bg]}
 
 
 def space():
@@ -149,9 +148,7 @@ primary_widgets = [
     widget.Clock(**base(bg="dark"), format="%H:%M"),
     sep(),
     # -- SYSTRAY --
-    widget.Systray(
-        background=colors["dark"],
-        padding=5, icon_size=icon_size + 3),
+    widget.Systray(background=colors["dark"], padding=5, icon_size=icon_size + 3),
 ]
 
 secondary_widgets = [

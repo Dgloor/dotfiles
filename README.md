@@ -11,12 +11,23 @@
 - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
-- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
-- [Picom](https://github.com/yshui/picom) - blur & Transparency
+- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings [Picom](https://github.com/yshui/picom) - blur & Transparency
 
-## Tiling Manager
+## Window Tiling Managers 🥷
 
 - [Qtile](http://www.qtile.org/)
+- [Bspwm](https://github.com/baskerville/bspwm)
+  - [Sxhkd](https://github.com/baskerville/sxhkd) - hotkey daemon
+  - [Polybar](https://github.com/polybar/polybar) - status bar
+  - Scripts Dependencies
+    - perl
+    - mpstat
+    - mem
+    - acpi
+    - curl
+    - pgrep
+    - killall
+    - notify-send
 
 ## Fonts
 
@@ -26,11 +37,16 @@
 - FiraCode Nerd Font
 - [All nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
+## Aur Helper
+
+- [Yay]()
+
 ## Apps
 
-- [CopyQ](https://github.com/hluk/CopyQ) - clipboard tool
+- [Copyq](https://github.com/hluk/CopyQ) - clipboard tool
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
-- [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots
+- [Escrotum](https://github.com/Roger/escrotum) - screenshots
+- [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots with selection
 - [Sxiv](https://github.com/muennich/sxiv) - simple image viewer
 - [Feh](https://github.com/derf/feh) - minimalist image viewer
 - [Geequie](https://github.com/BestImageViewer/geeqie) - image viewer
@@ -39,23 +55,25 @@
 - [Redshift](https://wiki.archlinux.org/index.php/redshift) - night mode screen
 - [Rofi](https://github.com/davatorium/rofi) - app & window launcher
   - rofiemoji
+- [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast your keys
+- [Speedtest-cli](https://www.speedtest.net/es/apps/cli) - network speed
 - Thunar - gui file manager
 - [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
 
 ## Command line Apps
 
 - [Alacritty](https://github.com/alacritty/alacritty) - terminal emulator !!
-- Anydesk
+- [Anydesk](https://anydesk.com/es) - remote desktop
 - [Autojump-rs](https://github.com/xen0n/autojump-rs)
-- Bashtop
-- Bpython - python shell
-- Calcurse - calendar
+- [Bottom](https://github.com/ClementTsang/bottom) - graphical process/system monitor
+- [Bpython](https://github.com/bpython/bpython) - python interactive interpreter shell
+- [Calcurse](https://github.com/lfos/calcurse) - calendar & scheduling cli
 - [Ranger](https://github.com/ranger/ranger) - cli file manager
   - [Ueberzug](https://github.com/ranger/ranger/wiki/Image-Previews) - image preview
   - [compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
   - [autojump](https://github.com/fdw/ranger-autojump)
 - [Starship](https://starship.rs/) - minimalist shell prompt
-- Ytop
+- Ytop - TUI system monitor
 - [Zsh](<https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol)>)
 
 ## Development
@@ -67,8 +85,8 @@
 - IntelliJ IDEA
 - [Ncdu](https://www.archlinux.org/packages/community/x86_64/ncdu/) - check file weight
 - Netbeans
-- Neovim
-- Pycharm
+- [Neovim](https://github.com/neovim/neovim)
+- [Pycharm](https://www.jetbrains.com/es-es/pycharm/)
 - Visual Studio Code bin
 
 ## Comunication
@@ -85,9 +103,9 @@
 
 ## Office
 
-- [Zathura](https://github.com/pwmt/zathura) - console pdf viewer
 - Okukar - gui pdf viewer
 - WPS - office suit
+- [Zathura](https://github.com/pwmt/zathura) - console pdf viewer
 
 ## Search
 
@@ -96,8 +114,8 @@
 
 ## Edition
 
-- Gimp - image editor
-- Kdenlive - video editor
+- [Gimp]() - image editor
+- [Kdenlive]() - video editor
 
 ## Keyboard stuff
 
@@ -106,9 +124,7 @@
 
 ## Media
 
-- [DroidCam](https://www.dev47apps.com/)
-- Vlc
--
+- [Mpv](https://github.com/mpv-player/mpv) - video player
 
 ## System Info.
 

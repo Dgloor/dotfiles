@@ -21,6 +21,7 @@ inoremap <expr> <c-k> ("\<C-p>")
 " inoremap jk <Esc>
 " inoremap kj <Esc>
 inoremap ññ <Esc>
+inoremap ÑÑ <Esc>
 
 " Easy CAPS
 " inoremap <c-u> <ESC>viwUi

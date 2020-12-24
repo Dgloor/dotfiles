@@ -12,7 +12,7 @@ set whichwrap+=<,>,[,],h,l
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
-set ruler              			        " Show the cursor position all the time
+set ruler              			            " Show the cursor position all the time
 set cmdheight=1                         " More space for displaying messages
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
@@ -27,7 +27,7 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=2                        " Always display the status line
 set number                              " Line numbers
-set relativenumber                         " Show numbers relative to current line
+set relativenumber                      " Show numbers relative to current line
 set numberwidth=1
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
@@ -48,7 +48,7 @@ set scrolloff=8                         " Start scrolling when we're 8 lines awa
 set sidescrolloff=15
 set sidescroll=5
 
-" set cursorcolumn                         " Highlight current column
+" set cursorcolumn                      " Highlight current column
 
 " set guicursor=n-v-c:block-Cursor
 " set guicursor+=i:ver100-iCursor

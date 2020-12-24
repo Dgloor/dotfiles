@@ -33,9 +33,10 @@ function! StartifyEntryFormat()
 endfunction
 
 let g:startify_bookmarks = [
-        \ { 'p': '~/Prog/Python/' },
         \ { 'd': '~/Documents/dotfiles/' },
-        \ { 'c': '~/.config/qtile/' },
+        \ { 'p': '~/.config/polybar/' },
+        \ { 'b': '~/.config/bspwm/bspwmrc' },
+        \ { 's': '~/.config/sxhkd/sxhkdrc' },
         \ { 'i': '~/.config/nvim/init.vim' },
         \ { 'z': '~/.zshrc' },
         \ ]

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Wallpaper
-xwallpaper --stretch Documents/dotfiles/wallpapers/0031.jpg
+xwallpaper --stretch Documents/dotfiles/wallpapers/0043.jpg
 
 # Transparency
 picom &
