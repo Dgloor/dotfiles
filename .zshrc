@@ -39,7 +39,7 @@ zle -N history-beginning-search-forward-end history-search-end
 
 ### Set variables
 #################
-PATH="/home/dgloor/.local/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
+PATH="$HOME/scripts/polybar:/home/dgloor/.local/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000

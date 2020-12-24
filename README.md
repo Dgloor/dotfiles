@@ -2,9 +2,10 @@
 
 ## Screenshots
 
-![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
-![3](https://github.com/Dgloor/dotfiles/blob/main/screenshots/03.png)
-![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/02.png)
+- Qtile
+  ![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
+- Bspwm
+  ![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/04.png)
 
 ## Theming
 
@@ -19,15 +20,7 @@
 - [Bspwm](https://github.com/baskerville/bspwm)
   - [Sxhkd](https://github.com/baskerville/sxhkd) - hotkey daemon
   - [Polybar](https://github.com/polybar/polybar) - status bar
-  - Scripts Dependencies
-    - perl
-    - mpstat
-    - mem
-    - acpi
-    - curl
-    - pgrep
-    - killall
-    - notify-send
+    - [bar scripts](https://github.com/Dgloor/scripts)
 
 ## Fonts
 

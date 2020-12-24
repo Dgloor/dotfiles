@@ -6,11 +6,10 @@ bspc rule -r "*"
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Bar 
-# launchpolybar &
-$HOME/.config/polybar/launch.sh 
+launchpolybar &
 
 # Wallpaper
-xwallpaper --stretch Documents/dotfiles/wallpapers/0043.jpg &
+xwallpaper --stretch ~/dotfiles/wallpapers/0043.jpg &
 # Transparency
 picom -b --experimental-backends &
 # Num lock

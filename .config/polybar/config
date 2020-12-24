@@ -139,32 +139,32 @@ label-separator = 
 
 [module/updates]
 type = custom/script
-exec = ~/.config/polybar/scripts/polyupdates
+exec = polyupdates
 interval = 600
 format-prefix = "📦 "
-click-left = alacritty -e sudo pacman -Syyu
-click-right = alacritty -e yay -Syua
+click-left = $TERMINAL -e sudo pacman -Syyu
+click-right = $TERMINAL -e yay -Syua
 
 [module/cpu-usage]
 type = custom/script
-exec = ~/.config/polybar/scripts/polycpu
+exec = polycpu
 label = "%output%"
-click-left = alacritty -e btm
+click-left = $TERMINAL -e btm
 interval = 2
 format-prefix = "💻 "
 
 [module/cpu-temperature]
 type = custom/script
-exec = ~/.config/polybar/scripts/polytempamd
+exec = polytempamd
 label = "%output%"
 format-prefix="🔥 "
 interval = 5
 
 [module/polymemory]
 type = custom/script
-exec = ~/.config/polybar/scripts/polymemory
+exec = polymemory
 label = "%output%"
-click-left = alacritty -e btm
+# click-left = $TERMINAL -e btm
 interval = 2
 format-prefix = "🧠 "
 
@@ -182,33 +182,31 @@ click-right = pavucontrol
 
 [module/polyweather]
 type = custom/script
-exec = ~/.config/polybar/scripts/polyweather
+exec = polyweather
 label = "%output%"
-click-left = alacritty -e w3m wttr.in/Guayaquil
+click-left = $TERMINAL -e w3m wttr.in/Guayaquil
 interval = 1800
-
 
 [module/date]
 type = custom/script
 exec = date '+%d/%m/%Y'
 label = 📅 %output%
 interval = 86400
-click-left = alacritty -e calcurse
+click-left = $TERMINAL -e calcurse
 
 [module/time]
 type = custom/script
 exec = date '+%H:%M'
 label = 🕓 %output%
-interval = 1
+interval = 5
 
 [module/polytimer]
 type = custom/script
-exec = ~/.config/polybar/scripts/polytimer tail '🍅 25' 5
+exec = polytimer tail '🍅 25' 5
 tail = true
 
-click-left = ~/.config/polybar/scripts/polytimer new 25 '🍅 :' 'notify-send -u critial "Pomo Finalizado"' ; ~/.config/polybar/scripts/polytimer update %pid%
-click-right = ~/.config/polybar/scripts/polytimer cancel ; ~/.config/polybar/scripts/polytimer update %pid%
-scroll-up = ~/.config/polybar/scripts/polytimer increase 60 || ~/.config/polybar/scripts/polytimer new 1 '⏳ :' 'notify-send -u critical "Timer Finalizado"' ; ~/.config/polybar/scripts/polytimer update %pid%
-scroll-down = ~/.config/polybar/scripts/polytimer increase -60 ; ~/.config/polybar/scripts/polytimer update %pid%
-
+click-left = polytimer new 25 '🍅 :' 'notify-send -u critial "Pomo Finalizado"' ; polytimer update %pid%
+click-right = polytimer cancel ; polytimer update %pid%
+scroll-up = polytimer increase 60 || polytimer new 1 '⏳ :' 'notify-send -u critical "Timer Finalizado"' ; polytimer update %pid%
+scroll-down = polytimer increase -60 ; polytimer update %pid%
 
