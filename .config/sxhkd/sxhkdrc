@@ -1,17 +1,14 @@
 #
-# Applications  Launchers
+#================================================================= Applications  Launchers
 #
 
-# terminal emulator
+# Terminal emulator
 super + Return
 	alacritty
 
-# program launcher
-super + shift + Return
-	rofi -show drun
-
-super + shift + o 
-	rofi -show run
+# Program launcher
+super + shift + {Return,o}
+	rofi -show {drun,run}
 
 super + o 
 	rofi -show window
@@ -20,120 +17,176 @@ super + o
 super + e 
 	thunar
 
+# Browsers
 super + w
 	google-chrome-stable
+
+XF86HomePage
+	firefox
 
 # Clipboard
 super + shift + i
 	copyq toggle
 
 # Redshift 
-super + r 
-	redshift -O 4500
-
-super + shift + r 
-	redshift -x
+super + {_,shift} + r 
+	redshift {-O 4500,-x}
 
 # Screeshots
 super + shift + s 
 	flameshot gui
 
+# Compositor
+super + p
+	killall -q picom || picom 
+
 # Pomodoro
 super + shift + p 
 	gnome-pomodoro
 
+# Mail Client
+XF86Mail
+	thunderbird
+
+# Keys on screen
+XF86Tools
+	killall -q screenkey || screenkey
+
+# Quick screenshot
+Print
+ flameshot full -p ~/Images/screenshots
+
+
 #
-# bspwm hotkeys
+# ===================================================================== bspwm hotkeys
 #
 
-# quit/restart bspwm
-super + ctrl + {t,r}
-	bspc {quit, wm -r}
+# quit bspwm
+super + ctrl + t 
+	~/scripts/rofi/rofi-prompt "Quit Xsession" "bspc quit"
+
+# restart bspwm
+super + ctrl + r
+	bspc wm -r
 
 # close window
 super + shift + q
-	bspc node -c
+	~/scripts/bspwm/bspwm-crystal --close
+	# bspc node -c
 
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
 
-# send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+# Toggle fullscreen
+super + shift + f
+  ~/scripts/bspwm/bspwm-crystal --fullscreen
 
-# swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
+# Toogle floating mode
+super + f
+  bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
+
+# Swap nodes the tree from the current nodes parent
+super + ctrl + {Up, Down}
+  bspc node @parent -C {forward, backward}
+
+# Rotate the tree from the current nodes parent
+super + ctrl + {Right, Left}
+	bspc node @parent --rotate {90,270}
+
+# Flip the tree from the current nodes parent
+super + ctrl + {h,j,k,l}
+  bspc node @parent -F {vertical,horizontal,horizontal,vertical}
+
+# # send the newest marked node to the newest preselected node
+# super + y
+# 	bspc node newest.marked.local -n newest.!automatic.local
+
+# # swap the current node and the biggest window
+# super + g
+# 	bspc node -s biggest.window
 
 #
-# state/flags
+# ======================================================================= state/flags
 #
 
 # set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {t,shift + t}
+	bspc node -t {tiled,pseudo_tiled}
 
-# set the node flags
-super + ctrl + {m,x,y,z}
-	bspc node -g {marked,locked,sticky,private}
+# # set the node flags
+# super + ctrl + {m,x,y,z}
+# 	bspc node -g {marked,locked,sticky,private}
+
 
 #
-# focus/swap
+#======================================================================= focus/swap
 #
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-# focus the node for the given path jump
-super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
-
 # focus the next/previous window in the current desktop
-super + {_,shift + }c
+alt + {_,shift + }Tab
 	bspc node -f {next,prev}.local.!hidden.window
 
-# focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+# focus the last desktop
+super + Tab
+	bspc desktop -f last
 
-# focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+# focus desktop
+super + {1-9}
+	bspc desktop -f {1-9}
 
-# focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+# Send to desktop
+super + shift + {1-9}
+	~/scripts/bspwm/bspwm-crystal --send {1-9}
 
-# focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+# # Send and Swap to desktop
+# super + ctrl + {1-9}
+# 	bspc node -d {1-9} && ~/scripts/bspwm/bspwm-unhide && bspc desktop -f {1-9}
 
-#
-# preselect
-#
 
-# preselect the direction
-super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+# # focus the node for the given path jump
+# super + {p,b,comma,period}
+# 	bspc node -f @{parent,brother,first,second}
 
-# preselect the ratio
-super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
 
-# cancel the preselection for the focused node
-super + ctrl + space
-	bspc node -p cancel
+# # focus the next/previous desktop in the current monitor
+# super + bracket{left,right}
+# 	bspc desktop -f {prev,next}.local
 
-# cancel the preselection for the focused desktop
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+# # focus the older or newer node in the focus history
+# super + {o,i}
+# 	bspc wm -h off; \
+# 	bspc node {older,newer} -f; \
+# 	bspc wm -h on
+
 
 #
-# move/resize
+#======================================================================= preselect
+#
+
+# # preselect the direction
+# super + ctrl + {h,j,k,l}
+# 	bspc node -p {west,south,north,east}
+
+# # preselect the ratio
+# super + ctrl + {1-9}
+# 	bspc node -o 0.{1-9}
+
+# # cancel the preselection for the focused node
+# super + ctrl + space
+# 	bspc node -p cancel
+
+# # cancel the preselection for the focused desktop
+# super + ctrl + shift + space
+# 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+
+#
+#======================================================================= move/resize
 #
 
 # expand a window by moving one of its side outward
@@ -145,33 +198,33 @@ super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
-super + {Left,Down,Up,Right}
+super + alt + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+
 #
-# Media Controls
+#======================================================================= Media Controls
 #
+
 XF86AudioPlay
   playerctl play-pause
 
-XF86AudioRaiseVolume
-	pactl set-sink-volume @DEFAULT_SINK@ +2%
+XF86Audio{Prev,Next}
+  playerctl {previous,next}
 
-XF86AudioLowerVolume
-	pactl set-sink-volume @DEFAULT_SINK@ -2%
-
-super + F5
-  playerctl previous
-
-super + F8
-  playerctl next
+XF86Audio{RaiseVolume,LowerVolume}
+	pactl set-sink-volume @DEFAULT_SINK@ {+2%,-2%}
 
 super + F1
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 
+#
+#========================================================================= ETC
+#
 # make sxhkd reload its configuration files:
-# super + Escape
-	# pkill -USR1 -x sxhkd
+super + Escape
+	~/scripts/killandnotify "sxhkd" "Config reloaded" && sxhkd &
 
-
+super + ctrl + p
+	~/scripts/polybar/reloadpolybar &

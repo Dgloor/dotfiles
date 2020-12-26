@@ -34,7 +34,7 @@ endfunction
 
 let g:startify_bookmarks = [
         \ { 'd': '~/Documents/dotfiles/' },
-        \ { 'p': '~/.config/polybar/' },
+        \ { 'p': '~/.config/polybar/config' },
         \ { 'b': '~/.config/bspwm/bspwmrc' },
         \ { 's': '~/.config/sxhkd/sxhkdrc' },
         \ { 'i': '~/.config/nvim/init.vim' },

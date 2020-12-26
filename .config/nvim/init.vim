@@ -31,7 +31,7 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/fzf.vim 
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-source $HOME/.config/nvim/plug-config/main-screen.vim
+source $HOME/.config/nvim/plug-config/startify.vim
 
 
 " source $HOME/.config/nvim/plug-config/better-whitespace.vim   ???

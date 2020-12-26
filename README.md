@@ -2,17 +2,21 @@
 
 ## Screenshots
 
-- Qtile
-  ![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
-- Bspwm
-  ![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/04.png)
+### Qtile
+
+![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
+
+### Bspwm
+
+![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/04.png)
 
 ## Theming
 
 - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
-- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings [Picom](https://github.com/yshui/picom) - blur & Transparency
+- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
+- [Picom](https://github.com/yshui/picom) - blur & Transparency
 
 ## Window Tiling Managers 🥷
 
@@ -32,7 +36,7 @@
 
 ## Aur Helper
 
-- [Yay]()
+- [Yay](https://github.com/Jguer/yay)
 
 ## Apps
 
@@ -50,8 +54,9 @@
   - rofiemoji
 - [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast your keys
 - [Speedtest-cli](https://www.speedtest.net/es/apps/cli) - network speed
-- Thunar - gui file manager
+- [Thunar](https://wiki.archlinux.org/index.php/thunar) - gui file manager
 - [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
+- [Thunderbird](https://www.thunderbird.net/es-ES/) - email client
 
 ## Command line Apps
 
@@ -61,6 +66,7 @@
 - [Bottom](https://github.com/ClementTsang/bottom) - graphical process/system monitor
 - [Bpython](https://github.com/bpython/bpython) - python interactive interpreter shell
 - [Calcurse](https://github.com/lfos/calcurse) - calendar & scheduling cli
+- [Glow](https://github.com/charmbracelet/glow) - markdown render reader
 - [Ranger](https://github.com/ranger/ranger) - cli file manager
   - [Ueberzug](https://github.com/ranger/ranger/wiki/Image-Previews) - image preview
   - [compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
@@ -112,7 +118,7 @@
 
 ## Keyboard stuff
 
-- [playerct](https://github.com/altdesktop/playerctl) - activate pause button
+- [playerctl](https://github.com/altdesktop/playerctl) - activate pause button
 - [numlockx](<https://wiki.archlinux.org/index.php/Activating_numlock_on_bootup_(Espa%C3%B1ol)>) - active num lock on start
 
 ## Media

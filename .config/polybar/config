@@ -14,15 +14,6 @@
 ;
 ;==========================================================
 
-; [colors]
-; background = #1d1f21
-; background-wm = #444444
-; background-alt = #2d2d2d
-; foreground = #d8dee9
-; foreground-alt = #555555
-; primary = #268bd2
-; alert = #640130
-
 [colors]
 background = #0f101a
 background-wm = #0f101a
@@ -107,7 +98,7 @@ type = custom/text
 content = 
 
 click-left = rofi -show drun
-click-right = rofi -show run
+click-right = ~/scripts/rofi/rofi-powermenu
 
 [module/bspwm]
 type = internal/bspwm
@@ -139,32 +130,32 @@ label-separator = 
 
 [module/updates]
 type = custom/script
-exec = polyupdates
+exec = ~/scripts/polybar/polyupdates
 interval = 600
 format-prefix = "📦 "
-click-left = $TERMINAL -e sudo pacman -Syyu
-click-right = $TERMINAL -e yay -Syua
+click-left = alacritty -e sudo pacman -Syyu
+click-right = alacritty -e yay -Syua
 
 [module/cpu-usage]
 type = custom/script
-exec = polycpu
+exec = ~/scripts/polybar/polycpu
 label = "%output%"
-click-left = $TERMINAL -e btm
+click-left = alacritty -e btm
 interval = 2
 format-prefix = "💻 "
 
 [module/cpu-temperature]
 type = custom/script
-exec = polytempamd
+exec = ~/scripts/polybar/polytempamd
 label = "%output%"
 format-prefix="🔥 "
 interval = 5
 
 [module/polymemory]
 type = custom/script
-exec = polymemory
+exec = ~/scripts/polybar/polymemory
 label = "%output%"
-# click-left = $TERMINAL -e btm
+click-left = alacritty -e btm
 interval = 2
 format-prefix = "🧠 "
 
@@ -182,9 +173,9 @@ click-right = pavucontrol
 
 [module/polyweather]
 type = custom/script
-exec = polyweather
+exec = ~/scripts/polybar/polyweather
 label = "%output%"
-click-left = $TERMINAL -e w3m wttr.in/Guayaquil
+click-left = alacritty -e w3m wttr.in/Guayaquil
 interval = 1800
 
 [module/date]
@@ -192,21 +183,22 @@ type = custom/script
 exec = date '+%d/%m/%Y'
 label = 📅 %output%
 interval = 86400
-click-left = $TERMINAL -e calcurse
+click-left = alacritty -e calcurse
 
 [module/time]
 type = custom/script
 exec = date '+%H:%M'
 label = 🕓 %output%
 interval = 5
+click-left = thunderbird
 
 [module/polytimer]
 type = custom/script
-exec = polytimer tail '🍅 25' 5
+exec = ~/scripts/polybar/polytimer tail '🍅 25' 5
 tail = true
 
-click-left = polytimer new 25 '🍅 :' 'notify-send -u critial "Pomo Finalizado"' ; polytimer update %pid%
-click-right = polytimer cancel ; polytimer update %pid%
-scroll-up = polytimer increase 60 || polytimer new 1 '⏳ :' 'notify-send -u critical "Timer Finalizado"' ; polytimer update %pid%
-scroll-down = polytimer increase -60 ; polytimer update %pid%
+click-left = ~/scripts/polybar/polytimer new 25 '🍅 :' 'notify-send -u critial "Pomo Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
+click-right = ~/scripts/polybar/polytimer cancel ; ~/scripts/polybar/polytimer update %pid%
+scroll-up = ~/scripts/polybar/polytimer increase 60 || ~/scripts/polybar/polytimer new 1 '⏳ :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
+scroll-down = ~/scripts/polybar/polytimer increase -60 ; ~/scripts/polybar/polytimer update %pid%
 

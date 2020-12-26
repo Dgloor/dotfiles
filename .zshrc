@@ -39,7 +39,7 @@ zle -N history-beginning-search-forward-end history-search-end
 
 ### Set variables
 #################
-PATH="$HOME/scripts/polybar:/home/dgloor/.local/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
+PATH="$HOME/scripts:$HOME/scripts/bspwm:$HOME/scripts/rofi:$HOME/scripts/polybar:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000
@@ -105,6 +105,7 @@ alias n='nvim '
 alias ttime='tty-clock -S -c -b -n'
 
 # Utils
+alias ..='cd ..'
 alias le='less'
 alias t='trash '
 alias rm='rm -i'
@@ -115,6 +116,7 @@ alias ei='exit'
 alias off='systemctl poweroff '
 
 alias nspeed='speedtest-cli --simple'
+alias cpufetch='cpufetch --color amd'
 
 # ARCH
 alias pacin='sudo pacman -S ' 
