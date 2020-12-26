@@ -2,13 +2,15 @@
 
 ## Screenshots
 
-### Qtile
-
-![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
-
 ### Bspwm
 
-![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/04.png)
+![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/04.png)
+
+### Qtile
+
+![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
+
+
 
 ## Theming
 
