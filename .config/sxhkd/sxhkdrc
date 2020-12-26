@@ -1,5 +1,5 @@
 #
-#================================================================= Applications  Launchers
+#====================== Applications  Launchers
 #
 
 # Open terminal
@@ -42,9 +42,9 @@ super + shift + s
 super + p
 	killall -q picom || picom 
 
-# Pomodoro
+# Powermenu
 super + shift + p 
-	gnome-pomodoro
+	~/scripts/rofi/rofi-powermenu
 
 # Mail Client
 XF86Mail
@@ -60,7 +60,7 @@ Print
 
 
 #
-# ===================================================================== bspwm hotkeys
+# ============================ bspwm hotkeys
 #
 
 # Quit bspwm
@@ -79,6 +79,10 @@ super + shift + q
 # Toggle tiled and monocle layout
 super + m
 	bspc desktop -l next
+
+# Balance Nodes
+super + shift + m 
+	bspc node @/ -B
 
 # Toggle fullscreen
 super + shift + f
@@ -100,6 +104,10 @@ super + ctrl + {Right, Left}
 super + ctrl + {h,j,k,l}
   bspc node @parent -F {vertical,horizontal,horizontal,vertical}
 
+# Toggle Mater Layout | bsp-layout
+super + ctrl + m
+	bsp-layout cycle --layouts tall,tiled
+
 # # send the newest marked node to the newest preselected node
 # super + y
 # 	bspc node newest.marked.local -n newest.!automatic.local
@@ -109,7 +117,7 @@ super + ctrl + {h,j,k,l}
 # 	bspc node -s biggest.window
 
 #
-# ======================================================================= state/flags
+# ============================= state/flags
 #
 
 # set the window state
@@ -122,7 +130,7 @@ super + {t,shift + t}
 
 
 #
-#======================================================================= focus/swap
+#============================== focus/swap
 #
 
 # Focus the node in the given direction
@@ -166,7 +174,7 @@ super + shift + {1-9}
 
 
 #
-#======================================================================= preselect
+#=============================== Preselect
 #
 
 # # preselect the direction
@@ -187,29 +195,29 @@ super + shift + {1-9}
 
 
 #
-#======================================================================= move/resize
+#============================== Move/Resize
 #
-# Expand/contract a window by moving one of its side outward/inward
-super + s : {h,j,k,l}
-    STEP=20; SELECTION={1,2,3,4}; \
-    bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
-    bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
+# # Expand/contract a window by moving one of its side outward/inward
+# super + s : {h,j,k,l}
+#     STEP=20; SELECTION={1,2,3,4}; \
+#     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+#     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
 # Move floating window
 super + alt + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# # expand a window by moving one of its side outward
-# super + alt + {h,j,k,l}
-# 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-# # contract a window by moving one of its side inward
-# super + alt + shift + {h,j,k,l}
-# 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 
 #
-#======================================================================= Media Controls
+#============================= Media Controls
 #
 
 # Play/Stop Player
@@ -230,7 +238,7 @@ super + F1
 
 
 #
-#========================================================================= ETC
+#================================ ETC
 #
 # Reload sxhkd
 super + Escape

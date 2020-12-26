@@ -10,8 +10,6 @@
 
 ![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
 
-
-
 ## Theming
 
 - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
@@ -26,7 +24,8 @@
 - [Bspwm](https://github.com/baskerville/bspwm)
   - [Sxhkd](https://github.com/baskerville/sxhkd) - hotkey daemon
   - [Polybar](https://github.com/polybar/polybar) - status bar
-    - [bar scripts](https://github.com/Dgloor/scripts)
+    - [Bar scripts](https://github.com/Dgloor/scripts)
+  - [Bsp-layout](https://github.com/phenax/bsp-layout) - more layouts for bspwm
 
 ## Fonts
 
@@ -53,11 +52,10 @@
 - [Nm-applet](https://www.archlinux.org/packages/?name=network-manager-applet) - internet manager
 - [Redshift](https://wiki.archlinux.org/index.php/redshift) - night mode screen
 - [Rofi](https://github.com/davatorium/rofi) - app & window launcher
-  - rofiemoji
+  - Rofiemoji
 - [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast your keys
 - [Speedtest-cli](https://www.speedtest.net/es/apps/cli) - network speed
 - [Thunar](https://wiki.archlinux.org/index.php/thunar) - gui file manager
-- [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
 - [Thunderbird](https://www.thunderbird.net/es-ES/) - email client
 
 ## Command line Apps
@@ -71,9 +69,10 @@
 - [Glow](https://github.com/charmbracelet/glow) - markdown render reader
 - [Ranger](https://github.com/ranger/ranger) - cli file manager
   - [Ueberzug](https://github.com/ranger/ranger/wiki/Image-Previews) - image preview
-  - [compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
-  - [autojump](https://github.com/fdw/ranger-autojump)
+  - [Compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
+  - [Autojump](https://github.com/fdw/ranger-autojump) - \*rust version
 - [Starship](https://starship.rs/) - minimalist shell prompt
+- [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
 - Ytop - TUI system monitor
 - [Zsh](<https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol)>)
 
@@ -93,7 +92,7 @@
 ## Comunication
 
 - Discord
-- Whatsapp - \*whatdesk-bin
+- Whatdesk-bin
 
 ## Education
 
@@ -115,13 +114,13 @@
 
 ## Edition
 
-- [Gimp]() - image editor
-- [Kdenlive]() - video editor
+- [Gimp](https://www.gimp.org/downloads/) - image editor
+- [Kdenlive](https://kdenlive.org/es/) - video editor
 
 ## Keyboard stuff
 
-- [playerctl](https://github.com/altdesktop/playerctl) - activate pause button
-- [numlockx](<https://wiki.archlinux.org/index.php/Activating_numlock_on_bootup_(Espa%C3%B1ol)>) - active num lock on start
+- [Playerctl](https://github.com/altdesktop/playerctl) - activate play/pause button function
+- [Numlockx](<https://wiki.archlinux.org/index.php/activating_numlock_on_bootup_(espa%c3%b1ol)>) - active num lock on start
 
 ## Media
 
