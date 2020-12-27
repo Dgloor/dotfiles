@@ -8,7 +8,7 @@
 
 ### Qtile
 
-![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/01.png)
+![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/02.png)
 
 ## Theming
 
