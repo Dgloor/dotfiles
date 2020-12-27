@@ -1,4 +1,4 @@
-# Arch Dotfiles ⚒
+# Arch Dotfiles 🥷
 
 ![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/05.png)
 ![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/06.png)
@@ -11,7 +11,7 @@
 - [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
 - [Picom](https://github.com/yshui/picom) - blur & Transparency
 
-## Window Tiling Managers 🥷
+## Window Tiling Managers
 
 - [Qtile](http://www.qtile.org/)
 - [Bspwm](https://github.com/baskerville/bspwm)
