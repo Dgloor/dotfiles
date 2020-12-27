@@ -1,7 +1,5 @@
 # Arch Dotfiles ⚒
 
-## Screenshots
-
 ![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/04.png)
 
 ## Theming
