@@ -45,5 +45,6 @@ ln -sf $path/.config/sxhkd $HOME/.config/sxhkd
 [ -d $HOME/.config/zathura ] && rm -rf $HOME/.config/zathura
 ln -sf $path/.config/zathura/ $HOME/.config/zathura/
 
+ln -sf $path/.config/screenkey.json $HOME/.config/screenkey.json
 ln -sf $path/.config/starship.toml $HOME/.config/starship.toml
 

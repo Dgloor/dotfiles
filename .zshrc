@@ -68,11 +68,41 @@ done
 
 ### Set alias
 #############
-#
+alias nz='nvim ~/.zshrc'
+
+# Better list
 alias l='ls -lFh'
 alias la='ls -lAFh'
 alias ll='ls -l'
 alias ls='ls --color=auto '
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+# Utils
+alias le='less'
+alias t='trash '
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias q='exit'
+alias ei='exit'
+alias off='systemctl poweroff '
+
+# System info
+alias nspeed='speedtest-cli --simple'
+alias cpufetch='cpufetch --color amd'
+
+# Pacman & AUR
+alias pacin='sudo pacman -S ' 
+alias pacre='sudo pacman -R '
+alias yain='yay -S '
+alias yase='yay -s '
+alias yare='yay -R '
 
 # Python & Django
 alias p='python '
@@ -103,30 +133,6 @@ alias glog='git log --oneline --decorate --graph'
 # Apps 
 alias n='nvim '
 alias ttime='tty-clock -S -c -b -n'
-
-# Utils
-alias ..='cd ..'
-alias le='less'
-alias t='trash '
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-alias q='exit'
-alias ei='exit'
-alias off='systemctl poweroff '
-
-alias nspeed='speedtest-cli --simple'
-alias cpufetch='cpufetch --color amd'
-
-# ARCH
-alias pacin='sudo pacman -S ' 
-alias pacre='sudo pacman -R '
-alias yain='yay -S '
-alias yase='yay -s '
-alias yare='yay -R '
-
-
-alias nz='nvim ~/.zshrc'
 
 ### Bind keys
 #############
@@ -268,4 +274,4 @@ r() {
 
 # STARTUP
 # neofetch
-pfetch
+# pfetch
