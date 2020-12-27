@@ -2,13 +2,7 @@
 
 ## Screenshots
 
-### Bspwm
-
 ![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/04.png)
-
-### Qtile
-
-![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/02.png)
 
 ## Theming
 
@@ -24,7 +18,7 @@
 - [Bspwm](https://github.com/baskerville/bspwm)
   - [Sxhkd](https://github.com/baskerville/sxhkd) - hotkey daemon
   - [Polybar](https://github.com/polybar/polybar) - status bar
-    - [Bar scripts](https://github.com/Dgloor/scripts)
+  - [Bar scripts](https://github.com/Dgloor/scripts)
   - [Bsp-layout](https://github.com/phenax/bsp-layout) - more layouts for bspwm
 
 ## Fonts
