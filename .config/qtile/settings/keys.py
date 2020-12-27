@@ -21,7 +21,7 @@ keys = [
         ([mod, "shift"], "l", lazy.layout.grow()),
         ([mod, "shift"], "h", lazy.layout.shrink()),
         # Toggle floating
-        
+
         ([mod, "shift"], "f", lazy.window.toggle_floating()),
 
         # Move windows up or down in current stack
@@ -91,22 +91,36 @@ keys = [
         ([mod], "r", lazy.spawn("redshift -O 4500")),
         ([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
+        # Toggle Compositor
+        ([mod], "p",lazy.spawn("picom ")),
+
+        # Browser 2
+        ([], "XF86HomePage", lazy.spawn("firefox")),  
+        
+        # Mail Client
+        ([], "XF86Mail", lazy.spawn("thunderbird")),    
+
+        # Toggle Keys on screen
+        ([], "XF86Tools", lazy.spawn("screenkey")),
+
+        # Quick screenshot
+        ([], "Print", lazy.spawn("flameshot full -p /home/dgloor/Images/screenshots ")),   
+
         # ------------ HARDWARE CONFIGS ------------
-        # Sound Controles
-        (
-            [],
-            "XF86AudioLowerVolume",
-            lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -2%"),
-        ),
-        (
-            [],
-            "XF86AudioRaiseVolume",
-            lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +2%"),
-        ),
-        ([], "XF86AudioPlay", lazy.spawn("playerctl play-pause")),
-        ([mod], "F5", lazy.spawn("playerctl previous")),
-        ([mod], "F8", lazy.spawn("playerctl next")),
-        ([mod], "F1", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+        # Media Controls
+        ([], "XF86AudioLowerVolume",
+            lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -2%")),
+        ([], "XF86AudioRaiseVolume",
+            lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +2%")),
+        ([], "XF86AudioPlay",
+            lazy.spawn("playerctl play-pause")),
+        ([], "XF86AudioPrev",
+            lazy.spawn("playerctl previous")),
+        ([], "XF86AudioNext",
+            lazy.spawn("playerctl next")),
+        ([mod], "F1",
+            lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+
         # # Brightness
         # ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
         # ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),

@@ -39,7 +39,7 @@ def workspaces():
             text=" ",
             padding=3,
             mouse_callbacks={
-                "Button1": lambda qtile: qtile.cmd_spawn(" rofi -show drun")
+                "Button1": lambda qtile: qtile.cmd_spawn(" rofi -show drun"),
             },
         ),
         space(),
@@ -91,7 +91,8 @@ primary_widgets = [
     ),
     widget.Pacman(
         mouse_callbacks={
-            "Button1": lambda qtile: qtile.cmd_spawn(f"{term}" + " -e sudo pacman -Syu")
+            "Button1": lambda qtile: qtile.cmd_spawn(f"{term} -e sudo pacman -Syyu"),
+            "Button2": lambda qtile: qtile.cmd_spawn(f"{term} -e sudo yay -Syua" ),
         },
         **base(bg="dark"),
         update_interval=1800,
@@ -106,7 +107,7 @@ primary_widgets = [
         format="{load_percent}%",
         mouse_callbacks={
             "Button1": lambda qtile: qtile.cmd_spawn(
-                f"{term}" + " -e htop -s PERCENT_CPU"
+                f"{term} -e htop -s PERCENT_CPU"
             )
         },
     ),
@@ -124,7 +125,7 @@ primary_widgets = [
         format="{MemUsed}/{MemTotal}",
         mouse_callbacks={
             "Button1": lambda qtile: qtile.cmd_spawn(
-                f"{term}" + " -e htop -s PERCENT_MEM"
+                f"{term} -e htop -s PERCENT_MEM"
             )
         },
     ),

@@ -272,6 +272,5 @@ r() {
 	return $?
 }
 
-# STARTUP
 # neofetch
-# pfetch
+pfetch

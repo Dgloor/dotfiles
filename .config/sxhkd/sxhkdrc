@@ -50,7 +50,7 @@ super + shift + p
 XF86Mail
 	thunderbird
 
-# Keys on screen
+# Toggle Keys on screen
 XF86Tools
 	killall -q screenkey || screenkey
 
