@@ -67,10 +67,6 @@ Print
 super + ctrl + t 
 	~/scripts/rofi/rofi-prompt "Quit Xsession" "bspc quit"
 
-# Restart bspwm
-super + ctrl + r
-	bspc wm -r
-
 # Close window
 super + shift + q
 	~/scripts/bspwm/bspwm-crystal --close
@@ -92,25 +88,26 @@ super + shift + f
 super + f
   bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
 
-# Swap nodes the tree from the current nodes parent
-super + ctrl + {Up, Down}
-  bspc node @parent -C {forward, backward}
-
-# Rotate the tree from the current nodes parent
-super + ctrl + {Right, Left}
-	bspc node @parent --rotate {90,270}
-
 # Flip the tree from the current nodes parent
 super + ctrl + {h,j,k,l}
-  bspc node @parent -F {vertical,horizontal,horizontal,vertical}
+  bspc node @parent -F {vertical, horizontal, horizontal, vertical}
 
 # Toggle Mater Layout | bsp-layout
 super + ctrl + m
 	bsp-layout cycle --layouts tall,tiled
 
-# # send the newest marked node to the newest preselected node
-# super + y
-# 	bspc node newest.marked.local -n newest.!automatic.local
+# Send the newest marked node to the newest preselected node
+super + shift + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+
+# # Swap nodes the tree from the current nodes parent
+# super + alt + {Up,Down}
+#   bspc node @parent -C {forward, backward}
+
+# # Rotate the tree from the current nodes parent
+# super + alt + {Right,Left}
+# 	bspc node @parent --rotate {90,270}
 
 # # swap the current node and the biggest window
 # super + g
@@ -120,11 +117,14 @@ super + ctrl + m
 # ============================= state/flags
 #
 
-# set the window state
-super + {t,shift + t}
-	bspc node -t {tiled,pseudo_tiled}
+# Set the window state
+super + {t,shift+t}
+	bspc node -t {tiled, pseudo_tiled}
 
-# # set the node flags
+# Set the node flags
+super + y
+	bspc node -g marked
+
 # super + ctrl + {m,x,y,z}
 # 	bspc node -g {marked,locked,sticky,private}
 
@@ -161,7 +161,6 @@ super + shift + {1-9}
 # super + {p,b,comma,period}
 # 	bspc node -f @{parent,brother,first,second}
 
-
 # # focus the next/previous desktop in the current monitor
 # super + bracket{left,right}
 # 	bspc desktop -f {prev,next}.local
@@ -177,17 +176,17 @@ super + shift + {1-9}
 #=============================== Preselect
 #
 
-# # preselect the direction
-# super + ctrl + {h,j,k,l}
-# 	bspc node -p {west,south,north,east}
+# preselect the direction
+super + alt + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
 
 # # preselect the ratio
 # super + ctrl + {1-9}
 # 	bspc node -o 0.{1-9}
-
-# # cancel the preselection for the focused node
-# super + ctrl + space
-# 	bspc node -p cancel
 
 # # cancel the preselection for the focused desktop
 # super + ctrl + shift + space
@@ -197,15 +196,6 @@ super + shift + {1-9}
 #
 #============================== Move/Resize
 #
-# # Expand/contract a window by moving one of its side outward/inward
-# super + s : {h,j,k,l}
-#     STEP=20; SELECTION={1,2,3,4}; \
-#     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
-#     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
-
-# Move floating window
-super + alt + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -214,6 +204,16 @@ super + alt + {h,j,k,l}
 # contract a window by moving one of its side inward
 super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# # Expand/contract a window by moving one of its side outward/inward
+# super + s : {h,j,k,l}
+#     STEP=20; SELECTION={1,2,3,4}; \
+#     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+#     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
+
+# # Move floating window
+# super + alt + {Left,Down,Up,Right}
+# 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 
 #
@@ -224,7 +224,7 @@ super + alt + shift + {h,j,k,l}
 XF86AudioPlay
   playerctl play-pause
 
-# Preious/Next Video/Music
+# Previous/Next Video/Music
 XF86Audio{Prev,Next}
   playerctl {previous,next}
 
@@ -240,6 +240,11 @@ super + F1
 #
 #================================ ETC
 #
+
+# Reload bspwm
+super + ctrl + r
+	bspc wm -r
+
 # Reload sxhkd
 super + Escape
 	~/scripts/killandnotify "sxhkd" "Config reloaded" && sxhkd &
