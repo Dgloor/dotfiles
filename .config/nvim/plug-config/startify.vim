@@ -33,7 +33,7 @@ function! StartifyEntryFormat()
 endfunction
 
 let g:startify_bookmarks = [
-        \ { 'd': '~/Documents/dotfiles/' },
+        \ { 'd': '~/dotfiles/' },
         \ { 'p': '~/.config/polybar/config' },
         \ { 'b': '~/.config/bspwm/bspwmrc' },
         \ { 's': '~/.config/sxhkd/sxhkdrc' },

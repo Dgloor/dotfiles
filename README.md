@@ -102,6 +102,7 @@
 
 - [Fd](https://github.com/sharkdp/fd)
 - [Fzf](https://github.com/junegunn/fzf)
+- [Ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Edition
 

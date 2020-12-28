@@ -27,6 +27,9 @@ ln -sf $path/.config/flameshot $HOME/.config/flameshot
 [ -d $HOME/.config/gtk-3.0 ] && rm -rf $HOME/.config/gtk-3.0
 ln -sf $path/.config/gtk-3.0 $HOME/.config/gtk-3.0
 
+[ -d $HOME/.config/mpv ] && rm -rf $HOME/.config/mpv
+ln -s $path.config/mpv $HOME/.config/mpv
+
 [ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
 ln -sf $path/.config/nvim $HOME/.config/nvim
 
