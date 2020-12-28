@@ -9,6 +9,9 @@ ln -sf $path/.gtkrc-2.0 $HOME/.gtkrc-2.0
 [ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
 ln -sf $path/.config/alacritty $HOME/.config/alacritty
 
+[ -d $HOME/.config/bottom ] && rm -rf $HOME/.config/bottom
+ln -sf $path/.config/bottom  $HOME/.config/bottom
+
 [ -d $HOME/.config/bspwm ] && rm -rf $HOME/.config/bspwm
 ln -sf $path/.config/bspwm $HOME/.config/bspwm
 
@@ -17,6 +20,9 @@ ln -sf $path/.config/copyq $HOME/.config/copyq
 
 [ -d $HOME/.config/dunst ] && rm -rf $HOME/.config/dunst
 ln -sf $path/.config/dunst $HOME/.config/dunst
+
+[ -d $HOME/.config/flameshot ] && rm -rf $HOME/.config/flameshot
+ln -sf $path/.config/flameshot $HOME/.config/flameshot
 
 [ -d $HOME/.config/gtk-3.0 ] && rm -rf $HOME/.config/gtk-3.0
 ln -sf $path/.config/gtk-3.0 $HOME/.config/gtk-3.0

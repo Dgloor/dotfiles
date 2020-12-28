@@ -69,13 +69,9 @@ bspc config window_gap 10
 ####---Rules---###
 #bspc rule -a mpv state=fullscreen
 bspc rule -a copyq state=floating
-# rectangle=480x270+1440+810 layer=above
 bspc rule -a zoom state=tiled
 bspc rule -a obs state=tiled
 bspc rule -a Zathura state=tiled
 bspc rule -a Screenkey manage=off
 ## bspc rule -a com.github.ronnydo.colorpicker state=floating
-# bspc rule -a "Apache NetBeans IDE 11.0" manage=off
-bspc rule -a com.mycompany.expression_tree.App state=floating
-
-
+# bspc rule -a com.mycompany.expression_tree.App state=floating
