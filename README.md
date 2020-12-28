@@ -34,6 +34,7 @@
 
 ## Apps
 
+- [Anydesk](https://anydesk.com/es) - remote desktop
 - [Copyq](https://github.com/hluk/CopyQ) - clipboard tool
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
 - [Escrotum](https://github.com/Roger/escrotum) - screenshots
@@ -47,17 +48,13 @@
 - [Rofi](https://github.com/davatorium/rofi) - app & window launcher
   - Rofiemoji
 - [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast your keys
-- [Speedtest-cli](https://www.speedtest.net/es/apps/cli) - network speed
 - [Thunar](https://wiki.archlinux.org/index.php/thunar) - gui file manager
 - [Thunderbird](https://www.thunderbird.net/es-ES/) - email client
 
-## Command line Apps
+## CLI
 
 - [Alacritty](https://github.com/alacritty/alacritty) - terminal emulator !!
-- [Anydesk](https://anydesk.com/es) - remote desktop
 - [Autojump-rs](https://github.com/xen0n/autojump-rs)
-- [Bottom](https://github.com/ClementTsang/bottom) - graphical process/system monitor
-- [Bpython](https://github.com/bpython/bpython) - python interactive interpreter shell
 - [Calcurse](https://github.com/lfos/calcurse) - calendar & scheduling cli
 - [Glow](https://github.com/charmbracelet/glow) - markdown render reader
 - [Ranger](https://github.com/ranger/ranger) - cli file manager
@@ -65,12 +62,13 @@
   - [Compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
   - [Autojump](https://github.com/fdw/ranger-autojump) - \*rust version
 - [Starship](https://starship.rs/) - minimalist shell prompt
+
 - [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
-- Ytop - TUI system monitor
 - [Zsh](<https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol)>)
 
 ## Development
 
+- [Bpython](https://github.com/bpython/bpython) - python interactive interpreter shell
 - Color-picker
 - Figma-linux
 - Gluon-scene-builder11
@@ -86,12 +84,12 @@
 
 - Discord
 - Whatdesk-bin
+- Teams
+- Zoom
 
 ## Education
 
 - [Openboard](https://openboard.ch/index.en.html) - blackboard
-- Teams
-- Zoom
 - [Translate-shell](https://github.com/soimort/translate-shell) - cli translator
 
 ## Office
@@ -121,9 +119,12 @@
 
 ## System Info.
 
-- [Neofetch](https://github.com/dylanaraps/neofetch)
-- [Pfetch](https://github.com/dylanaraps/pfetch)
+- [Bottom](https://github.com/ClementTsang/bottom) - graphical process/system monitor
 - [Cpufetch](https://github.com/Dr-Noob/cpufetch)
+- [Neofetch](https://github.com/dylanaraps/neofetch)
+- [Speedtest-cli](https://www.speedtest.net/es/apps/cli) - network speed
+- [Pfetch](https://github.com/dylanaraps/pfetch)
+- Ytop - TUI system monitor
 
 ## References
 
