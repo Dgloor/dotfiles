@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "350x0-10+23"
+    geometry = "350x0-10+22"
 	
     # Turn on the progess bar
     progress_bar = true
@@ -39,13 +39,13 @@
     progress_bar_height = 10
 
     # Set the frame width of the progress bar
-    progress_bar_frame_width = 1
-    
+    progress_bar_frame_width = 1 
+
     # Set the minimum width for the progress bar
     progress_bar_min_width = 150
 
     # Set the maximum width for the progress bar
-    progress_bar_max_width = 300
+    progress_bar_max_width = 320
     
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -80,7 +80,7 @@
     frame_width = 0
 
     # Defines color of the frame around the notification window.
-    frame_color = "#1c1f24"
+    frame_color ="#788388"
 
     # Define a color for the separator.
     # possible values are:
@@ -314,21 +314,21 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#1c1f24"
     foreground = "#ffffff"
-    timeout = 5
+    timeout = 3
     # Icon for notifications with low urgency, uncomment to enable
     icon = ~/.config/dunst/normal.png
 
 [urgency_normal]
     background = "#1c1f24"
     foreground = "#ffffff"
-    timeout = 5
+    timeout = 3
     # Icon for notifications with normal urgency, uncomment to enable
     icon = ~/.config/dunst/normal.png
 
 [urgency_critical]
     background = "#900000"
     foreground = "#ffffff"
-    timeout = 5
+    timeout = 3
     # Icon for notifications with critical urgency, uncomment to enable
     icon = ~/.config/dunst/critical.png
 

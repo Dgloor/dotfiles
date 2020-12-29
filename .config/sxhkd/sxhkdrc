@@ -233,7 +233,7 @@ XF86Audio{Prev,Next}
 
 # Volume Up/Down
 XF86Audio{RaiseVolume,LowerVolume}
-	pactl set-sink-volume @DEFAULT_SINK@ {+2%,-2%}
+	~/scripts/audio-notifier {up,down} 2
 
 # Mute Sound
 super + F1
