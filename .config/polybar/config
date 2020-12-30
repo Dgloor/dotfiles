@@ -73,7 +73,7 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=12:antialias=false;
 
 modules-left = arch-logo bspwm xwindow
-modules-right = updates polytimer cpu-usage cpu-temperature polymemory pulseaudio polyweather date time
+modules-right = updates polytimer cpu-usage cpu-temperature polymemory polyweather pulseaudio date time
 
 tray-position = right
 tray-padding = 2

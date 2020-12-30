@@ -6,10 +6,6 @@
 
 
 " General Settings
-if !exists('g:vscode')
-    source $HOME/.config/nvim/plug-config/polyglot.vim
-endif
-
 source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/keys/mappings.vim
@@ -30,9 +26,13 @@ source $HOME/.config/nvim/plug-config/closetags.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/fzf.vim 
-luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 source $HOME/.config/nvim/plug-config/startify.vim
+source $HOME/.config/nvim/plug-config/emmet.vim
 
+luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+
+" source $HOME/.config/nvim/plug-config/far.vim
+" source $HOME/.config/nvim/plug-config/markdown-preview.vim
 
 " source $HOME/.config/nvim/plug-config/better-whitespace.vim   ???
 " luafile $HOME/.config/nvim/lua/nvcodeline.lua ???
@@ -41,12 +41,10 @@ source $HOME/.config/nvim/plug-config/startify.vim
 " source $HOME/.config/nvim/plug-config/gitgutter.vim ??? 
 " source $HOME/.config/nvim/plug-config/git-messenger.vim ??? 
 " source $HOME/.config/nvim/plug-config/barbar.vim    ??? 
-" source $HOME/.config/nvim/plug-config/far.vim   ??? 
 " source $HOME/.config/nvim/plug-config/tagalong.vim  ??? 
 " source $HOME/.config/nvim/plug-config/bracey.vim    ??? 
 " source $HOME/.config/nvim/plug-config/asynctask.vim ??? 
 " source $HOME/.config/nvim/plug-config/window-swap.vim ??? 
-" source $HOME/.config/nvim/plug-config/markdown-preview.vim  ??? 
 " source $HOME/.config/nvim/plug-config/neovide.vim   ??? 
 " source $HOME/.config/nvim/plug-config/sneak.vim
 " source $HOME/.config/nvim/plug-config/illuminate.vim
