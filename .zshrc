@@ -105,8 +105,8 @@ alias yase='yay -s '
 alias yare='yay -R '
 
 # Python & Django
-alias p='python '
-alias bp='bpython'
+alias py='python '
+alias bpy='bpython'
 alias djrs='python manage.py runserver'
 
 # GO

@@ -383,12 +383,12 @@ schemes:
 
 # ayu_dark
 # ayu_mirage
-# material_ocean
 # argonaut
+# material_ocean
+# molokai
+# nord
 # onedark
+# oceanic_next
 # ubuntu
 # vs_code
-# nord
-# oceanic_next
-# molokai
 colors: *ayu_dark

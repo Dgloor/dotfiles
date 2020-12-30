@@ -5,9 +5,6 @@ bspc rule -r "*"
 ###---Autostart---###
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-# Bar 
-~/scripts/polybar/launchpolybar &
-
 # Wallpaper
 xwallpaper --stretch ~/dotfiles/wallpapers/0047.jpg &
 
@@ -22,6 +19,9 @@ xset r rate 200 30 &
 
 # Compositor
 picom &
+
+# Bar 
+~/scripts/polybar/launchpolybar &
 
 # Systray 
 copyq & 
@@ -74,5 +74,7 @@ bspc rule -a zoom state=tiled
 bspc rule -a obs state=tiled
 bspc rule -a Zathura state=tiled
 bspc rule -a Screenkey manage=off
-## bspc rule -a com.github.ronnydo.colorpicker state=floating
+bspc rule -a com.github.ronnydo.colorpicker state=floating
+bspc rule -a balena-etcher state=tiled
+bspc rule -a OpenBoard state=tiled
 # bspc rule -a com.mycompany.expression_tree.App state=floating

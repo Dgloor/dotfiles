@@ -38,6 +38,7 @@
 - [Copyq](https://github.com/hluk/CopyQ) - clipboard tool
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
 - [Escrotum](https://github.com/Roger/escrotum) - screenshots
+- [Etcher](https://github.com/balena-io/etcher) - Fash OS Images
 - [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots with selection
 - [Sxiv](https://github.com/muennich/sxiv) - simple image viewer
 - [Feh](https://github.com/derf/feh) - minimalist image viewer

@@ -26,7 +26,7 @@ source $HOME/.config/nvim/plug-config/closetags.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/fzf.vim 
-source $HOME/.config/nvim/plug-config/startify.vim
+source $HOME/.config/nvim/plug-config/home.vim
 source $HOME/.config/nvim/plug-config/emmet.vim
 
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
