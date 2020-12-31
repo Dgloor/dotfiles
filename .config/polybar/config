@@ -134,7 +134,7 @@ type = custom/script
 exec = ~/scripts/polybar/polyupdates
 interval = 600
 format-prefix = "📦 "
-click-left = alacritty -e sudo pacman -Syyu
+click-left = alacritty -e sudo pacman -Syu
 click-right = alacritty -e yay -Syua
 
 [module/cpu-usage]
@@ -198,7 +198,7 @@ type = custom/script
 exec = ~/scripts/polybar/polytimer tail '🍅 25' 5
 tail = true
 
-click-left = ~/scripts/polybar/polytimer new 25 '🍅 :' 'notify-send -u critical "Pomo Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
+click-left = ~/scripts/polybar/polytimer new 25 '🍅 :' 'notify-send -u critical "Pomodoro Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
 click-right = ~/scripts/polybar/polytimer cancel ; ~/scripts/polybar/polytimer update %pid%
 scroll-up = ~/scripts/polybar/polytimer increase 60 || ~/scripts/polybar/polytimer new 1 '⏳ :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
 scroll-down = ~/scripts/polybar/polytimer increase -60 ; ~/scripts/polybar/polytimer update %pid%

@@ -233,7 +233,7 @@ XF86Audio{Prev,Next}
 
 # Volume Up/Down
 XF86Audio{RaiseVolume,LowerVolume}
-	~/scripts/audio-notifier {up,down} 2
+	~/scripts/media/volume-notifier {up,down} 2
 
 # Mute Sound
 super + F1

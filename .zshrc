@@ -39,7 +39,7 @@ zle -N history-beginning-search-forward-end history-search-end
 
 ### Set variables
 #################
-PATH="$HOME/scripts:$HOME/scripts/shell-colors:$HOME/scripts/bspwm:$HOME/scripts/rofi:$HOME/scripts/polybar:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
+PATH="$HOME/scripts:$HOME/scripts/media:$HOME/scripts/shell-colors:$HOME/scripts/bspwm:$HOME/scripts/rofi:$HOME/scripts/polybar:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin/:$PATH"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000
