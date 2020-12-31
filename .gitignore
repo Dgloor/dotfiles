@@ -1,3 +1,4 @@
 .config/nvim/autoload/plugged/
 .config/nvim/session/
 .config/mpv/scripts/total_playtime.list
+.config/mpv/watch_later/
