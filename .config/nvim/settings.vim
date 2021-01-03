@@ -44,7 +44,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set ignorecase                          " case insensitive search
 set smartcase                           " Smart case search if there is uppercase
-set scrolloff=8                         " Start scrolling when we're 8 lines away from margins
+" set scrolloff=8                         " Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=5
 

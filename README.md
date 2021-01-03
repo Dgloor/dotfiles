@@ -35,10 +35,11 @@
 ## Apps
 
 - [Anydesk](https://anydesk.com/es) - remote desktop
+- [Bitwarden](https://bitwarden.com/) - password manager
 - [Copyq](https://github.com/hluk/CopyQ) - clipboard tool
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
 - [Escrotum](https://github.com/Roger/escrotum) - screenshots
-- [Etcher](https://github.com/balena-io/etcher) - Fash OS Images
+- [Etcher](https://github.com/balena-io/etcher) - fash OS Images
 - [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots with selection
 - [Sxiv](https://github.com/muennich/sxiv) - simple image viewer
 - [Feh](https://github.com/derf/feh) - minimalist image viewer
@@ -115,9 +116,11 @@
 - [Playerctl](https://github.com/altdesktop/playerctl) - activate play/pause button function
 - [Numlockx](<https://wiki.archlinux.org/index.php/activating_numlock_on_bootup_(espa%c3%b1ol)>) - active num lock on start
 
-## Media
+## Media & Entertaiment
 
 - [Mpv](https://github.com/mpv-player/mpv) - video player
+- Popcorn time
+- Stremio
 
 ## System Info.
 
