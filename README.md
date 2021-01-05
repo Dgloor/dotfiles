@@ -9,7 +9,7 @@
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
 - [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
-- [Picom](https://github.com/yshui/picom) - blur & Transparency
+- [Picom](https://github.com/ibhagwan/picom) - blur & transparency
 
 ## Window Tiling Managers
 

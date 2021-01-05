@@ -109,7 +109,7 @@ super + alt + {Right,Left}
 	bspc node @parent --rotate {90,270}
 
 # Toggle window gaps
-super + g
+super + ctrl + g
 	~/scripts/bspwm/bspwm-gaps
 
 # # swap the current node and the biggest window
@@ -212,16 +212,16 @@ super + alt + {h,j,k,l}
 super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
+# Move floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
 # # Expand/contract a window by moving one of its side outward/inward
 # super + s : {h,j,k,l}
 #     STEP=20; SELECTION={1,2,3,4}; \
 #     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
 #     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
-
-# # Move floating window
-# super + alt + {Left,Down,Up,Right}
-# 	bspc node -v {-20 0,0 20,0 -20,20 0}
-
 
 #
 #============================= Media Controls
