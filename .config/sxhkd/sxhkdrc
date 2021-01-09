@@ -14,9 +14,14 @@ super + shift + {Return,o}
 super + o 
 	rofi -show window
 
+# Rofi emoji
+super + period
+	rofi -show emoji
+
 # File Explorer
 super + e 
-	thunar
+	spacefm
+	# thunar
 
 # Browser 1
 super + w
@@ -125,8 +130,8 @@ super + {t,shift+t}
 	bspc node -t {tiled, pseudo_tiled}
 
 # Set the node flags
-super + y
-	bspc node -g marked
+super + {y,s}
+	bspc node -g {marked, sticky}
 
 # super + ctrl + {m,x,y,z}
 # 	bspc node -g {marked,locked,sticky,private}

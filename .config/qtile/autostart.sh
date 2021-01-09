@@ -18,4 +18,5 @@ xset r rate 200 30 &
 # Systray
 # nm-applet & 
 copyq & 
+udiskie &
 # volumeicon &

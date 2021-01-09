@@ -22,11 +22,12 @@
 
 ## Fonts
 
+- Ubuntu Mono
+- Roboto Mono Nerd Font
+- FiraCode Nerd Font
+- [More Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 - ttf-ms-fonts
 - ttf-wps-fonts
-- Ubuntu Mono
-- FiraCode Nerd Font
-- [All nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
 ## Aur Helper
 
@@ -42,7 +43,6 @@
 - [Etcher](https://github.com/balena-io/etcher) - fash OS Images
 - [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots with selection
 - [Sxiv](https://github.com/muennich/sxiv) - simple image viewer
-- [Feh](https://github.com/derf/feh) - minimalist image viewer
 - [Geequie](https://github.com/BestImageViewer/geeqie) - image viewer
 - Google-chrome
 - [Nm-applet](https://www.archlinux.org/packages/?name=network-manager-applet) - internet manager
@@ -50,8 +50,8 @@
 - [Rofi](https://github.com/davatorium/rofi) - app & window launcher
   - Rofiemoji
 - [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast your keys
-- [Thunar](https://wiki.archlinux.org/index.php/thunar) - gui file manager
 - [Thunderbird](https://www.thunderbird.net/es-ES/) - email client
+- [SpaceFM](https://github.com/IgnorantGuru/spacefm) - gui file manager
 
 ## CLI
 
@@ -64,7 +64,6 @@
   - [Compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
   - [Autojump](https://github.com/fdw/ranger-autojump) - \*rust version
 - [Starship](https://starship.rs/) - minimalist shell prompt
-
 - [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
 - [Zsh](<https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol)>)
 
@@ -87,11 +86,14 @@
 - Discord
 - Whatdesk-bin
 - Teams
+- Telegram
 - Zoom
 
 ## Education
 
+- [Anki](https://apps.ankiweb.net/) - flashcards
 - [Openboard](https://openboard.ch/index.en.html) - blackboard
+- [Remnote](https://remnote.io) - note taking & flashcards
 - [Translate-shell](https://github.com/soimort/translate-shell) - cli translator
 
 ## Office
@@ -110,6 +112,7 @@
 
 - [Gimp](https://www.gimp.org/downloads/) - image editor
 - [Kdenlive](https://kdenlive.org/es/) - video editor
+- [Shotcut](https://shotcut.org/) - video editor
 
 ## Keyboard stuff
 

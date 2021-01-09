@@ -63,12 +63,6 @@ module-margin-right = 1
 
 font-0 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
 font-1 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
-
-; font-0 = UbuntuMono Nerd Font:weight=bold:pixelsize=9;
-; font-1 = UbuntuMono Nerd Font:weight=bold:pixelsize=9;
-; font-0 = JetBrainsMonoMedium:pixelsize=9;
-; font-1 = HackNerdFont:pixelsize=9;
-
 font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=12:antialias=false;
 
