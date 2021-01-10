@@ -94,7 +94,7 @@ alias ei='exit'
 alias off='systemctl poweroff '
 
 # System info
-alias nspeed='speedtest-cli --simple'
+alias nspeed='speedtest-cli'
 alias cpufetch='cpufetch --color amd'
 
 # Pacman & AUR

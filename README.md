@@ -10,6 +10,7 @@
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
 - [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
 - [Picom](https://github.com/ibhagwan/picom) - blur & transparency
+- [Kvantum-qt5](https://store.kde.org/p/1005410/) - theme engine for qt5
 
 ## Window Tiling Managers
 

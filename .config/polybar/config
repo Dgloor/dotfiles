@@ -136,7 +136,7 @@ type = custom/script
 exec = ~/scripts/polybar/polycpu
 label = "%output%"
 click-left = alacritty -e btm
-interval = 2
+interval = 5
 format-prefix = "💻 "
 
 [module/cpu-temperature]
@@ -151,7 +151,7 @@ type = custom/script
 exec = ~/scripts/polybar/polymemory
 label = "%output%"
 click-left = alacritty -e btm
-interval = 2
+interval = 5
 format-prefix = "🧠 "
 
 [module/pulseaudio]
@@ -189,11 +189,9 @@ click-left = thunderbird
 
 [module/polytimer]
 type = custom/script
-exec = ~/scripts/polybar/polytimer tail '🍅 25' 5
+exec = ~/scripts/polybar/polytimer tail '🍅 0' 5
 tail = true
 
-click-left = ~/scripts/polybar/polytimer new 25 '🍅 :' 'notify-send -u critical "Pomodoro Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
 click-right = ~/scripts/polybar/polytimer cancel ; ~/scripts/polybar/polytimer update %pid%
-scroll-up = ~/scripts/polybar/polytimer increase 60 || ~/scripts/polybar/polytimer new 1 '⏳ :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
+scroll-up = ~/scripts/polybar/polytimer increase 60 || ~/scripts/polybar/polytimer new 1 '🍅 :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
 scroll-down = ~/scripts/polybar/polytimer increase -60 ; ~/scripts/polybar/polytimer update %pid%
-

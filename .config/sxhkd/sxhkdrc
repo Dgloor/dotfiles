@@ -47,9 +47,13 @@ super + shift + s
 super + p
 	killall -q picom || picom 
 
-# Powermenu
+# Pomodoro
 super + shift + p 
-	~/scripts/rofi/rofi-powermenu
+	pidof pomotroid || pomotroid
+
+##Powermenu
+#super + shift + p 
+#	~/scripts/rofi/rofi-powermenu
 
 # Mail Client
 XF86Mail
