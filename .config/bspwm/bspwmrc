@@ -82,4 +82,5 @@ bspc rule -a balena-etcher state=tiled
 bspc rule -a OpenBoard state=tiled
 bspc rule -a wpp state=tiled
 bspc rule -a Gnome-pomodoro state=floating
+bspc rule -a SpeedCrunch state=floating
 bspc rule -a app.App state=floating

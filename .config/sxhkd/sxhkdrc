@@ -49,7 +49,7 @@ super + p
 
 # Pomodoro
 super + shift + p 
-	pidof pomotroid || pomotroid
+	gnome-pomodoro
 
 ##Powermenu
 #super + shift + p 

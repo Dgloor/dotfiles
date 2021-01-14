@@ -3,9 +3,8 @@
 ![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/05.png)
 ![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/06.png)
 
-## Theming
+## Theming - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 
-- [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
 - [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
@@ -43,6 +42,7 @@
 - [Escrotum](https://github.com/Roger/escrotum) - screenshots
 - [Etcher](https://github.com/balena-io/etcher) - fash OS Images
 - [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots with selection
+- gnome-pomodoro - Pomo timer
 - [Sxiv](https://github.com/muennich/sxiv) - simple image viewer
 - [Geequie](https://github.com/BestImageViewer/geeqie) - image viewer
 - Google-chrome
@@ -53,6 +53,7 @@
 - [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast your keys
 - [Thunderbird](https://www.thunderbird.net/es-ES/) - email client
 - [SpaceFM](https://github.com/IgnorantGuru/spacefm) - gui file manager
+- [SpeedCrunch](http://speedcrunch.org/) - Scientific calculator
 
 ## CLI
 
@@ -86,6 +87,7 @@
 
 - Discord
 - Whatdesk-bin
+- Signal-desktop
 - Teams
 - Telegram
 - Zoom
@@ -99,6 +101,7 @@
 
 ## Office
 
+- Google docs nativefier - online office suit
 - Okukar - gui pdf viewer
 - WPS - office suit
 - [Zathura](https://github.com/pwmt/zathura) - console pdf viewer
