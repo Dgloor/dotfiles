@@ -27,7 +27,6 @@
 - FiraCode Nerd Font
 - [More Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 - ttf-ms-fonts
-- ttf-wps-fonts
 
 ## Aur Helper
 
@@ -103,7 +102,7 @@
 
 - Google docs nativefier - online office suit
 - Okukar - gui pdf viewer
-- WPS - office suit
+- FreeOffice - office suit
 - [Zathura](https://github.com/pwmt/zathura) - console pdf viewer
 
 ## Search
