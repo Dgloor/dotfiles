@@ -128,10 +128,11 @@
 - Popcorn time
 - Stremio
 
-## System Info.
+## Utilities
 
 - [Bottom](https://github.com/ClementTsang/bottom) - graphical process/system monitor
 - [Cpufetch](https://github.com/Dr-Noob/cpufetch)
+- [Duf](https://github.com/muesli/duf) - disk usage/free
 - [Neofetch](https://github.com/dylanaraps/neofetch)
 - [Speedtest-cli](https://www.speedtest.net/es/apps/cli) - network speed
 - [Pfetch](https://github.com/dylanaraps/pfetch)
