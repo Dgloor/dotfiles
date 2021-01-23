@@ -114,7 +114,7 @@
 ## Edition
 
 - [Gimp](https://www.gimp.org/downloads/) - image editor
-- [Kdenlive](https://kdenlive.org/es/) - video editor
+- [Olive](https://www.olivevideoeditor.org/) - video editor
 - [Shotcut](https://shotcut.org/) - video editor
 
 ## Keyboard stuff
