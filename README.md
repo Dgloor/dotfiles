@@ -30,7 +30,7 @@
 
 ## Aur Helper
 
-- [Yay](https://github.com/Jguer/yay)
+- [Paru](https://github.com/Morganamilo/paru)
 
 ## Apps
 
@@ -101,8 +101,8 @@
 ## Office
 
 - Google docs nativefier - online office suit
+- [Libreoffice](<https://wiki.archlinux.org/index.php/LibreOffice_(Español)>) - office suit
 - Okukar - gui pdf viewer
-- FreeOffice - office suit
 - [Zathura](https://github.com/pwmt/zathura) - console pdf viewer
 
 ## Search

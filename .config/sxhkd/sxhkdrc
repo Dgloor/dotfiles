@@ -23,13 +23,13 @@ super + e
 	spacefm
 	# thunar
 
-# Browser 1
+# Browser
 super + w
 	google-chrome-stable
 
-# Browser 2
+# Music Player
 XF86HomePage
-	firefox
+	spotify
 
 # Clipboard
 super + shift + i
@@ -77,7 +77,7 @@ super + ctrl + t
 	~/scripts/rofi/rofi-prompt "Quit Xsession" "bspc quit"
 
 # Close window
-super + shift + q
+super + q
 	~/scripts/bspwm/bspwm-crystal --close
 	# bspc node -c
 

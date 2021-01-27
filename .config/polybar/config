@@ -128,8 +128,10 @@ type = custom/script
 exec = ~/scripts/polybar/polyupdates
 interval = 600
 format-prefix = "📦 "
-click-left = alacritty -e sudo pacman -Syu
-click-right = alacritty -e yay -Syua
+# click-left = alacritty -e sudo pacman -Syu
+# click-right = alacritty -e yay -Syua
+click-left = alacritty -e paru
+click-right = alacritty -e paru -Sua
 
 [module/cpu-usage]
 type = custom/script
