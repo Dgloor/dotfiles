@@ -52,6 +52,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Ranger
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
+" Lf
+Plug 'ptzz/lf.vim'
+Plug 'rbgrouleff/bclose.vim'
+
 " FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }

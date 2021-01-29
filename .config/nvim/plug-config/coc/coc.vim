@@ -6,7 +6,6 @@
 " endif
 
 let g:NERDTreeHijackNetrw = 0
-let g:ranger_replace_netrw = 1 
 
 " TextEdit might fail if hidden is not set.
 set hidden
