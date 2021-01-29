@@ -333,6 +333,7 @@ let g:which_key_map.t = {
     \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
     \ 'p' : [':FloatermNew python'                            , 'python'],
     \ 'm' : [':FloatermNew lazynpm'                           , 'npm'],
+    \ 'l' : [':FloatermNew lf'                                , 'lf'],
     \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
     \ 't' : [':FloatermToggle'                                , 'toggle'],
     \ 'y' : [':FloatermNew ytop'                              , 'ytop'],

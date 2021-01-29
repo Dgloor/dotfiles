@@ -50,11 +50,11 @@ Plug 'alvan/vim-closetag'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Ranger
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+" Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 " Lf
-Plug 'ptzz/lf.vim'
-Plug 'rbgrouleff/bclose.vim'
+" Plug 'ptzz/lf.vim'
+" Plug 'rbgrouleff/bclose.vim'
 
 " FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

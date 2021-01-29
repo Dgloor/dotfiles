@@ -5,6 +5,7 @@ set drawbox true
 set info size
 set icons true
 set ignorecase true
+# set number true
 
 set cleaner ~/.config/lf/preview-image
 set previewer ~/.config/lf/pv
@@ -143,6 +144,7 @@ map e
 map f
 map x 
 map y
+map p
 
 # # File Openers
 map ee $$EDITOR "$f"
@@ -179,16 +181,16 @@ map ss stripspace
 
 # Basic Functions
 map . set hidden!
-map p paste
-map dd cut
 map yy copy
+map dd cut
+map pp paste
 map <enter> open
 map mf mkfile
 map mr sudomkfile
 map md mkdir
 map ms $mkscript
 map ch chmod
-map X setwallpaper
+map x setwallpaper
 # map o open_config
 # map br $vimv $fx
 map r rename
