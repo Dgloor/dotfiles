@@ -1,11 +1,14 @@
 # Basic Settings
-# set previewer ~/.config/lf/preview
-set previewer pistol
 # set hidden true
 set preview true
 set drawbox true
+set info size
 set icons true
 set ignorecase true
+
+set cleaner ~/.config/lf/preview-image
+set previewer ~/.config/lf/pv
+# set previewer pistol
 
 # Custom Functions
 cmd j %lf -remote "send $id cd '$(autojump $1)'"
@@ -152,6 +155,9 @@ map at tar
 map ag targz
 map ab targz
 map au unarchive
+
+# Img Preview 
+map - $~/.config/lf/draw_img "$f"
 
 # Trash Mappings
 map DD trash
