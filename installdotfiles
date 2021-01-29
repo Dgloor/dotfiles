@@ -60,4 +60,5 @@ ln -sf $path/.config/lf/ $HOME/.config/lf
 ln -sf $path/.config/screenkey.json $HOME/.config/screenkey.json
 ln -sf $path/.config/starship.toml $HOME/.config/starship.toml
 
-# ln -s /home/dgloor/dotfiles/.config/lf /home/dgloor/.local/bin/lf
+# ln -sf $path/.config/lf/lf /home/dgloor/.local/bin/lf
+# ln -sf $path/scripts/ $HOME/scripts/
