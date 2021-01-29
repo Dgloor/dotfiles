@@ -52,8 +52,12 @@ ln -sf $path/.config/rofi $HOME/.config/rofi
 ln -sf $path/.config/sxhkd $HOME/.config/sxhkd
 
 [ -d $HOME/.config/zathura ] && rm -rf $HOME/.config/zathura
-ln -sf $path/.config/zathura/ $HOME/.config/zathura/
+ln -sf $path/.config/zathura/ $HOME/.config/zathura
+
+[ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
+ln -sf $path/.config/lf/ $HOME/.config/lf
 
 ln -sf $path/.config/screenkey.json $HOME/.config/screenkey.json
 ln -sf $path/.config/starship.toml $HOME/.config/starship.toml
 
+# ln -s /home/dgloor/dotfiles/.config/lf /home/dgloor/.local/bin/lf
