@@ -6,7 +6,7 @@ bspc rule -r "*"
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Wallpaper
-xwallpaper --zoom ~/dotfiles/wallpapers/0052.jpg &
+xwallpaper --zoom ~/.config/wall.jpg &
 
 # Num lock
 numlockx &

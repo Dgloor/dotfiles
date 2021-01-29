@@ -3,8 +3,9 @@
 ![1](https://github.com/Dgloor/dotfiles/blob/main/screenshots/05.png)
 ![2](https://github.com/Dgloor/dotfiles/blob/main/screenshots/06.png)
 
-## Theming - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
+## Theming
 
+- [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
 - [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
@@ -22,10 +23,7 @@
 
 ## Fonts
 
-- Ubuntu Mono
-- Roboto Mono Nerd Font
-- FiraCode Nerd Font
-- [More Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+- [Nerd Fonts](hhttps://github.com/ryanoasis/nerd-fonts)
 - ttf-ms-fonts
 
 ## Aur Helper
@@ -60,7 +58,10 @@
 - [Autojump-rs](https://github.com/xen0n/autojump-rs)
 - [Calcurse](https://github.com/lfos/calcurse) - calendar & scheduling cli
 - [Glow](https://github.com/charmbracelet/glow) - markdown render reader
-- [Ranger](https://github.com/ranger/ranger) - cli file manager
+- [Lf](https://github.com/gokcehan/lf) - terminal file manager | go
+  - [Pistol](https://github.com/doronbehar/pistol) - file previewer
+  - [Dragon](https://github.com/mwh/dragon) - drag & drop source/target for X
+- [Ranger](https://github.com/ranger/ranger) - terminal file manager | python
   - [Ueberzug](https://github.com/ranger/ranger/wiki/Image-Previews) - image preview
   - [Compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
   - [Autojump](https://github.com/fdw/ranger-autojump) - \*rust version
