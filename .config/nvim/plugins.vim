@@ -129,6 +129,9 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'gko/vim-coloresque'
 Plug 'tpope/vim-haml'
 
+" R 
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+
 " Start Scren
 Plug 'mhinz/vim-startify'
 

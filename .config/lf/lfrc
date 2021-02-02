@@ -159,7 +159,7 @@ map ab targz
 map au unarchive
 
 # Img Preview 
-map - $~/.config/lf/draw_img "$f"
+map - $~/.config/lf/preview-image "$f"
 
 # Trash Mappings
 map DD trash

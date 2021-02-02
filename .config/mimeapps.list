@@ -31,6 +31,7 @@ image/x-xpixmap=sxiv.desktop
 application/wps-office.pptx=libreoffice-impress.desktop;freeoffice-presentations.desktop;
 application/wps-office.docx=libreoffice-writer.desktop;freeoffice-textmaker.desktop;
 video/x-matroska=mpv.desktop;
+text/x-r-source=nvim.desktop;
 
 [Added Associations]
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop;org.pwmt.zathura-pdf-mupdf.desktop;okularApplication_pdf.desktop;wps-office-pdf.desktop;
@@ -60,3 +61,4 @@ image/x-tga=sxiv.desktop;
 image/x-xpixmap=sxiv.desktop;
 application/wps-office.pptx=libreoffice-impress.desktop;
 application/wps-office.docx=libreoffice-writer.desktop;
+text/x-r-source=nvim.desktop;

@@ -94,7 +94,8 @@
 
 ## Education
 
-- [Anki](https://apps.ankiweb.net/) - flashcards
+- [Anki](https://apps.ankiweb.net/) - flashcards & space repetition
+- [Obsidian](https://obsidian.md/) - markdown note taking app
 - [Openboard](https://openboard.ch/index.en.html) - blackboard
 - [Remnote](https://remnote.io) - note taking & flashcards
 - [Translate-shell](https://github.com/soimort/translate-shell) - cli translator
