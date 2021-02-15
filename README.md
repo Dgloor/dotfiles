@@ -48,7 +48,7 @@
 - [Rofi](https://github.com/davatorium/rofi) - app & window launcher
   - Rofiemoji
 - [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast your keys
-- [Thunderbird](https://www.thunderbird.net/es-ES/) - email client
+- [MailSpring](https://getmailspring.com/) - email client
 - [SpaceFM](https://github.com/IgnorantGuru/spacefm) - gui file manager
 - [SpeedCrunch](http://speedcrunch.org/) - Scientific calculator
 

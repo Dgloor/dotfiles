@@ -92,5 +92,5 @@ bspc rule -a OpenBoard state=tiled
 bspc rule -a app.App state=floating
 bspc rule -a matplotlib state=floating
 bspc rule -a Droidcam state=tiled
-bspc rule -a Anki state=pseudo_tiled
+# bspc rule -a Anki state=fullscreen
 bspc rule -a com.github.ronnydo.colorpicker state=floating
