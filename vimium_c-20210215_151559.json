@@ -1,0 +1,88 @@
+{
+	"name": "Vimium C",
+	"@time": "15/2/2021 15:15:59",
+	"time": 1613420159445,
+	"environment": {
+		"extension": "1.88.2",
+		"platform": "linux",
+		"chrome": 88
+	},
+	"autoDarkMode": false,
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://mail.google.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://app.memrise.com/course"
+		},
+		{
+			"passKeys": "0 1 2 3 4 5 6 7 8 9 f h j k l m ",
+			"pattern": ":https://www.youtube.com/watch"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://app.memrise.com/"
+		}
+	],
+	"keyMappings": [
+		"unmap P",
+		"unmap p",
+		"",
+		"unmap J",
+		"unmap K",
+		"unmap H",
+		"unmap L",
+		"",
+		"map H previousTab",
+		"map L nextTab",
+		"map <a-h> goBack",
+		"map <a-l> goForward",
+		""
+	],
+	"searchEngines": [
+		"b|ba|baidu|百度: https://www.baidu.com/s?ie=utf-8&wd=%s \\",
+		"  blank=https://www.baidu.com/ 百度",
+		"g|go|gg|google|Google: https://www.google.com/search?q=%s \\",
+		"  www.google.com re=/^(?:\\.[a-z]{2,4})?\\/search\\b.*?[#&?]q=([^#&]*)/i\\",
+		"  blank=https://www.google.com/ Google",
+		"d|ddg|duckduckgo: https://duckduckgo.com/?q=%s DuckDuckGo",
+		"qw|qwant: https://www.qwant.com/?q=%s Qwant",
+		"",
+		"g.m|gm|g.map|gmap: https://www.google.com/maps?q=%s \\",
+		"  blank=https://www.google.com/maps Google Maps",
+		"b.m|bm|map|b.map|bmap|百度地图: \\",
+		"  https://api.map.baidu.com/geocoder?output=html&address=%s&src=vimium-c",
+		"y|yt: https://www.youtube.com/results?search_query=%s \\",
+		"  blank=https://www.youtube.com/ YouTube",
+		"w|wiki: https://www.wikipedia.org/w/index.php?search=%s Wikipedia",
+		"g.s|gs|gscholar: https://scholar.google.com/scholar?q=$s \\",
+		"  scholar.google.com re=/^(?:\\.[a-z]{2,4})?\\/scholar\\b.*?[#&?]q=([^#&]*)/i\\",
+		"  blank=https://scholar.google.com/ Google Scholar",
+		"",
+		"a|ae|ali|alie|aliexp: https://www.aliexpress.com/wholesale?SearchText=%s \\",
+		"  blank=https://www.aliexpress.com/ AliExpress",
+		"j|jd|jb|joy|joybuy: https://www.joybuy.com/search?keywords=%s \\",
+		"  blank=https://www.joybuy.com/ Joybuy",
+		"az|amazon: https://www.amazon.com/s/?field-keywords=%s \\",
+		"  blank=https://www.amazon.com/ Amazon",
+		"",
+		"v.m|v\\:math: vimium://math\\ $S re= Calculate",
+		"gh|github: https://github.com/search?q=$s \\",
+		"  blank=https://github.com/ GitHub Repo",
+		"ge|gitee: https://search.gitee.com/?type=repository&q=$s \\",
+		"  blank=https://gitee.com/ Gitee 仓库",
+		"js\\:|Js: javascript:\\ $S; JavaScript",
+		""
+	],
+	"showActionIcon": false,
+	"vimSync": true,
+	"vomnibarOptions": {
+		"actions": "",
+		"maxMatches": 8,
+		"queryInterval": 333,
+		"sizes": "77,3,44",
+		"styles": "time"
+	}
+}
