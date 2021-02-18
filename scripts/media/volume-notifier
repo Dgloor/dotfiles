@@ -1,0 +1,73 @@
+#!/bin/sh
+# Send audio notifications for dunst
+# E.g: audio-notifier up 5, audio-notifier down 15
+
+notify(){
+  level=$1
+  urgency=$2
+  icon_path=$3
+  timeout=1500
+
+  dunstify   \
+    -h string:x-canonical-private-synchronous:audio "Volume: $level%" \
+    -h int:value:$level \
+    -i $icon_path \
+    -t $timeout \
+    -u $urgency \
+
+  exit
+}
+
+set_icon(){
+  level=$1
+  if [ $level = 0 ]; then
+    icon='mute'
+    pactl set-sink-mute @DEFAULT_SINK@ 1
+  elif [ $level -gt 0 ] && [ $level -lt 30 ]; then
+    icon='low'
+    pactl set-sink-mute @DEFAULT_SINK@ 0
+  elif [ $level -ge 30 ] && [ $level -lt 60 ]; then
+    icon='medium'
+  elif [ $level -ge 60 ] && [ $level -le 100 ]; then
+    icon='high'
+  else 
+    icon='critical'
+  fi
+
+  echo $icon
+}
+
+set_urgency(){
+  level=$1
+  if [ $level -le 100 ]; then
+    urgency='normal'
+  else 
+    urgency='critical'
+  fi
+
+  echo $urgency
+}
+
+update_volume(){
+  volume=$1
+  interval=$2
+  if [ $volume = 'up' ]; then
+    pactl set-sink-volume @DEFAULT_SINK@ +$interval%
+  elif [ $volume = 'down' ]; then
+    pactl set-sink-volume @DEFAULT_SINK@ -$interval%
+  fi
+}
+
+# ========================================================== 
+
+volume=$1
+interval=$2
+update_volume $volume $interval
+
+level=$(pamixer --get-volume)
+set_urgency $level
+set_icon $level
+icon_path='~/.config/dunst/'$icon'.png'
+
+notify $level $urgency $icon_path
+

@@ -1,0 +1,4 @@
+#!/bin/sh
+# Opens a terminal to update pacman packages
+
+$TERMINAL -e sudo pacman -Su && polybar-msg -p "$(pidof "polybar")" hook pacman-packages 1

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+choice=`man -k . |
+  awk '{ print $1 }' |
+  rofi -dmenu -i -p "man-pages" \
+  -sort -sorting-method fzf`
+
+if [ $choice ]; then 
+  alacritty -e man $choice
+fi

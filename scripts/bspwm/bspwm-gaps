@@ -1,0 +1,9 @@
+#!/bin/sh
+# Simple script for toggle window gap in bspwm
+
+g=`bspc config window_gap `
+if [ $g = 0 ];then  
+  bspc config window_gap 5
+else
+  bspc config window_gap 0 
+fi
