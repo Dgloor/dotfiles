@@ -382,4 +382,4 @@ schemes:
 # oceanic_next
 # ubuntu
 # vs_code
-colors: *ayu_dark
+colors: *ayu_mirage

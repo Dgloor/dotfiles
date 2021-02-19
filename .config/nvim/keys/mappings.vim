@@ -84,5 +84,6 @@ nnoremap <silent> <C-Right> :vertical resize +2<CR>
 "     nnoremap <C-Right> :vertical resize +2<CR>
 " endif
 
-
+" Quickly remove search highlights
+nmap <F8> :nohl<CR>
 

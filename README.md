@@ -8,18 +8,18 @@
 - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
-- [Xwallpaper](https://github.com/stoeckmann/xwallpaper) - wallpaper settings
 - [Picom](https://github.com/ibhagwan/picom) - blur & transparency
 - [Kvantum-qt5](https://store.kde.org/p/1005410/) - theme engine for qt5
+  - [Qogir dark solid](https://github.com/vinceliuice/Qogir-kde)
 
 ## Window Tiling Managers
 
-- [Qtile](http://www.qtile.org/)
 - [Bspwm](https://github.com/baskerville/bspwm)
   - [Sxhkd](https://github.com/baskerville/sxhkd) - hotkey daemon
   - [Polybar](https://github.com/polybar/polybar) - status bar
   - [Bar scripts](https://github.com/Dgloor/scripts)
   - [Bsp-layout](https://github.com/phenax/bsp-layout) - more layouts for bspwm
+- [Qtile](http://www.qtile.org/)
 
 ## Fonts
 
@@ -39,7 +39,7 @@
 - [Escrotum](https://github.com/Roger/escrotum) - screenshots
 - [Etcher](https://github.com/balena-io/etcher) - fash OS Images
 - [Flameshot](https://github.com/ManuelLR/docker-flameshot) - screenshots with selection
-- gnome-pomodoro - Pomo timer
+- gnome-pomodoro - Pomodoro timer
 - [Sxiv](https://github.com/muennich/sxiv) - simple image viewer
 - [Geequie](https://github.com/BestImageViewer/geeqie) - image viewer
 - Google-chrome
@@ -97,8 +97,7 @@
 - [Anki](https://apps.ankiweb.net/) - flashcards & space repetition
 - [Obsidian](https://obsidian.md/) - markdown note taking app
 - [Openboard](https://openboard.ch/index.en.html) - blackboard
-- [Remnote](https://remnote.io) - note taking & flashcards
-- [Translate-shell](https://github.com/soimort/translate-shell) - cli translator
+- [Crow translate](https://crow-translate.github.io/es/) - ligthweight translator
 
 ## Office
 
