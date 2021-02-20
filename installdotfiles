@@ -57,6 +57,9 @@ ln -sf $path/.config/zathura/ $HOME/.config/zathura
 [ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
 ln -sf $path/.config/lf/ $HOME/.config/lf
 
+[ -d $HOME/.config/lsd ] && rm -rf $HOME/.config/lsd
+ln -sf $path/.config/lsd/ $HOME/.config/lsd
+
 ln -sf $path/.config/screenkey.json $HOME/.config/screenkey.json
 ln -sf $path/.config/starship.toml $HOME/.config/starship.toml
 
