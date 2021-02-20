@@ -83,6 +83,7 @@ bspc config window_gap 10
 # bspc rule -a SpeedCrunch state=floating
 # bspc rule -a obsidian state=pseudo_tiled
 # bspc rule -a Gnome-pomodoro state=floating
+# bspc rule -a Anki state=fullscreen
 bspc rule -a copyq state=floating
 bspc rule -a zoom state=tiled
 bspc rule -a obs state=tiled
@@ -93,5 +94,4 @@ bspc rule -a OpenBoard state=tiled
 bspc rule -a app.App state=floating
 bspc rule -a matplotlib state=floating
 bspc rule -a Droidcam state=tiled
-# bspc rule -a Anki state=fullscreen
-bspc rule -a com.github.ronnydo.colorpicker state=floating
+bspc rule -a Com.github.ronnydo.colorpicker state=pseudo_tiled

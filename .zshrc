@@ -70,11 +70,18 @@ done
 #############
 alias nz='nvim ~/.zshrc'
 
-# Better list
-alias l='ls -lFh'
-alias la='ls -lAFh'
+# Better ls
+# alias ls='ls --color=auto'
+alias ls='lsd'
+
+# alias l='ls -lFh'
+alias l='ls -lL'
+
+# alias la='ls -lAFh'
+alias la='ls -lAL'
+
+# alias ll='ls -l'
 alias ll='ls -l'
-alias ls='ls --color=auto '
 
 # Navigation
 alias ..='cd ..'

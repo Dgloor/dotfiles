@@ -7,15 +7,19 @@ background_opacity: 0.90
 font:
   normal:
     family: "FiraCode NF"
+    # family: "JetBrains Mono"
     style: Regular
   bold:
     family: "FiraCode NF"
+    # family: "JetBrains Mono"
     style: Bold
   italic:
     family: "FiraCode NF"
+    # family: "JetBrains Mono"
     style: Italic
   bold_italic:
     family: "FiraCode NF"
+    # family: "JetBrains Mono"
     style: Bold Italic
 
   # Point size
@@ -107,6 +111,29 @@ cursor:
 #   - { key: N, mods: Shift, mode: Vi, action: SearchPrevious }
 
 schemes:
+  ayu_mirage: &ayu_mirage
+    primary:
+      background: "#202734"
+      foreground: "#CBCCC6"
+    normal:
+      black: "#191E2A"
+      red: "#FF3333"
+      green: "#BAE67E"
+      yellow: "#FFA759"
+      blue: "#73D0FF"
+      magenta: "#FFD580"
+      cyan: "#95E6CB"
+      white: "#C7C7C7"
+    bright:
+      black: "#686868"
+      red: "#F27983"
+      green: "#A6CC70"
+      yellow: "#FFCC66"
+      blue: "#5CCFE6"
+      magenta: "#FFEE99"
+      cyan: "#95E6CB"
+      white: "#FFFFFF"
+
   ayu_dark: &ayu_dark
     primary:
       background: "0x0f1419"
@@ -188,29 +215,6 @@ schemes:
       magenta: "#A578EA"
       cyan: "#73FBF1"
       white: "#FEFEF8"
-
-  ayu_mirage: &ayu_mirage
-    primary:
-      background: "#202734"
-      foreground: "#CBCCC6"
-    normal:
-      black: "#191E2A"
-      red: "#FF3333"
-      green: "#BAE67E"
-      yellow: "#FFA759"
-      blue: "#73D0FF"
-      magenta: "#FFD580"
-      cyan: "#95E6CB"
-      white: "#C7C7C7"
-    bright:
-      black: "#686868"
-      red: "#F27983"
-      green: "#A6CC70"
-      yellow: "#FFCC66"
-      blue: "#5CCFE6"
-      magenta: "#FFEE99"
-      cyan: "#95E6CB"
-      white: "#FFFFFF"
 
   molokai: &molokai
     primary:
@@ -349,28 +353,30 @@ schemes:
       cyan: "#29b8db"
       white: "#e5e5e5"
 
-  test: &test
+  test: &lala
     primary:
       background: "#202734"
       foreground: "#CBCCC6"
+
     normal:
-      black: "#191E2A"
-      red: "#FF3333"
-      green: "#BAE67E"
-      yellow: "#FFA759"
-      blue: "#73D0FF"
-      magenta: "#FFD580"
-      cyan: "#95E6CB"
-      white: "#C7C7C7"
+      black: "0x000000"
+      red: "0xf34a4a"
+      green: "0xbae67e"
+      yellow: "0xffee99"
+      blue: "0x73d0ff"
+      magenta: "0xd4bfff"
+      cyan: "0x83CEC6"
+      white: "0xf2f2f2"
+
     bright:
-      black: "#686868"
-      red: "#F27983"
-      green: "#A6CC70"
-      yellow: "#FFCC66"
-      blue: "#5CCFE6"
-      magenta: "#FFEE99"
-      cyan: "#95E6CB"
-      white: "#FFFFFF"
+      black: "0x737d87"
+      red: "0xff3333"
+      green: "0xc2d94c"
+      yellow: "0xe7c547"
+      blue: "0x59c2ff"
+      magenta: "0xb77ee0"
+      cyan: "0x5ccfe6"
+      white: "0xffffff"
 
 # ayu_dark
 # ayu_mirage
@@ -382,4 +388,4 @@ schemes:
 # oceanic_next
 # ubuntu
 # vs_code
-colors: *ayu_mirage
+colors: *lala

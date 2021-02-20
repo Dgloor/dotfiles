@@ -62,6 +62,7 @@
 - [Lf](https://github.com/gokcehan/lf) - terminal file manager | go
   - [Pistol](https://github.com/doronbehar/pistol) - file previewer
   - [Dragon](https://github.com/mwh/dragon) - drag & drop source/target for X
+- [Lsd](https://github.com/Peltoche/lsd) - modern ls command
 - [Ranger](https://github.com/ranger/ranger) - terminal file manager | python
   - [Ueberzug](https://github.com/ranger/ranger/wiki/Image-Previews) - image preview
   - [Compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
