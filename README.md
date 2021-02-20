@@ -5,6 +5,7 @@
 
 ## Theming
 
+- [Arc Darkest](https://www.gnome-look.org/p/1317409/)
 - [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)

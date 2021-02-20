@@ -6,22 +6,22 @@
  */
 
 * {
-    background-color:            #282c34;
-    border-color:                #0f5171;
+    background-color:            #252D3D;
+    border-color:                #5294E2; 
     text-color:                  #bbc2cf;
-    font:                        "FiraCode Nerd Font 9";
-    prompt-font:                 "FiraCode Nerd Font Bold 9";
-    prompt-background:           #0f5171;
-    prompt-foreground:           #ffffff;
+    font:                        "RobotoMono Nerd Font 9";
+    prompt-font:                 "RobotoMono Nerd Font Bold 9";
+    prompt-background:           #4B8CD8;
+    prompt-foreground:           #212121;
     prompt-padding:              4px;
-    alternate-normal-background: #1c1f24;
+    alternate-normal-background: #1F2533;
     alternate-normal-foreground: @text-color;
-    selected-normal-background:  #0f5171;
-    selected-normal-foreground:  #ffffff;
+    selected-normal-background:  #4B8CD8;
+    selected-normal-foreground:  #000000;
     spacing:                     3;
 }
 #window {
-    border:  2;
+    border:  1;
     padding: 5;
 }
 #mainbox {
@@ -37,11 +37,11 @@
     border:       2px dash 0px 0px ;
     spacing:      2px ;
     scrollbar:    true;
-    padding:      2px 0px 0px ;
+    padding:      4px 0px 0px ;
 }
 #element {
     border:  0;
-    padding: 1px ;
+    padding: 2px ;
 }
 #element.selected.normal {
     background-color: @selected-normal-background;
