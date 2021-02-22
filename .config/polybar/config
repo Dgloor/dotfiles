@@ -45,21 +45,22 @@ monitor-exact = true
 override-redirect = false
 wm-restack = bspwm
 enable-ipc = true
-fixed-center = false bottom = false
-separator =
+fixed-center = false
+bottom = false
+separator = " "
 width = 100%
 height = 18
 offset-x = 0
 offset-y = 0
 radius = 0.0
-underline-size = 2
+underline-size = 1
 overline-size = 0
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
 module-margin-left = 0
-module-margin-right = 1
+module-margin-right = 0
 
 font-0 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
 font-1 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
@@ -71,7 +72,7 @@ modules-right = player-prev player player-next updates polytimer cpu-usage cpu-t
 ; modules-right = updates polytimer cpu-usage cpu-temperature polymemory pulseaudio polyweather date time
 
 tray-position = right
-tray-padding = 2
+tray-padding = 3
 tray-background = ${colors.background-alt}
 tray-offset-x = 0
 tray-offset-y = 0
@@ -87,7 +88,7 @@ label = %title:0:30:...%
 
 format-underline =
 format-background =
-format-padding =
+format-padding = 1
 
 [module/arch-logo]
 type = custom/text
@@ -121,7 +122,6 @@ format-padding =
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
-; label-separator = |
 label-separator = 
 
 [module/player]
@@ -222,7 +222,7 @@ type = custom/script
 exec = date '+%H:%M'
 label = 🕓 %output%
 interval = 5
-click-left = thunderbird
+click-left = mailspring
 
 [module/polytimer]
 type = custom/script

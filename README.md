@@ -6,7 +6,6 @@
 ## Theming
 
 - [Arc Darkest](https://www.gnome-look.org/p/1317409/)
-- [Material-Black-Blueberry](https://www.gnome-look.org/p/1316887/)
 - [Sweet-cursors](https://www.gnome-look.org/p/1393084/)
 - [Papirus icons](https://www.gnome-look.org/p/1166289/)
 - [Picom](https://github.com/ibhagwan/picom) - blur & transparency
@@ -55,7 +54,7 @@
 
 ## CLI
 
-- [Alacritty](https://github.com/alacritty/alacritty) - terminal emulator !!
+- [Alacritty](https://github.com/alacritty/alacritty) - terminal emulator
 - [Autojump-rs](https://github.com/xen0n/autojump-rs)
 - [Calcurse](https://github.com/lfos/calcurse) - calendar & scheduling cli
 - [Glow](https://github.com/charmbracelet/glow) - markdown render reader
@@ -63,6 +62,7 @@
   - [Pistol](https://github.com/doronbehar/pistol) - file previewer
   - [Dragon](https://github.com/mwh/dragon) - drag & drop source/target for X
 - [Lsd](https://github.com/Peltoche/lsd) - modern ls command
+- [Ncdu](https://www.archlinux.org/packages/community/x86_64/ncdu/) - check file weight
 - [Ranger](https://github.com/ranger/ranger) - terminal file manager | python
   - [Ueberzug](https://github.com/ranger/ranger/wiki/Image-Previews) - image preview
   - [Compress](https://github.com/maximtrp/ranger-archives/blob/master/compress.py)
@@ -71,7 +71,7 @@
 - [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
 - [Zsh](<https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol)>)
 
-## Development
+## Software Development
 
 - [Bpython](https://github.com/bpython/bpython) - python interactive interpreter shell
 - Color-picker
@@ -79,7 +79,6 @@
 - Gluon-scene-builder11
 - [Lazygit](https://github.com/jesseduffield/lazygit) - git gui
 - IntelliJ IDEA
-- [Ncdu](https://www.archlinux.org/packages/community/x86_64/ncdu/) - check file weight
 - Netbeans
 - [Neovim](https://github.com/neovim/neovim)
 - [Pycharm](https://www.jetbrains.com/es-es/pycharm/)

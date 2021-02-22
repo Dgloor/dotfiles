@@ -50,9 +50,9 @@ super + p
 super + shift + p 
 	gnome-pomodoro
 
-##Powermenu
-#super + shift + p 
-#	~/scripts/rofi/rofi-powermenu
+#Powermenu
+super + shift + g
+	~/scripts/rofi/rofi-powermenu
 
 # Mail Client
 XF86Mail
