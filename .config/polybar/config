@@ -215,7 +215,8 @@ type = custom/script
 exec = date '+%d/%m/%Y'
 label = 📅 %output%
 interval = 5
-click-left = alacritty -e calcurse
+;click-left = alacritty -e calcurse
+click-left = obsidian
 
 [module/time]
 type = custom/script

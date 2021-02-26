@@ -102,4 +102,4 @@ bspc rule -a OpenBoard state=tiled
 bspc rule -a app.App state=floating
 bspc rule -a matplotlib state=floating
 bspc rule -a Droidcam state=tiled
-bspc rule -a Com.github.ronnydo.colorpicker state=pseudo_tiled
+bspc rule -a Com.github.ronnydo.colorpicker state=tiled
