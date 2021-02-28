@@ -1,5 +1,5 @@
 configuration {
-	theme: "~/.config/rofi/themes/center.rasi";
-	/* theme: "~/.config/rofi/themes/dmenu.rasi"; */
+	/* theme: "~/.config/rofi/themes/center.rasi"; */
+	theme: "~/.config/rofi/themes/dmenu.rasi";
 	modi: "emoji,drun,run,window,keys";
 }

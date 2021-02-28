@@ -1,21 +1,14 @@
-/**
- * ROFI Color theme
- * NAME: dmenu.rasi
- * DESCRIPTION: This is a horizontal prompt similar to dmenu.
- * AUTHOR: Danny Loor
- */
-
 * {
-    background-color:            #282c34;
-    border-color:                #0f5171;
+    background-color:            #252D3D;
+    border-color:                #5294E2;
     text-color:                  #bbc2cf;
-    font:                        "FiraCode Nerd Font 9";
-    prompt-font:                 "FiraCode Nerd Font Bold 9";
-    prompt-background:           #0f5171;
-    prompt-foreground:           #ffffff;
+    font:                        "RobotoMono Nerd Font 9";
+    prompt-font:                 "RobotoMono Nerd Font Bold 9";
+    prompt-background:           #4B8CD8;
+    prompt-foreground:           #212121;
     prompt-padding:              4px;
-    selected-normal-background:  #0f5171;
-    selected-normal-foreground:  #ffffff;
+    selected-normal-background:  #4B8CD8;
+    selected-normal-foreground:  #000000;
 }
 #window {
     anchor: north;

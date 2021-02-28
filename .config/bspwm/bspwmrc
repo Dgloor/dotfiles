@@ -85,11 +85,8 @@ bspc config border_width 2
 bspc config window_gap 0
 
 
-
 ####---Rules---###
 #bspc rule -a mpv state=fullscreen
-# bspc rule -a SpeedCrunch state=floating
-# bspc rule -a obsidian state=pseudo_tiled
 # bspc rule -a Gnome-pomodoro state=floating
 # bspc rule -a Anki state=fullscreen
 bspc rule -a copyq state=floating

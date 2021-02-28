@@ -1,12 +1,12 @@
 #!/bin/sh
 # Handle by MIME type
 case "$(file -Lb --mime-type -- "$1")" in
-    text/html)
-        if [ -n "$DISPLAY" ]; then
-            firefox -- "$@"
-        else
-            lynx "$@" || elinks "$@" || w3m "$@" || links "$@"
-        fi && exit ;;
+    # text/html)
+    #     if [ -n "$DISPLAY" ]; then
+    #         firefox -- "$@"
+    #     else
+    #         lynx "$@" || elinks "$@" || w3m "$@" || links "$@"
+    #     fi && exit ;;
     text/*|*/xml|*/csv|*/json)
         ${EDITOR:-vim} "$@" && exit ;;
     video/*)
