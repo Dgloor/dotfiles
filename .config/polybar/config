@@ -172,9 +172,9 @@ click-right = alacritty -e paru -Sua
 type = custom/script
 exec = ~/scripts/polybar/polycpu
 label = "%output%"
-click-left = alacritty -e btm
 interval = 3
 format-prefix = "💻 "
+click-left = alacritty -e btm
 
 [module/cpu-temperature]
 type = custom/script
@@ -182,14 +182,15 @@ exec = ~/scripts/polybar/polytempamd
 label = "%output%"
 format-prefix="🔥 "
 interval = 5
+click-left = alacritty -e btm
 
 [module/polymemory]
 type = custom/script
 exec = ~/scripts/polybar/polymemory
 label = "%output%"
-click-left = alacritty -e btm
 interval = 3
 format-prefix = "🧠 "
+click-left = alacritty -e btm
 
 [module/pulseaudio]
 type = internal/pulseaudio
