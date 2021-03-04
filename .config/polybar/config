@@ -68,8 +68,8 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
 font-3 = IPAGothic:fontformat=truetype:pixelsize=12:antialias=false;
 
 modules-left = arch-logo bspwm xwindow
-modules-right = player-prev player player-next updates polytimer cpu-usage cpu-temperature polymemory pulseaudio date time
-; modules-right = updates polytimer cpu-usage cpu-temperature polymemory pulseaudio polyweather date time
+modules-right = player-prev player player-next updates cpu-usage cpu-temperature polymemory pulseaudio keyboard date time
+;modules-right = updates polytimer cpu-usage cpu-temperature polymemory pulseaudio polyweather date time xkeyboard 
 
 tray-position = right
 tray-padding = 3
@@ -127,7 +127,6 @@ label-separator = 
 [module/player]
 type = custom/script
 tail = true
-# format-prefix = " "
 format = <label>
 exec = ~/scripts/polybar/scroll-player-status
 click-left = playerctl play-pause
@@ -138,19 +137,6 @@ type = custom/script
 exec = echo "玲"
 format = <label>
 click-left = playerctl previous
-
-# [module/player-play-pause]
-# type = custom/ipc
-# hook-0 = echo ""
-# hook-1 = echo "契"
-# initial = 1
-# click-left = playerctl play-pause
-
-# [module/player-play-pause]
-# type = custom/script
-# exec = echo "懶"
-# initial = 1
-# click-left = playerctl play-pause
 
 [module/player-next]
 type = custom/script
@@ -234,3 +220,20 @@ tail = true
 click-right = ~/scripts/polybar/polytimer cancel ; ~/scripts/polybar/polytimer update %pid%
 scroll-up = ~/scripts/polybar/polytimer increase 60 || ~/scripts/polybar/polytimer new 1 '🍅 :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
 scroll-down = ~/scripts/polybar/polytimer increase -60 ; ~/scripts/polybar/polytimer update %pid%
+
+# [module/keyboard]
+# type = internal/xkeyboard
+# format = <label-layout>
+# label-layout = %icon% %layout% 
+# layout-icon-default = ⌨️
+# blacklist-0 = num lock
+# blacklist-1 = caps lock
+# blacklist-2 = scroll lock
+
+[module/keyboard]
+type=custom/script
+exec= setxkbmap -query | awk 'NR == 3 {print toupper($2)}'
+label = ⌨️ %output%
+interval = 1
+click-left = setxkbmap latam
+click-right = setxkbmap dvorak

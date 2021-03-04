@@ -18,7 +18,7 @@ set completion-fg "#dcddde"
 set recolor-lightcolor "#1a1a1a"
 set recolor-darkcolor "#f2f2f2"
 
-set recolor true
+/* set recolor true */
 set selection-clipboard clipboard
 set sandbox none
 
