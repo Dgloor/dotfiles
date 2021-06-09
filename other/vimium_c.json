@@ -1,11 +1,11 @@
 {
 	"name": "Vimium C",
-	"@time": "12/3/2021 17:58:20",
-	"time": 1615589900186,
+	"@time": "9/6/2021 17:06:14",
+	"time": 1623276374166,
 	"environment": {
-		"extension": "1.88.2",
+		"extension": "1.90.0",
 		"platform": "win",
-		"chrome": 89
+		"chrome": 91
 	},
 	"autoDarkMode": false,
 	"exclusionRules": [
@@ -18,12 +18,28 @@
 			"pattern": ":https://app.memrise.com/course"
 		},
 		{
-			"passKeys": "0 1 2 3 4 5 6 7 8 9 f h j k l m ",
+			"passKeys": "0 1 2 3 4 5 6 7 8 9 f h j k l m t ",
 			"pattern": ":https://www.youtube.com/watch"
 		},
 		{
 			"passKeys": "",
+			"pattern": ":https://awwapp.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://monkeytype.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://monkeytype.com/"
+		},
+		{
+			"passKeys": "",
 			"pattern": ":https://app.memrise.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://classroom.udacity.com/"
 		}
 	],
 	"keyMappings": [
@@ -75,6 +91,12 @@
 		"",
 		"rd|raindrop: https://app.raindrop.io/my/0/%s \\",
 		"  blank=https://app.raindrop.io/my/-1 Bookmarks",
+		"",
+		"tra|deepl: https://www.deepl.com/translator#en/es/%S \\",
+		"  blank=https://www.deepl.com/translator Traducir",
+		"",
+		"dic|linguee: https://www.linguee.es/espanol-ingles/search?source=auto&query=%S \\",
+		"  blank=https://www.linguee.es/espanol-ingles Diccionario",
 		""
 	],
 	"showActionIcon": false,

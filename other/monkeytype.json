@@ -1,5 +1,5 @@
 {
-  "theme": "pulse",
+  "theme": "terminal",
   "customTheme": false,
   "customThemeColors": [
     "#323437",
@@ -34,19 +34,21 @@
   "words": 25,
   "time": 15,
   "mode": "time",
-  "quoteLength": 1,
-  "language": "spanish_1k",
+  "quoteLength": [
+    1
+  ],
+  "language": "spanish",
   "fontSize": "15",
   "freedomMode": false,
   "difficulty": "normal",
   "blindMode": false,
   "quickEnd": true,
-  "caretStyle": "block",
+  "caretStyle": "default",
   "paceCaretStyle": "default",
   "flipTestColors": false,
   "capsLockBackspace": false,
   "layout": "default",
-  "savedLayout": "default",
+  "funbox": "none",
   "confidenceMode": "off",
   "indicateTypos": false,
   "timerStyle": "bar",
@@ -56,8 +58,9 @@
   "timerOpacity": "0.25",
   "stopOnError": "off",
   "showAllLines": false,
-  "keymapMode": "react",
+  "keymapMode": "off",
   "keymapStyle": "staggered",
+  "keymapLegendStyle": "lowercase",
   "keymapLayout": "overrideSync",
   "fontFamily": "JetBrains_Mono",
   "smoothLineScroll": false,
@@ -71,6 +74,7 @@
   "showOutOfFocusWarning": true,
   "paceCaret": "off",
   "paceCaretCustomSpeed": 100,
+  "repeatedPace": true,
   "pageWidth": "100",
   "chartAccuracy": false,
   "chartStyle": "scatter",
@@ -85,5 +89,17 @@
   "minAccCustom": 90,
   "showLiveAcc": false,
   "monkey": false,
-  "repeatQuotes": "off"
+  "repeatQuotes": "off",
+  "oppositeShiftMode": "off",
+  "customBackground": "",
+  "customBackgroundSize": "cover",
+  "customBackgroundFilter": [
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "customLayoutfluid": "qwerty#dvorak#colemak",
+  "monkeyPowerLevel": "off"
 }
