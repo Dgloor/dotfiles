@@ -1,6 +1,8 @@
 # Arch Installation
 
-## Keyboard and font setup
+## Base Installation
+
+### Keyboard and font setup
 
 ```bash
 setfont ter-132n
@@ -9,7 +11,7 @@ loadkeys es
 loadkeys la-latin
 ```
 
-## Internet config
+### Internet config
 
 ```bash
 # Ethernet
@@ -18,31 +20,33 @@ ping -c 3 google.com
 # Wifi
 systemctl enable dhcpcd
 systemctl start dhcpcd
-wifi-menu # login...
+wifi-menu 
+# TODO: login...
 ```
 
-## Disk partitions and mounting
+### Disk partitions and mounting
 
 ```bash
 # Disk Partition
 fdisk -l
 cfdisk /dev/<disk_id> # GPT 
-# <write the partitions: efi, root, home>
+# TODO: Write the partitions: efi, root, home, swap
 # sda1 > boot | type: EFI System
 # sda2 > root 
 # sda3 > home
+# sda4 > swap
 
 
 # Format Partitions
 mkfs.fat -F 32 /dev/sda1 # efi ...
-mkfs.ext4 /dev/sda2 # root 
-mkfs.ext4 /dev/sda3 # home *or maybe not 
+mkfs.ext4 /dev/sda2 
+mkfs.ext4 /dev/sda3 # *or maybe not 
+mkfswap /dev/sda4  
 
 # Check partitions
 fdisk -l
 
-
-# Mount root partition
+# Mount root partition first
 mount /dev/sda2 /mnt
 
 mkdir /mnt/home
@@ -51,14 +55,17 @@ mount /dev/sda3 /mnt/home
 mkdir /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
 
+# Activate swap partition
+swapon /dev/sda4
+
 ```
 
-## Install base packages
+### Install base packages
 
 ```bash
 # Update Mirrors
 pacman -Sy reflector python3 --noconfirm
-reflector --verbose -l 10 --sort rate --save /etc/pacman.d/mirrorlist
+reflector --verbose -l 15 --sort rate --save /etc/pacman.d/mirrorlist
 
 # Base packages
 pacstrap /mnt base base-devel git vim
@@ -71,7 +78,7 @@ pacstratp /mnt wireless_tools dialog wpa_supplicant
 
 ```
 
-##  Write partition table
+### Write partition table
 
 ```bash
 # Write partition table
@@ -79,16 +86,15 @@ genfstab -U /mnt >> /mnt/etc/fstab
 cat /mnt/etc/fstab
 ```
 
-## Language, clock and hostname setup
+### Language, clock and hostname setup
 
 ```bash
 # Enter as root
 arch-chroot /mnt
 
-
 # Set Language
 vim /etc/locale.gen
-# uncomment es_EC.UTF-8
+# TODO: uncomment es_EC.UTF-8
 
 local-gen
 echo LANG=es_EC.UTF-8 > /etc/locale.conf
@@ -102,21 +108,21 @@ ln -sf /usr/share/zoneinfo/America/Guayaquil /etc/localtime
 hwclock -w 
 
 # Keyboard distribution
-echo KEYMAP=es > /etc/vconsole.conf
-
+echo KEYMAP=la-latin1 > /etc/vconsole.conf
 
 # Set Hostname
 echo Jarvis > /etc/hostname
 vim /etc/hosts
 
-# /etc/hosts:
+vim /etc/hosts:
+# TODO: add ...
 # 127.0.0.1 [tab] localhost
 # ::1       [tab] localhost
 # 127.0.1.1 [tab] Jarvis.localdomain Jarvis
 
 ```
 
-## Users
+### Set Users
 
 ```bash
 
@@ -136,8 +142,7 @@ vim /etc/sudoers
 
 ```
 
-
-## Install Internet packages
+### Install Internet packages
 
 ```bash
 pacman -S networkmanager ifplugd
@@ -148,14 +153,13 @@ pacman -S openssh
 systemctl enable sshd
 ```
 
-## Install Linux stable kernel
+### Install Linux Stable Kernel
 
 ```bash
-pacman -S linux linux-firmware mkinitcpio linux-headers
+pacman -S linux linux-firmware linux-headers mkinitcpio 
 ```
 
-
-## Grub setup, dual boot
+### Grub setup, dual boot
 
 ```bash
 pacman -S grub efibootmgr os-prober
@@ -164,7 +168,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --removable
 
 vim /etc/default/grub
 
-# edit this: 
+# TODO: edit this:
 GRUB_TIMEOUT=5
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3"
 
@@ -173,17 +177,18 @@ GRUB_DISABLE_OS_PROBER=false
 
 
 grub-mkconfig -o /boot/grub/grub.cfg
-```
-
-## Exit and reboot
 
 ```
+
+### Exit and reboot
+
+```bash
 exit 
 umount -R /mnt 
 reboot
 ```
 
-## After reboot
+### After reboot
 
 ```bash
 # Login as root
@@ -202,13 +207,12 @@ nmcli dev wifi connect <'NETWORK name'> password <PASSWORD>
 nmcli dev status
 ```
 
-
-## Pacman Config
+### Pacman Config
 
 ```bash
 sudo vim /etc/pacman.conf
 
-# uncommnent:
+# TODO: uncommnent:
 Color
 Total Download
 CheckSpace
@@ -216,11 +220,11 @@ CheckSpace
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 
-# add:
+# TODO: add:
 ILoveCandy
 ```
 
-## Extra packages
+## Extra Packages Installation
 
 ### Drivers
 
@@ -242,6 +246,12 @@ pacman -S xf86-video-intel vulkan-intel
 ```bash
 pacman -S xdg-user-dirs
 xdg-users-dirs-update
+```
+
+### Xorg server
+
+```bash
+pacman -S xorg xorg-apps xorg-init xorg-twm xterm xorg-xclock
 ```
 
 ### Audio & video
@@ -267,12 +277,6 @@ pacman -S gvfs-goa gvfs-nfs gvfs-google
 pacman -S ntfs-3g exfat-utils udftools gpart mtools
 ```
 
-### Xorg server
-
-```bash
-pacman -S xorg xorg-apps xorg-init xorg-twm xterm xorg-xclock
-```
-
 ### Login manager, lightdm
 
 ```bash
@@ -281,7 +285,7 @@ pacman -S lightl-locker accountsservice
 systemctl enable lightdm
 ```
 
-### Install ARU Helper - Paru
+### AUR Helper - Paru
 
 ```bash
 sudo pacman -S --needed base-devel
@@ -290,15 +294,89 @@ cd paru
 makepkg -si
 ```
 
-### Etc
-
-```bash
-# fc-list <- to see all fonts
-pacman -S alacritty firefox noto-fonts ttf-dejavu ttf-liberation picom neovim trash-cli
-```
-
-## Install XCFE
+### XCFE
 
 ```bash
 pacman -S xcfe-4 xcfe4-goodies network-manager-applet
+pacman -S alacritty firefox gh-cli # essentials
+```
+
+### Bswpm
+
+```bash
+# dependencies
+pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms 
+pacman -S bspwm sxhkd polybar bspwm-layout picom
+```
+
+### Fonts
+
+```bash
+# fc-list <- to see all fonts
+pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts nerd-fonst-complete
+```
+
+### Apps
+
+```bash
+pacman -S anydesk-bin bitwarden copyq etcher flameshot 
+pacman -S sxiv google-chrome rofi mailspring
+```
+
+### CLI
+
+```bash
+pacman -S autojump-rs glow lf pistol dragon 
+pacman -S starship trash-cli zsh zsh-autosuggestion zsh-autocompletion
+```
+
+### Software development
+
+```bash
+pacman -S bpython color-picker figma-linux lazygit neovim 
+pacman -S visual-studio-code-bin gnome-keyring
+```
+
+### Comunication
+
+```bash
+pacman -S discord whatdesk-bin telegram zoom
+```
+
+### Education
+
+```bash
+pacman -S anki obsidian
+```
+
+### Office
+
+```bash
+pacman -S zathura zathura-pdf-mupdf
+```
+
+### Search
+
+```bash
+pacman -S fd fzf ripgrep
+```
+
+### Edition & Video recorders
+
+```bash
+pacman -S gimp olive
+pacman -S obs-studio simplescreenrecorder
+```
+
+### Keyboard stuff
+
+```bash
+pacman -S numlockx
+```
+
+### Utilities
+
+```bash
+pacman -S bottom cpufetch dunst duf lsd neofetch pfetch
+pacman -S redshift screenkey speedtest-cli
 ```
