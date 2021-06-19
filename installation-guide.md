@@ -57,7 +57,6 @@ mount /dev/sda1 /mnt/boot/efi
 
 # Activate swap partition
 swapon /dev/sda4
-
 ```
 
 ### Install base packages
@@ -274,7 +273,7 @@ pacman -S ntfs-3g exfat-utils udftools gpart mtools
 ### Login manager, lightdm
 
 ```bash
-pacman -S xorg xterm
+pacman -S xorg xorg-xinit xterm
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 pacman -S lightl-locker accountsservice
 
@@ -301,16 +300,32 @@ paru -S alacritty firefox github-cli # essentials
 
 ```bash
 pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
-pacman -S bspwm sxhkd
+pacman -S bspwm sxhkd rofi
 paru -S bsp-layout polybar picom-jonaburg-git
 
-# Running bspwm
+# Bspwm & Sxhkd initial config
 mkdir -p ~/.config/{bspwm,sxhkd}
-
-# config examples:
-# https://github.com/baskerville/bspwm/blob/master/examples/bspwmrc
-# https://github.com/baskerville/bspwm/blob/master/examples/sxhkdrc
+install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
+install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 chmod u+x ~/.config/bspwm/bspwmrc
+# TODO: replace terminal in sxhkdrc
+# super + Return 
+#   alacritty
+
+# Polybar initial config
+cp /usr/share/doc/polybar/config .config/polybar
+# TODO: add this line to bspwmrc:
+# polybar example & picom &
+
+# Rofi initial config
+rofi -upgrade-config
+rofi -dump-config > ~/.config/rofi/config.rasi
+# TODO:
+# 1) uncomment and modify:
+#   modi: "drun";
+# 2) add this two line to sxhkdrc
+#   super + shift + Return
+#       rofi -show drun
 ```
 
 ### Fonts
