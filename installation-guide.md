@@ -248,12 +248,6 @@ pacman -S xdg-user-dirs
 xdg-users-dirs-update
 ```
 
-### Xorg server
-
-```bash
-pacman -S xorg xorg-apps xorg-init xorg-twm xterm xorg-xclock
-```
-
 ### Audio & video
 
 ```bash
@@ -280,8 +274,10 @@ pacman -S ntfs-3g exfat-utils udftools gpart mtools
 ### Login manager, lightdm
 
 ```bash
+pacman -S xorg xterm
 pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 pacman -S lightl-locker accountsservice
+
 systemctl enable lightdm
 ```
 
@@ -298,55 +294,64 @@ makepkg -si
 
 ```bash
 pacman -S xcfe-4 xcfe4-goodies network-manager-applet
-pacman -S alacritty firefox gh-cli # essentials
+paru -S alacritty firefox github-cli # essentials
 ```
 
 ### Bswpm
 
 ```bash
-# dependencies
-pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms 
-pacman -S bspwm sxhkd polybar bspwm-layout picom
+pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
+pacman -S bspwm sxhkd
+paru -S bsp-layout polybar picom-jonaburg-git
+
+# Running bspwm
+mkdir -p ~/.config/{bspwm,sxhkd}
+
+# config examples:
+# https://github.com/baskerville/bspwm/blob/master/examples/bspwmrc
+# https://github.com/baskerville/bspwm/blob/master/examples/sxhkdrc
+chmod u+x ~/.config/bspwm/bspwmrc
 ```
 
 ### Fonts
 
 ```bash
 # fc-list <- to see all fonts
-pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts nerd-fonst-complete
+pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts
+paru -S nerd-fonts-complete
 ```
 
 ### Apps
 
 ```bash
-pacman -S anydesk-bin bitwarden copyq etcher flameshot 
-pacman -S sxiv google-chrome rofi mailspring
+pacman -S copyq flameshot sxiv rofi
+paru -S anydesk-bin bitwarden balena-etcher google-chrome mailspring
 ```
 
 ### CLI
 
 ```bash
-pacman -S autojump-rs glow lf pistol dragon 
-pacman -S starship trash-cli zsh zsh-autosuggestion zsh-autocompletion
+pacman -S starship trash-cli zsh zsh-autosuggestions zsh-syntax-highlighting
+paru -S autojump-rs glow lf pistol-git dragon-drag-and-drop
 ```
 
 ### Software development
 
 ```bash
-pacman -S bpython color-picker figma-linux lazygit neovim 
-pacman -S visual-studio-code-bin gnome-keyring
+pacman -S bpython lazygit gnome-keyring
+paru -S color-picker figma-linux neovim-git visual-studio-code-bin
 ```
 
 ### Comunication
 
 ```bash
-pacman -S discord whatdesk-bin telegram zoom
+paru -S discord whatsdesk-bin telegram-desktop-bin zoom
 ```
 
 ### Education
 
 ```bash
-pacman -S anki obsidian
+paru -S anki obsidian
 ```
 
 ### Office
@@ -364,8 +369,8 @@ pacman -S fd fzf ripgrep
 ### Edition & Video recorders
 
 ```bash
-pacman -S gimp olive
 pacman -S obs-studio simplescreenrecorder
+paru -S gimp olive
 ```
 
 ### Keyboard stuff
@@ -377,6 +382,6 @@ pacman -S numlockx
 ### Utilities
 
 ```bash
-pacman -S bottom cpufetch dunst duf lsd neofetch pfetch
-pacman -S redshift screenkey speedtest-cli
+pacman -S dunst lsd neofetch redshift redshift screenkey speedtest-cli
+paru -S bottom cpufetch-git duf pfetch
 ```
