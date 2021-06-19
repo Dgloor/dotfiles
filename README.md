@@ -2,7 +2,7 @@
 
 ## Theming
 
-- [Picom](https://github.com/ibhagwan/picom) - blur & transparency
+- [Picom (jonaburg fork)](https://github.com/jonaburg/picom) - blur & transparency
 
 ## Window Tiling Managers
 
