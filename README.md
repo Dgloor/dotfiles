@@ -1,5 +1,9 @@
 # Arch Dotfiles
 
+## Display Manager
+
+- [Ly](https://github.com/nullgemm/ly)
+
 ## Window Tiling Managers
 
 - [Bspwm](https://github.com/baskerville/bspwm)
@@ -9,10 +13,15 @@
   - [Bsp-layout](https://github.com/phenax/bsp-layout) - more layouts for bspwm
   - [Picom (jonaburg fork)](https://github.com/jonaburg/picom) - blur & transparency
 
-
 ## Desktop Environments
 
-- [Xfce](https://wiki.archlinux.org/title/xfce) - lightweight de
+- [Xfce](https://wiki.archlinux.org/title/xfce) - lightweight DE
+- [WhiteSur Gtk Theme](https://www.pling.com/p/1403328/) # just for app bar
+
+## Theme
+  - [Orchis Dark Compact](https://www.pling.com/p/1357889/)
+  - [Papirus Icons](https://www.pling.com/p/1166289/)
+  - [Vimix Cursors](https://www.pling.com/p/1358330/)
 
 ## Fonts
 
@@ -38,7 +47,7 @@
 - [Rofi](https://github.com/davatorium/rofi) - super app launcher and more...
   - Rofiemoji
 - [MailSpring](https://github.com/Foundry376/Mailspring) - email client
-- [SpaceFM](https://github.com/IgnorantGuru/spacefm) - gui file manager
+- [Thunar](https://wiki.archlinux.org/title/thunar) - gui file manager
 - [SpeedCrunch](https://bitbucket.org/heldercorreia/speedcrunch/src/master/) - Scientific calculator
 
 ## CLI

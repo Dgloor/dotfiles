@@ -174,9 +174,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3"
 # Fix windows detection, add this at the end of the file:
 GRUB_DISABLE_OS_PROBER=false
 
-
 grub-mkconfig -o /boot/grub/grub.cfg
-
 ```
 
 ### Exit and reboot
@@ -264,20 +262,10 @@ pacman -S cpio unrar unzip zstd zip lzip unarj zstd
 ### Disk utils
 
 ```bash
-pacman -S android-file-transfer android-tools android-udev msmtp libmtp
+pacman -S android-file-transfer android-tools msmtp
 pacman -S libcddb gvfs gvfs-afc gvfs-smb gvfs-gphoto2 gvfs-mtp
 pacman -S gvfs-goa gvfs-nfs gvfs-google
 pacman -S ntfs-3g exfat-utils udftools gpart mtools
-```
-
-### Login manager, lightdm
-
-```bash
-pacman -S xorg xorg-xinit xterm
-pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
-pacman -S lightl-locker accountsservice
-
-systemctl enable lightdm
 ```
 
 ### AUR Helper - Paru
@@ -289,10 +277,25 @@ cd paru
 makepkg -si
 ```
 
+### Display Manager: Ly
+
+```bash
+pacman -S xorg xorg-xinit xterm
+paru -S ly
+
+systemctl enable ly.service
+```
+
+### Utilities for DE and WM's
+
+```bash
+udiskie gvfs network-manager-applet udisks2 udiskie
+```
+
 ### XCFE
 
 ```bash
-pacman -S xcfe-4 xcfe4-goodies network-manager-applet
+pacman -S xcfe-4 xcfe4-goodies  gvfs
 paru -S alacritty firefox github-cli # essentials
 ```
 
@@ -302,12 +305,14 @@ paru -S alacritty firefox github-cli # essentials
 pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
 pacman -S bspwm sxhkd rofi
 paru -S bsp-layout polybar picom-jonaburg-git
+pacman -S 
 
 # Bspwm & Sxhkd initial config
 mkdir -p ~/.config/{bspwm,sxhkd}
 install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
 install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 chmod u+x ~/.config/bspwm/bspwmrc
+setxkbmap latam # latam keyboard layout
 # TODO: replace terminal in sxhkdrc
 # super + Return 
 #   alacritty
@@ -397,6 +402,6 @@ pacman -S numlockx
 ### Utilities
 
 ```bash
-pacman -S dunst lsd neofetch redshift redshift screenkey speedtest-cli
+pacman -S dunst lsd neofetch redshift redshift screenkey speedtest-cli xwallpaper
 paru -S bottom cpufetch-git duf pfetch
 ```
