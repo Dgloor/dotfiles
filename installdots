@@ -1,0 +1,48 @@
+#!/bin/sh
+path=$(pwd)
+
+# HOME directory
+
+# == Zsh ==
+ln -sf $path/.zshrc $HOME/.zshrc
+echo "> Zsh configurado correctamente"
+
+# ETC directory
+
+# CONFIG directory
+
+# == Alacritty == 
+[ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
+ln -sf $path/config/alacritty $HOME/.config/alacritty
+echo "> Alacritty configurado correctamente"
+
+# == Bottom ==
+[ -d $HOME/.config/bottom ] && rm -rf $HOME/.config/bottom
+ln -sf $path/config/bottom  $HOME/.config/bottom
+echo "> Bottom configurado correctamente"
+
+# == Flameshot ==
+[ -d $HOME/.config/flameshot ] && rm -rf $HOME/.config/flameshot
+ln -sf $path/config/flameshot $HOME/.config/flameshot
+echo "> Flameshot configurado correctamente"
+
+# == Lsd ==
+[ -d $HOME/.config/lsd ] && rm -rf $HOME/.config/lsd
+ln -sf $path/config/lsd/ $HOME/.config/lsd
+mkdir -p $HOME/Images/screenshots
+echo "> Lsd configurado correctamente"
+
+# == Lf ==
+
+# == Screenkey == 
+ln -sf $path/config/screenkey.json $HOME/.config/screenkey.json
+echo "> Screenkey configurado correctamente"
+
+# == Starship == 
+ln -sf $path/config/starship.toml $HOME/.config/starship.toml
+echo "> Starship configurado correctamente"
+
+# == Zathura == 
+[ -d $HOME/.config/zathura ] && rm -rf $HOME/.config/zathura
+ln -sf $path/config/zathura/ $HOME/.config/zathura
+echo "> Zathura configurado correctamente"

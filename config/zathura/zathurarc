@@ -18,11 +18,10 @@ set completion-fg "#dcddde"
 set recolor-lightcolor "#1a1a1a"
 set recolor-darkcolor "#f2f2f2"
 
-/* set recolor true */
 set selection-clipboard clipboard
 set sandbox none
 
-set font "FiraCode NF 9"
+set font "FiraCode Nerd Font 9"
 
 set statusbar-h-padding 0 
 set statusbar-v-padding 0 

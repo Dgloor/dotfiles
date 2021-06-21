@@ -24,3 +24,9 @@ disabled = true
 
 [golang]
 disabled = true
+
+[kotlin]
+disabled = true
+
+[lua]
+disabled = true

@@ -21,9 +21,6 @@ ln -sf $path/.config/copyq $HOME/.config/copyq
 [ -d $HOME/.config/dunst ] && rm -rf $HOME/.config/dunst
 ln -sf $path/.config/dunst $HOME/.config/dunst
 
-[ -d $HOME/.config/flameshot ] && rm -rf $HOME/.config/flameshot
-ln -sf $path/.config/flameshot $HOME/.config/flameshot
-
 [ -d $HOME/.config/gtk-3.0 ] && rm -rf $HOME/.config/gtk-3.0
 ln -sf $path/.config/gtk-3.0 $HOME/.config/gtk-3.0
 
@@ -39,12 +36,6 @@ ln -sf $path/.config/picom $HOME/.config/picom
 [ -d $HOME/.config/polybar ] && rm -rf $HOME/.config/polybar
 ln -sf $path/.config/polybar $HOME/.config/polybar
 
-[ -d $HOME/.config/qtile ] && rm -rf $HOME/.config/qtile
-ln -sf $path/.config/qtile $HOME/.config/qtile
-
-[ -d $HOME/.config/ranger ] && rm -rf $HOME/.config/ranger
-ln -sf $path/.config/ranger $HOME/.config/ranger
-
 [ -d $HOME/.config/rofi ] && rm -rf $HOME/.config/rofi
 ln -sf $path/.config/rofi $HOME/.config/rofi
 
@@ -56,12 +47,6 @@ ln -sf $path/.config/zathura/ $HOME/.config/zathura
 
 [ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
 ln -sf $path/.config/lf/ $HOME/.config/lf
-
-[ -d $HOME/.config/lsd ] && rm -rf $HOME/.config/lsd
-ln -sf $path/.config/lsd/ $HOME/.config/lsd
-
-ln -sf $path/.config/screenkey.json $HOME/.config/screenkey.json
-ln -sf $path/.config/starship.toml $HOME/.config/starship.toml
 
 # ln -sf $path/.config/lf/lf /home/dgloor/.local/bin/lf
 # ln -sf $path/scripts/ $HOME/scripts/

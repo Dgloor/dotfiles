@@ -138,6 +138,7 @@ alias ls='lsd'
 alias l='ls -lL'
 alias la='ls -lAL'
 alias ll='ls -l'
+alias lt='ls --tree'
 
 # Navigation
 
@@ -152,7 +153,7 @@ alias nz='nvim ~/.zshrc'
  
 alias le='less'
 alias t='trash '
-alias rm='rm -i'
+alias rm='trash -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias q='exit'
@@ -242,5 +243,5 @@ r() {
 # -------------------
 
 # neofetch
-# pfetch
-zwaves
+pfetch
+# zwaves
