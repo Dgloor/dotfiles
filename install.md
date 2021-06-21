@@ -403,6 +403,6 @@ pacman -S numlockx
 
 ```bash
 pacman -S dunst bat lsd neofetch redshift redshift screenkey
-pacman -S speedtest-cli xwallpaper
+pacman -S speedtest-cli xwallpaper tty-clock
 paru -S bottom cpufetch-git duf pfetch
 ```

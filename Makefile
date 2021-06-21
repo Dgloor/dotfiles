@@ -3,15 +3,15 @@ HOME		= /home/dgloor
 CONFIGS		= $(HOME)/.config
 DOTS		= $(HOME)/repos/dotfiles
 DOTCONFIGS	= $(DOTS)/config
-DOTCONFIGSF = $(DOTCONFIGS)/singlefiles
+DOTCONFIGSF 	= $(DOTCONFIGS)/singlefiles
 
 RMDIR		= [ -d $(DOTCONFIGS)/$@ ] && rm -rf $(CONFIGS)/$@
 LNDIR		= ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
 LNFILE		= ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
-MSG			= echo "== $@ configurado correctamente =="
+MSG		= echo "== $@ configurado correctamente =="
 
-main:
-	echo "test"
+main: alacritty bottom copyq flameshot lsd zathura screenkey.json starship.toml zsh
+	echo "Todo configurado correctamente"
 
 alacritty:
 	$(RMDIR)
@@ -22,9 +22,8 @@ bottom:
 	$(LNDIR) && $(MSG)
 
 copyq:
-	ln -sf $(DOTCONFIGS)/$@/themes $(CONFIGS)/$@/themes
-	ln -sf $(DOTCONFIGS)/$@/$@.conf $(CONFIGS)/$@/$@.conf 
-	$(MSG)
+	$(RMDIR)
+	$(LNDIR) && $(MSG)
 
 flameshot:
 	$(RMDIR) 

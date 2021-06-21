@@ -20,8 +20,8 @@ export PAGER="less"
 
 # Rofi
 export CM_SELECTIONS="clipboard"
-export CM_DEBUG=0 
-export CM_OUTPUT_CLIP=1 
+export CM_DEBUG=0
+export CM_OUTPUT_CLIP=1
 export CM_MAX_CLIPS=20
 export CM_LAUNCHER=rofi
 

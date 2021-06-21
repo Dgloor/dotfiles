@@ -1,4 +1,12 @@
+# Nvim stff
 config/nvim/autoload/plugged/
 config/nvim/session/
+
+# Mpv stuff
 config/mpv/scripts/total_playtime.list
 config/mpv/watch_later/
+
+# Copyq stuff
+config/copyq/copyq-*
+config/copyq/copyq_*
+config/copyq/copyq.pub
