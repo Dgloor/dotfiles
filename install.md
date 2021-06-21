@@ -1,4 +1,4 @@
-# Arch Installation
+# Arch Installation Guide
 
 ## Base Installation
 
@@ -402,6 +402,7 @@ pacman -S numlockx
 ### Utilities
 
 ```bash
-pacman -S dunst lsd neofetch redshift redshift screenkey speedtest-cli xwallpaper
+pacman -S dunst bat lsd neofetch redshift redshift screenkey
+pacman -S speedtest-cli xwallpaper
 paru -S bottom cpufetch-git duf pfetch
 ```

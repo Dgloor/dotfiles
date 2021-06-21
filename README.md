@@ -118,6 +118,7 @@
 - [Cpufetch](https://github.com/Dr-Noob/cpufetch) - cpu info
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
 - [Duf](https://github.com/muesli/duf) - disk usage
+- [Bat](https://github.com/sharkdp/bat) - modern cat with wings
 - [Lsd](https://github.com/Peltoche/lsd) - modern ls command
 - [Neofetch](https://github.com/dylanaraps/neofetch) - system information
 - [Pfetch](https://github.com/dylanaraps/pfetch) - system information
