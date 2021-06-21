@@ -15,40 +15,39 @@ main:
 
 alacritty:
 	$(RMDIR)
-	$(LNDIR)
-	$(MSG)
+	$(LNDIR) && $(MSG)
 
 bottom:
 	$(RMDIR) 
-	$(LNDIR)
+	$(LNDIR) && $(MSG)
+
+copyq:
+	ln -sf $(DOTCONFIGS)/$@/themes $(CONFIGS)/$@/themes
+	ln -sf $(DOTCONFIGS)/$@/$@.conf $(CONFIGS)/$@/$@.conf 
 	$(MSG)
 
 flameshot:
 	$(RMDIR) 
-	$(LNDIR)
-	$(MSG)
+	$(LNDIR) && $(MSG)
 
 lsd:
 	$(RMDIR) 
-	$(LNDIR)
-	$(MSG)
+	$(LNDIR) && $(MSG)
 
 zathura:
 	$(RMDIR) 
-	$(LNDIR)
-	$(MSG)
+	$(LNDIR) && $(MSG)
 
 screenkey.json: 
-	$(LNFILE)
-	$(MSG)
+	$(LNFILE) && $(MSG)
 
 starship.toml:
-	$(LNFILE)
-	$(MSG)
+	$(LNFILE) && $(MSG)
 
 zsh:
 	ln -sf $(DOTCONFIGSF)/.zshrc $(HOME)/.zshrc
 	ln -sf $(DOTCONFIGSF)/.zshenv $(HOME)/.zshenv
+	$(MSG)
 
 scripts:
 	echo "script test"
