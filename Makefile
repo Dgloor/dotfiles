@@ -33,6 +33,10 @@ lsd:
 	$(RMDIR) 
 	$(LNDIR) && $(MSG)
 
+rofi: 
+	$(RMDIR)
+	$(LNDIR) && $(MSG)
+
 zathura:
 	$(RMDIR) 
 	$(LNDIR) && $(MSG)
