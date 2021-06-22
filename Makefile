@@ -10,7 +10,7 @@ LNDIR		= ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
 LNFILE		= ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 MSG		= echo "== $@ configurado correctamente =="
 
-main: alacritty bottom copyq flameshot lsd zathura screenkey.json starship.toml zsh
+main: alacritty bottom copyq flameshot lsd zathura screenkey.json starship.toml zsh scripts
 	echo "Todo configurado correctamente"
 
 alacritty:
@@ -48,5 +48,5 @@ zsh:
 	ln -sf $(DOTCONFIGSF)/.zshenv $(HOME)/.zshenv
 	$(MSG)
 
-scripts:
-	echo "script test"
+scriptsdir:
+	ln -sf $(DOTS)/scripts $(HOME)/.scripts

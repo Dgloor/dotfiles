@@ -1,24 +1,24 @@
 #!/bin/sh
-# Send audio notifications for dunst
-# E.g: audio-notifier up 5, audio-notifier down 15
+# Send Volume notifications for dunst
+# E.g: volume-notifier up 5, volume-notifier down 15
 
-notify(){
+notify() {
   level=$1
   urgency=$2
   icon_path=$3
   timeout=1500
 
-  dunstify   \
+  dunstify \
     -h string:x-canonical-private-synchronous:audio "Volume: $level%" \
     -h int:value:$level \
     -i $icon_path \
     -t $timeout \
-    -u $urgency \
+    -u $urgency
 
   exit
 }
 
-set_icon(){
+set_icon() {
   level=$1
   if [ $level = 0 ]; then
     icon='mute'
@@ -30,25 +30,25 @@ set_icon(){
     icon='medium'
   elif [ $level -ge 60 ] && [ $level -le 100 ]; then
     icon='high'
-  else 
+  else
     icon='critical'
   fi
 
   echo $icon
 }
 
-set_urgency(){
+set_urgency() {
   level=$1
   if [ $level -le 100 ]; then
     urgency='normal'
-  else 
+  else
     urgency='critical'
   fi
 
   echo $urgency
 }
 
-update_volume(){
+update_volume() {
   volume=$1
   interval=$2
   if [ $volume = 'up' ]; then
@@ -58,7 +58,7 @@ update_volume(){
   fi
 }
 
-# ========================================================== 
+# ==========================================================
 
 volume=$1
 interval=$2
@@ -70,4 +70,3 @@ set_icon $level
 icon_path='~/.config/dunst/'$icon'.png'
 
 notify $level $urgency $icon_path
-

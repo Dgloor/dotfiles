@@ -5,6 +5,6 @@ temp=$(sensors | grep "Tdie" | sed "s/Tdie: *+//;s/°C *//")
 if [ 1 -eq "$(echo "$temp > 80" | bc)" ]; then
     printf "%%{F#ed0b0b}"
 elif [ 1 -eq "$(echo "$temp > 60" | bc)" ]; then
-    printf "%%{F#f2e421}";
+    printf "%%{F#f2e421}"
 fi
 echo "$temp"°C

@@ -11,4 +11,3 @@ fi
 for node in $NODES; do
   bspc node $node -g hidden=off
 done
-

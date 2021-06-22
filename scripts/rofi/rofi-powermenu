@@ -1,34 +1,33 @@
 #!/usr/bin/env bash
 
 _rofi() {
-  rofi \
-    -dmenu \
-    -i \
-    -width 30 \
-    -lines 4 \
-    -no-custom true \
-    -disable-history true \
-    -p "Power" \
-    -sep '|' \
-    "$@"
+    rofi \
+        -dmenu \
+        -i \
+        -width 30 \
+        -lines 4 \
+        -no-custom true \
+        -disable-history true \
+        -p "Power" \
+        -sep '|' \
+        "$@"
 }
 
 LINES="Restart|Log out|Suspend|Power off"
 CHENTRY=$(echo "$LINES" | _rofi)
 
-if [ "$CHENTRY" = "Restart"  ]; then
+if [ "$CHENTRY" = "Restart" ]; then
     alacritty -e sudo reboot
 
-elif [ "$CHENTRY" = "Log out"  ]; then
+elif [ "$CHENTRY" = "Log out" ]; then
     bspc quit
 
-elif [ "$CHENTRY" = "Suspend"  ]; then
+elif [ "$CHENTRY" = "Suspend" ]; then
     alacritty -e systemctl suspend
 
-elif [ "$CHENTRY" = "Power off"  ]; then
+elif [ "$CHENTRY" = "Power off" ]; then
     alacritty -e sudo poweroff
 
 else
-  echo "err"
+    echo "err"
 fi
-

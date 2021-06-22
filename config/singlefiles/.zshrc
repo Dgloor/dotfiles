@@ -49,7 +49,7 @@ unsetopt BG_NICE
 unsetopt NO_BEEP
 
 # ========== Variables ========= #
-PATH="$HOME/.scripts:$PATH"
+PATH="$HOME/.scripts/bspwm:$HOME/.scripts/media:$HOME/.scripts/polybar:$HOME/.scripts/rofi:$HOME/.scripts/shell-colors:$HOME/.scripts/etc:$PATH"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
 SAVEHIST=1000
@@ -178,6 +178,6 @@ r() {
 }
 
 # ========== AutoStart ========== #
-pfetch
+# pfetch
 # neofetch
-# zwaaves
+zwaves

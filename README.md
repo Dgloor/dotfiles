@@ -19,9 +19,10 @@
 - [WhiteSur Gtk Theme](https://www.pling.com/p/1403328/) # just for app bar
 
 ## Theme
-  - [Orchis Dark Compact](https://www.pling.com/p/1357889/)
-  - [Papirus Icons](https://www.pling.com/p/1166289/)
-  - [Vimix Cursors](https://www.pling.com/p/1358330/)
+
+- [Orchis Dark Compact](https://www.pling.com/p/1357889/)
+- [Papirus Icons](https://www.pling.com/p/1166289/)
+- [Vimix Cursors](https://www.pling.com/p/1358330/)
 
 ## Fonts
 
