@@ -20,6 +20,7 @@
 
 ## Theme
 
+- Lxappearance - Gtk theme sticher
 - [Orchis Dark Compact](https://www.pling.com/p/1357889/)
 - [Papirus Icons](https://www.pling.com/p/1166289/)
 - [Vimix Cursors](https://www.pling.com/p/1358330/)

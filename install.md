@@ -248,7 +248,8 @@ xdg-users-dirs-update
 ### Audio & video
 
 ```bash
-pacman -S pulseaudio pavucontrol pulseaudio-alsa pamixer pulseaudio-equalizer mpv
+pacman -S pulseaudio pavucontrol pulseaudio-alsa pamixer pulseaudio-equalizer 
+pacman -S playerctl mpv
 ```
 
 ### Archivers
@@ -303,7 +304,7 @@ paru -S alacritty firefox github-cli # essentials
 
 ```bash
 pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
-pacman -S bspwm sxhkd rofi xsel
+pacman -S bspwm sxhkd rofi xsel xdo wmctrl
 paru -S bsp-layout polybar picom-jonaburg-git
 pacman -S 
 
@@ -404,5 +405,6 @@ pacman -S numlockx
 ```bash
 pacman -S dunst bat lsd neofetch redshift redshift screenkey
 pacman -S speedtest-cli xwallpaper tty-clock
+pacman -S lxappearance
 paru -S bottom cpufetch-git duf pfetch
 ```

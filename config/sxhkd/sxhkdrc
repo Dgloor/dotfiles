@@ -1,11 +1,12 @@
 #
-#====================== Applications  Launchers
+# ========== Launch Applications  ========== #
 #
 
-# Open terminal
+# Open Terminal
 super + Return
 	alacritty
-# Program launcher
+	
+# Run App Launcher
 super + shift + {Return,o}
 	rofi -show {drun,run}
 
@@ -19,8 +20,7 @@ super + period
 
 # File Explorer
 super + e 
-	spacefm
-	# thunar
+	thunar
 
 # Browser
 super + w
@@ -50,10 +50,6 @@ super + p
 super + shift + p 
 	gnome-pomodoro
 
-#Powermenu
-super + shift + g
-	~/scripts/rofi/rofi-powermenu
-
 # Mail Client
 XF86Mail
 	mailspring
@@ -64,21 +60,21 @@ XF86Tools
 
 # Quick screenshot
 Print
- flameshot full -p ~/Images/screenshots
+	flameshot full -p ~/Images/screenshots
 
 
 #
-# ============================ bspwm hotkeys
+# ========== Bspwm Hotkeys  ========== #
 #
 
 # Quit bspwm
 super + ctrl + t 
-	~/scripts/rofi/rofi-prompt "Quit Xsession" "bspc quit"
+	~/.scripts/rofi/rofi-prompt "Quit bspwm?" "bspc quit"
 
 # Close window
 super + q
-	~/scripts/bspwm/bspwm-crystal --close
-	# bspc node -c
+	~/.scripts/bspwm/bspwm-crystal --close
+	#bspc node -c
 
 # Toggle tiled and monocle layout
 super + m
@@ -90,15 +86,15 @@ super + shift + m
 
 # Toggle fullscreen
 super + shift + f
-  ~/scripts/bspwm/bspwm-crystal --fullscreen
+	~/.scripts/bspwm/bspwm-crystal --fullscreen
 
 # Toggle floating mode
 super + f
-  bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
+    bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
 
 # Flip the tree from the current nodes parent
 super + ctrl + {Left,Down,Up,Right}
-  bspc node @parent -F {vertical, horizontal, horizontal, vertical}
+	bspc node @parent -F {vertical, horizontal, horizontal, vertical}
 
 # Toggle Mater Layout | bsp-layout
 super + ctrl + m
@@ -116,16 +112,13 @@ super + alt + {Up,Down}
 super + alt + {Right,Left}
 	bspc node @parent --rotate {90,270}
 
-# Toggle window gaps
-super + ctrl + g
-	~/scripts/bspwm/bspwm-gaps
-
 # # swap the current node and the biggest window
 # super + g
 # 	bspc node -s biggest.window
 
+
 #
-# ============================= state/flags
+# ========== State/flags  ========== #
 #
 
 # Set the window state
@@ -141,7 +134,7 @@ super + {y,s}
 
 
 #
-#============================== focus/swap
+# ========== Focus/Swap  ========== #
 #
 
 # Focus the node in the given direction
@@ -166,7 +159,7 @@ super + Tab
 
 # Send to desktop
 super + shift + {1-9}
-	~/scripts/bspwm/bspwm-crystal --send {1-9}
+	~/.scripts/bspwm/bspwm-crystal --send {1-9}
 
 # Send and Swap to desktop
 super + ctrl + {1-9}
@@ -188,7 +181,7 @@ super + ctrl + {1-9}
 
 
 #
-#=============================== Preselect
+# ========== Preselect  ========== #
 #
 
 # preselect the direction
@@ -209,7 +202,7 @@ super + ctrl + space
 
 
 #
-#============================== Move/Resize
+# ========== Move/Rezize ========== #
 #
 
 # Expand a window by moving one of its side outward
@@ -231,21 +224,22 @@ super + {Left,Down,Up,Right}
 #     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
 #     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
+
 #
-#============================= Media Controls
+# ========== Media Controls ========== #
 #
 
 # Play/Stop Player
 XF86AudioPlay
-  playerctl play-pause
+	playerctl play-pause
 
 # Previous/Next Video/Music
 XF86Audio{Prev,Next}
-  playerctl {previous,next}
+	playerctl {previous,next}
 
 # Volume Up/Down
 XF86Audio{RaiseVolume,LowerVolume}
-	~/scripts/media/volume-notifier {up,down} 2
+	~/.scripts/media/volume-notifier {up,down} 2
 
 # Mute Sound
 super + F1
@@ -253,8 +247,8 @@ super + F1
 
 
 #
-#================================ ETC
-#
+# ========== ETC  ========== #
+#   
 
 # Reload bspwm
 super + ctrl + r
@@ -262,16 +256,24 @@ super + ctrl + r
 
 # Reload sxhkd
 super + Escape
-	~/scripts/killandnotify "sxhkd" "Config reloaded" && sxhkd &
+	~/.scripts/etc/killandnotify "sxhkd" "Config reloaded" && sxhkd &
 
 # Reload polybar
 super + ctrl + p
-	~/scripts/polybar/reloadpolybar &
+	~/.scripts/polybar/reloadpolybar &
 
-# Show sxhkd help
+# Rofi - List Sxhkd Hotkeys
 super + u
-	~/scripts/rofi/rofi-sxhkd-help &
+	~/.scripts/rofi/rofi-sxhkd-help &
 
-# Rofi man pages 
+# Rofi - List and open Man Pages 
 super + shift + u 
-	~/scripts/rofi/rofi-man &
+	~/.scripts/rofi/rofi-man &
+
+# Rofi - Powermenu
+super + shift + g
+	~/.scripts/rofi/rofi-powermenu
+
+# Bswpm - Toggle Window Gaps
+#super + ctrl + g
+#	~/.scripts/bspwm/bspwm-gaps
