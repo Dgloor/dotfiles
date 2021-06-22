@@ -1,4 +1,4 @@
 configuration {
 	theme: "~/.config/rofi/themes/center.rasi";
-	modi: "drun,run,window";
+	modi: "drun,run,window,emoji";
 }

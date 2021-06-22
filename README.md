@@ -46,7 +46,7 @@
 - Google-chrome
 - [Network-manager-applet](https://www.archlinux.org/packages/?name=network-manager-applet) - network connections manager applet
 - [Rofi](https://github.com/davatorium/rofi) - super app launcher and more...
-  - Rofiemoji
+  - [Rofiemoji](https://github.com/Mange/rofi-emoji)
 - [MailSpring](https://github.com/Foundry376/Mailspring) - email client
 - [Thunar](https://wiki.archlinux.org/title/thunar) - gui file manager
 - [SpeedCrunch](https://bitbucket.org/heldercorreia/speedcrunch/src/master/) - Scientific calculator

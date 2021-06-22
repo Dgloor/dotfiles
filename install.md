@@ -303,7 +303,7 @@ paru -S alacritty firefox github-cli # essentials
 
 ```bash
 pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
-pacman -S bspwm sxhkd rofi
+pacman -S bspwm sxhkd rofi xsel
 paru -S bsp-layout polybar picom-jonaburg-git
 pacman -S 
 
@@ -344,7 +344,7 @@ paru -S nerd-fonts-complete
 ### Apps
 
 ```bash
-pacman -S copyq flameshot sxiv rofi
+pacman -S copyq xsel flameshot sxiv rofi
 paru -S anydesk-bin bitwarden balena-etcher google-chrome mailspring
 ```
 
