@@ -2,7 +2,7 @@
     font:                         "JetBrains Mono 11";
     foreground:                   #E4E4E4;
     background-color:             #242424;
-    active-background:            #5296E2;
+    active-background:            #995972;
     urgent-background:            #ff5555;
     alternate-background:         #2C2C2C;
     selected-background:          @active-background;

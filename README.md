@@ -11,7 +11,7 @@
   - [Polybar](https://github.com/polybar/polybar) - status bar
     - [Polybar scripts](https://github.com/Dgloor/dotfiles/tree/main/scripts/polybar)
   - [Bsp-layout](https://github.com/phenax/bsp-layout) - more layouts for bspwm
-  - [Picom (jonaburg fork)](https://github.com/jonaburg/picom) - blur & transparency
+  - [Picom](https://github.com/yshui/picom) - lightweight compositor
 
 ## Desktop Environments
 

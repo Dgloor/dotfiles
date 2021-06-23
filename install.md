@@ -305,7 +305,7 @@ paru -S alacritty firefox github-cli # essentials
 ```bash
 pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
 pacman -S bspwm sxhkd rofi xsel xdo wmctrl
-paru -S bsp-layout polybar picom-jonaburg-git
+paru -S bsp-layout polybar picom
 pacman -S 
 
 # Bspwm & Sxhkd initial config
@@ -332,6 +332,10 @@ rofi -dump-config > ~/.config/rofi/config.rasi
 # 2) add this two line to sxhkdrc
 #   super + shift + Return
 #       rofi -show drun
+
+# Picom initial config
+mkdir -p ~/.config/picom
+cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
 ```
 
 ### Fonts
