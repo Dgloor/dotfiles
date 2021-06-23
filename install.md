@@ -249,7 +249,7 @@ xdg-users-dirs-update
 
 ```bash
 pacman -S pulseaudio pavucontrol pulseaudio-alsa pamixer pulseaudio-equalizer 
-pacman -S playerctl mpv
+pacman -S playerctl pamixer mpv
 ```
 
 ### Archivers
