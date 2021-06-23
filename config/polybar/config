@@ -1,3 +1,5 @@
+;==========================================================
+;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
 ;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
@@ -15,23 +17,17 @@
 ;==========================================================
 
 [colors]
-background = #0f101a
-background-wm = #0f101a
-background-alt = #0f101a
-foreground = #d8dee9
-foreground-alt =  #555555
-primary = #268bd2
-alert = #640130
+background = #1E1F29
+background-alt = #282A36
+foreground = #F8F8F2
+foreground-alt = #555
+primary = #6272A4
+secondary = #8BE9FD
+alert = #bd2c40
 
 [settings]
-format-foreground =
-format-underline = ${colors.primary}
-format-background = ${colors.background-alt}
-format-padding = 1
-format-overline =
-format-margin = 0
-format-offset =
 screenchange-reload = true
+;format-underline = ${colors.primary}
 
 [global/wm]
 margin-top = 0
@@ -39,124 +35,100 @@ margin-bottom = 0
 
 [bar/bar]
 monitor = ${env:MONITOR:DisplayPort-0}
-monitor-fallback =
-monitor-strict = false
-monitor-exact = true
-override-redirect = false
+fixed-center = true
 wm-restack = bspwm
 enable-ipc = true
-fixed-center = false
 bottom = false
-separator = " "
-width = 100%
-height = 18
 offset-x = 0
 offset-y = 0
+width = 100%
+height = 28
 radius = 0.0
-underline-size = 1
-overline-size = 0
+separator = "  "
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+line-size = 2
+
+border-size = 0
+border-color = ${colors.background}
+
+padding-left = 1
+padding-right = 0
+
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
-font-1 = RobotoMono Nerd Font:weight=bold:pixelsize=8;
+font-0 = RobotoMono Nerd Font:weight=bold:pixelsize=9;
+font-1 = RobotoMono Nerd Font:weight=bold:pixelsize=10;
 font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
-font-3 = IPAGothic:fontformat=truetype:pixelsize=12:antialias=false;
 
-modules-left = arch-logo bspwm xwindow
-modules-right = player-prev player player-next updates cpu-usage cpu-temperature polymemory pulseaudio keyboard date time
-;modules-right = updates polytimer cpu-usage cpu-temperature polymemory pulseaudio polyweather date time xkeyboard 
+modules-left = arch-logo bspwm 
+modules-center = date
+modules-right = updates cpu cpu-temperature memory pulseaudio keyboard 
 
 tray-position = right
 tray-padding = 3
-tray-background = ${colors.background-alt}
-tray-offset-x = 0
-tray-offset-y = 0
-tray-scale = 1
-tray-maxsize = 15
 
 cursor-click = pointer
 cursor-scroll = default
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-format-underline =
-format-background =
-format-padding = 1
-
-[module/arch-logo]
-type = custom/text
-content = 
-
-click-left = rofi -show drun
-click-right = ~/scripts/rofi/rofi-powermenu
 
 [module/bspwm]
 type = internal/bspwm
 enable-scroll = false
 
 label-focused = %name%
-label-focused-background = ${colors.background-wm}
+label-focused-background = ${colors.background-alt}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 1
+
 label-occupied = %name%
-label-occupied-padding = 1
 label-occupied-underline = ${colors.background}
+label-occupied-padding = 1
+
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
+
 label-empty = %name%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 1
 label-empty-underline = ${colors.background}
-
-format-underline =
-format-background =
-format-padding =
+label-empty-padding = 1
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 label-separator = 
 
-[module/player]
-type = custom/script
-tail = true
-format = <label>
-exec = ~/scripts/polybar/scroll-player-status
-click-left = playerctl play-pause
-click-right = pidof spotify || spotify
+[module/arch-logo]
+type = custom/text
+content = 
+click-left = rofi -show drun
+click-right = ~/.scripts/rofi/rofi-powermenu
 
-[module/player-prev]
-type = custom/script
-exec = echo "玲"
-format = <label>
-click-left = playerctl previous
-
-[module/player-next]
-type = custom/script
-exec = echo "怜"
-format = <label>
-click-left = playerctl next
+[module/date]
+type = internal/date
+interval = 1
+;date = %d/%m/%y
+date = %a, %b %d
+time = %H:%M
+date-alt = %a, %b %d
+time-alt = %H:%M:%S
+label = %date% - %time%
+label-font = 1
 
 [module/updates]
 type = custom/script
-exec = ~/scripts/polybar/polyupdates
-interval = 600
+exec = ~/.scripts/polybar/polyupdates
+interval = 1800
 format-prefix = "📦 "
 # click-left = alacritty -e sudo pacman -Syu
-# click-right = alacritty -e yay -Syua
 click-left = alacritty -e paru
 click-right = alacritty -e paru -Sua
 
-[module/cpu-usage]
+[module/cpu]
 type = custom/script
-exec = ~/scripts/polybar/polycpu
+exec = ~/.scripts/polybar/polycpu
 label = "%output%"
 interval = 3
 format-prefix = "💻 "
@@ -164,15 +136,15 @@ click-left = alacritty -e btm
 
 [module/cpu-temperature]
 type = custom/script
-exec = ~/scripts/polybar/polytempamd
+exec = ~/.scripts/polybar/polytempamd
 label = "%output%"
 format-prefix="🔥 "
 interval = 5
 click-left = alacritty -e btm
 
-[module/polymemory]
+[module/memory]
 type = custom/script
-exec = ~/scripts/polybar/polymemory
+exec = ~/.scripts/polybar/polymemory
 label = "%output%"
 interval = 3
 format-prefix = "🧠 "
@@ -187,53 +159,66 @@ label-muted = 🔇 muted
 ramp-volume-0 = 🔈
 ramp-volume-1 = 🔉
 ramp-volume-2 = 🔊
-
 click-right = pavucontrol
-
-# [module/polyweather]
-# type = custom/script
-# exec = ~/scripts/polybar/polyweather
-# label = "%output%"
-# click-left = alacritty -e w3m wttr.in/Guayaquil
-# interval = 1800
-
-[module/date]
-type = custom/script
-exec = date '+%d/%m/%Y'
-label = 📅 %output%
-interval = 5
-;click-left = alacritty -e calcurse
-click-left = obsidian
-
-[module/time]
-type = custom/script
-exec = date '+%H:%M'
-label = 🕓 %output%
-interval = 5
-click-left = mailspring
-
-[module/polytimer]
-type = custom/script
-exec = ~/scripts/polybar/polytimer tail '🍅 0' 5
-tail = true
-
-click-right = ~/scripts/polybar/polytimer cancel ; ~/scripts/polybar/polytimer update %pid%
-scroll-up = ~/scripts/polybar/polytimer increase 60 || ~/scripts/polybar/polytimer new 1 '🍅 :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
-scroll-down = ~/scripts/polybar/polytimer increase -60 ; ~/scripts/polybar/polytimer update %pid%
-
-# [module/keyboard]
-# type = internal/xkeyboard
-# format = <label-layout>
-# label-layout = %icon% %layout% 
-# layout-icon-default = ⌨️
-# blacklist-0 = num lock
-# blacklist-1 = caps lock
-# blacklist-2 = scroll lock
 
 [module/keyboard]
 type=custom/script
-exec= setxkbmap -query | awk 'NR == 3 {print toupper($2)}'
+exec= setxkbmap -query | awk 'NR == 3 {print($2)}'
 label = ⌨️ %output%
 interval = 1
 click-left = setxkbmap latam
 click-right = setxkbmap dvorak
+layout-underline = ${colors.secondary}
+
+; to review
+;[module/date]
+;type = custom/script
+;exec = date '+%d/%m/%Y'
+;label = 📅 %output%
+;interval = 5
+;click-left = alacritty -e calcurse
+;click-left = obsidian
+
+;[module/time]
+;type = custom/script
+;exec = date '+%H:%M'
+;label = 🕓 %output%
+;interval = 5
+;click-left = mailspring
+
+;[module/xwindow]
+;type = internal/xwindow
+;label = %title:0:30:...%
+;format-underline =
+;format-background =
+;format-padding = 1
+
+;[module/player]
+;type = custom/script
+;tail = true
+;format = <label>
+;exec = ~/scripts/polybar/scroll-player-status
+;click-left = playerctl play-pause
+;click-right = pidof spotify || spotify
+
+;[module/player-prev]
+;type = custom/script
+;exec = echo "玲"
+;format = <label>
+;click-left = playerctl previous
+
+;[module/player-next]
+;type = custom/script
+;exec = echo "怜"
+;format = <label>
+;click-left = playerctl next
+
+;[module/polytimer]
+;type = custom/script
+;exec = ~/.scripts/polybar/polytimer tail '🍅 0' 5
+;tail = true
+
+;click-right = ~/.scripts/polybar/polytimer cancel ; ~/.scripts/polybar/polytimer update %pid%
+;scroll-up = ~/.scripts/polybar/polytimer increase 60 || ~/.scripts/polybar/polytimer new 1 '🍅 :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
+;scroll-down = ~/.scripts/polybar/polytimer increase -60 ; ~/.scripts/polybar/polytimer update %pid%
+

@@ -8,8 +8,7 @@
 setfont ter-132n
 
 loadkeys es
-loadkeys la-latin
-```
+loadkeys la-latin ```
 
 ### Internet config
 
@@ -248,8 +247,9 @@ xdg-users-dirs-update
 ### Audio & video
 
 ```bash
-pacman -S pulseaudio pavucontrol pulseaudio-alsa pamixer pulseaudio-equalizer 
+pacman -S pulseaudio pavucontrol pulseaudio-alsa  pulseaudio-equalizer 
 pacman -S playerctl pamixer mpv
+paru -S spotify spotify-adblock
 ```
 
 ### Archivers
@@ -342,7 +342,7 @@ cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
 
 ```bash
 # fc-list <- to see all fonts
-pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts
+pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts ttf-font-awesome
 paru -S nerd-fonts-complete
 ```
 
@@ -409,6 +409,6 @@ pacman -S numlockx
 ```bash
 pacman -S dunst bat lsd neofetch redshift redshift screenkey
 pacman -S speedtest-cli xwallpaper tty-clock
-pacman -S lxappearance
+pacman -S lxappearance pacman-contrib sysstat
 paru -S bottom cpufetch-git duf pfetch
 ```

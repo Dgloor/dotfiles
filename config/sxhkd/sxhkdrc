@@ -260,7 +260,7 @@ super + Escape
 
 # Reload polybar
 super + ctrl + p
-	~/.scripts/polybar/reloadpolybar &
+	~/.scripts/polybar/launchpolybar &
 
 # Rofi - List Sxhkd Hotkeys
 super + u

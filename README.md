@@ -108,6 +108,7 @@
 ## Media & Entertaiment
 
 - [Mpv](https://github.com/mpv-player/mpv) - video player
+- Spotify
 - Popcorn time
 - Stremio
 
