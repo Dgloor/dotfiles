@@ -10,7 +10,7 @@ LNDIR		= ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
 LNFILE		= ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 MSG		= echo "== $@ configurado correctamente =="
 
-main: alacritty bottom bspwm copyq dunst flameshot lsd picom polybar rofi zathura screenkey.json starship.toml zsh scripts
+main: alacritty bottom bspwm copyq dunst flameshot lsd mpv picom polybar rofi zathura screenkey.json starship.toml zsh scripts
 	echo "Todo configurado correctamente"
 
 alacritty:
@@ -38,6 +38,10 @@ flameshot:
 	$(LNDIR) && $(MSG)
 
 lsd:
+	$(RMDIR) 
+	$(LNDIR) && $(MSG)
+
+mpv:
 	$(RMDIR) 
 	$(LNDIR) && $(MSG)
 
