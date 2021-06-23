@@ -16,13 +16,11 @@
 ## Desktop Environments
 
 - [Xfce](https://wiki.archlinux.org/title/xfce) - lightweight DE
-- [WhiteSur Gtk Theme](https://www.pling.com/p/1403328/) # just for app bar
 
 ## Theme
 
 - Lxappearance - Gtk theme sticher
-- [Orchis Dark Compact](https://www.pling.com/p/1357889/)
-- [Papirus Icons](https://www.pling.com/p/1166289/)
+- [Dracula Theme](https://draculatheme.com/)
 - [Vimix Cursors](https://www.pling.com/p/1358330/)
 
 ## Fonts

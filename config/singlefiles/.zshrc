@@ -157,6 +157,8 @@ alias glog='git log --oneline --decorate --graph '
 # Apps
 alias b='btm '
 alias n='nvim '
+alias si='sxiv '
+alias z='zathura '
 alias ss='sudo systemctl '
 alias ttime='tty-clock -S -c -b -n'
 alias nspeed='speedtest-cli'
@@ -178,6 +180,6 @@ r() {
 }
 
 # ========== AutoStart ========== #
-# pfetch
-# neofetch
-zwaves
+pfetch
+#neofetch
+#zwaves

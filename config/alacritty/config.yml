@@ -3,7 +3,7 @@ env:
 
 live_config_reload: true
 
-background_opacity: 0.93
+background_opacity: 0.90
 
 window:
     padding:
@@ -15,7 +15,7 @@ window:
     class:
         instance: Alacritty
         general: Alacritty
-    
+
     dynamic_title: true
 
 scrolling:

@@ -1,10 +1,10 @@
 * {
     font:                         "JetBrains Mono 11";
-    foreground:                   #E4E4E4;
-    background-color:             #242424;
-    active-background:            #995972;
+    foreground:                   #F8F8F2;
+    background-color:             #282A36;
+    active-background:            #6272A4;
     urgent-background:            #ff5555;
-    alternate-background:         #2C2C2C;
+    alternate-background:         #282A36;
     selected-background:          @active-background;
     selected-urgent-background:   @urgent-background;
     selected-active-background:   @active-background;
