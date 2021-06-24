@@ -1,0 +1,31 @@
+#!/bin/sh
+
+batorcat() {
+  file="$1"
+  shift
+  if command -v bat >/dev/null 2>&1; then
+    bat --color=always --style=plain --pager=never "$file" "$@"
+  else
+    cat "$file"
+  fi
+}
+
+case "$1" in
+  *.tgz | *.tar.gz) tar tzf "$1" ;;
+  *.tar.bz2 | *.tbz2) tar tjf "$1" ;;
+  *.tar.txz | *.txz) xz --list "$1" ;;
+  *.tar) tar tf "$1" ;;
+  *.zip | *.jar | *.war | *.ear | *.oxt) unzip -l "$1" ;;
+  *.rar) unrar l "$1" ;;
+  *.7z) 7z l "$1" ;;
+  *.[1-8]) man "$1" | col -b ;;
+  *.png | *.jpg | *.jpeg | *.mkv | *.mp4 | *.m4v) mediainfo "$1" ;;
+  *.md) batorcat "$1" ;;
+  *.pdf) pdftotext "$1" - ;;
+  *.doc) catdoc "$1" ;;
+  *.docx) docx2txt "$1" - ;;
+  *.zsh* | *.bash* | *.git*) batorcat "$1" ;;
+  *) batorcat "$1" ;;
+esac
+
+exit 0
