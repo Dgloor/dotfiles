@@ -3,14 +3,14 @@ HOME		= /home/dgloor
 CONFIGS		= $(HOME)/.config
 DOTS		= $(HOME)/repos/dotfiles
 DOTCONFIGS	= $(DOTS)/config
-DOTCONFIGSF 	= $(DOTCONFIGS)/singlefiles
+DOTCONFIGSF 	= $(DOTS)/config-sf
 
 RMDIR		= [ -d $(DOTCONFIGS)/$@ ] && rm -rf $(CONFIGS)/$@
 LNDIR		= ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
 LNFILE		= ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 MSG		= echo "== $@ configurado correctamente =="
 
-main: alacritty bottom bspwm copyq dunst flameshot lsd mpv picom polybar rofi zathura screenkey.json starship.toml zsh scripts
+main: alacritty bottom bspwm copyq dunst flameshot lsd mpv nvim picom polybar rofi zathura screenkey.json starship.toml zsh scripts
 	echo "Todo configurado correctamente"
 
 alacritty:
@@ -45,6 +45,10 @@ mpv:
 	$(RMDIR) 
 	$(LNDIR) && $(MSG)
 
+nvim: 
+	$(RMDIR) 
+	$(LNDIR) && $(MSG)
+
 picom: 
 	$(RMDIR) 
 	$(LNDIR) && $(MSG)
@@ -76,5 +80,5 @@ zsh:
 	ln -sf $(DOTCONFIGSF)/.zshenv $(HOME)/.zshenv
 	$(MSG)
 
-scriptsdir:
+scripts:
 	ln -sf $(DOTS)/scripts $(HOME)/.scripts

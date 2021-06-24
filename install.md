@@ -357,7 +357,7 @@ paru -S anydesk-bin bitwarden balena-etcher google-chrome mailspring
 
 ```bash
 pacman -S starship trash-cli zsh zsh-autosuggestions zsh-syntax-highlighting
-paru -S autojump-rs glow lf pistol-git dragon-drag-and-drop
+paru -S autojump-rs glow lf pistol-git dragon-drag-and-drop fontpreview-ueberzug-git
 ```
 
 ### Software development
@@ -410,5 +410,5 @@ pacman -S numlockx
 pacman -S dunst bat lsd neofetch redshift redshift screenkey
 pacman -S speedtest-cli xwallpaper tty-clock
 pacman -S lxappearance pacman-contrib sysstat
-paru -S bottom cpufetch-git duf pfetch
+paru -S bottom cpufetch-git duf pfetch 
 ```

@@ -57,6 +57,7 @@
 - [Lf](https://github.com/gokcehan/lf) - terminal file manager written in go
   - [Pistol](https://github.com/doronbehar/pistol) - file previewer
   - [Dragon](https://github.com/mwh/dragon) - drag & drop source/target for X
+- [Fontpreview-ueberzug-git](https://github.com/OliverLew/fontpreview-ueberzug) - Minimal font previewer
 - [Starship](https://github.com/starship/starship) - minimalist shell prompt
 - [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
 - [Zsh](https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol))
