@@ -409,6 +409,6 @@ pacman -S numlockx
 ```bash
 pacman -S dunst bat lsd neofetch redshift redshift screenkey
 pacman -S speedtest-cli xwallpaper tty-clock
-pacman -S lxappearance pacman-contrib sysstat
+pacman -S lxappearance pacman-contrib sysstat zip
 paru -S bottom cpufetch-git duf pfetch 
 ```
