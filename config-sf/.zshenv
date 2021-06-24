@@ -25,6 +25,9 @@ export CM_OUTPUT_CLIP=1
 export CM_MAX_CLIPS=20
 export CM_LAUNCHER=rofi
 
+# Bat
+export BAT_THEME="Dracula"
+
 # Lf Icons
 export LF_ICONS="\
 tw=:\

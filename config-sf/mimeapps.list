@@ -4,6 +4,8 @@ x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 
+inode/x-empty=nvim.desktop;
+
 text/markdown=nvim.desktop;
 text/html=nvim.desktop
 text/x-python3=nvim.desktop;

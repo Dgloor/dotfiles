@@ -357,7 +357,11 @@ paru -S anydesk-bin bitwarden balena-etcher google-chrome mailspring
 
 ```bash
 pacman -S starship trash-cli zsh zsh-autosuggestions zsh-syntax-highlighting
-paru -S autojump-rs glow lf pistol-git dragon-drag-and-drop fontpreview-ueberzug-git
+paru -S autojump-rs fontpreview-ueberzug-git
+
+# lf stuff
+pacman -S python-pdftotext mediainfo bat catdoc docx2txt
+paru -S lf dragon-drag-and-drop
 ```
 
 ### Software development

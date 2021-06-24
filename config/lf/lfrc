@@ -6,37 +6,51 @@ set icons true
 set ignorecase true
 #set hidden true
 
+set previewer ~/.scripts/lf/preview
+
 
 # ========== Custom Functions ========== #
 cmd clear_trash %trash-empty
-cmd j %lf -remote "send $id cd '$(autojump $1)'"
-cmd setwallpaper %cp "$f" ~/.config/wall.jpg && xwallpaper --zoom "$f"
-
 cmd trash %trash-put $fx
+
+cmd setwallpaper %{{
+  cp "$f" ~/.config/wall.jpg && xwallpaper --zoom "$f"
+}}
+
+cmd j %{{
+  lf -remote "send $id cd '$(autojump $1)'"
+}}
 
 cmd restore_trash ${{
   trash-restore
 }}
 
-cmd mkdir ${{
-  printf "Directory Name: "
+cmd open ${{
+  case $(file --mime-type "$f" -bL) in
+    text/*|application/json) $EDITOR "$f";;
+    *) xdg-open "$f" ;;
+  esac
+}}
+
+cmd mkdir %{{
+  printf "Directory name: "
   read ans
   mkdir -p $ans
 }}
 
-cmd mkfile ${{
-  printf "File Name: "
+cmd mkfile %{{
+  printf "File name: "
   read ans
-  $EDITOR $ans
+  touch $ans
 }}
 
-cmd sudomkfile ${{
+cmd sudomkfile %{{
   printf "File Name: "
   read ans
-  sudo $EDITOR $ans
+  sudo touch $ans
 }}
 
-cmd chmod ${{
+cmd chmod %{{
   printf "Mode Bits: "
   read ans
 
@@ -48,7 +62,12 @@ cmd chmod ${{
   lf -remote 'send reload'
 }}
 
-cmd zip %zip -r "$f" "$f"
+cmd zip %{{
+  IFS='/'
+  read -a dirname <<< "$f"
+  zip -r "${dirname[-1]}".zip ${dirname[-1]}
+}}
+
 cmd tar %tar cvf "$f.tar" "$f"
 cmd targz %tar cvzf "$f.tar.gz" "$f"
 cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
@@ -83,14 +102,9 @@ map p
 map ee $$EDITOR "$f"
 
 # Basic functions
-map <enter> open
 map . set hidden!
 map yy copy
 map dd cut
-map mf mkfile
-map msf sudomkfile
-map md mkdir
-map x setwallpaper
 map r rename
 map R reload
 map C clear
@@ -99,12 +113,20 @@ map H top
 map L bottom
 map ch chmod
 
+map <enter> open
+map S $$SHELL
+map md mkdir
+map mf mkfile
+map msf sudomkfile
+map x setwallpaper
+
+
 # Archive 
 map az zip
 map at tar 
 map ag targz
 map ab targz
-map ua unarchive
+map au unarchive
 
 # Trash 
 map DD trash 
