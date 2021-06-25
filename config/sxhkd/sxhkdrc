@@ -47,8 +47,8 @@ super + p
 	killall -q picom || picom 
 
 # Pomodoro
-super + shift + p 
-	gnome-pomodoro
+#super + shift + p 
+#	gnome-pomodoro
 
 # Mail Client
 XF86Mail
@@ -68,8 +68,8 @@ Print
 #
 
 # Quit bspwm
-super + ctrl + t 
-	~/.scripts/rofi/rofi-prompt "Quit bspwm?" "bspc quit"
+#super + ctrl + t 
+#	~/.scripts/rofi/rofi-prompt "Quit bspwm?" "bspc quit"
 
 # Close window
 super + q
@@ -271,7 +271,7 @@ super + shift + u
 	~/.scripts/rofi/rofi-man &
 
 # Rofi - Powermenu
-super + shift + g
+super + shift + p
 	~/.scripts/rofi/rofi-powermenu
 
 # Bswpm - Toggle Window Gaps
