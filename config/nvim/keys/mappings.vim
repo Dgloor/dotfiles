@@ -36,3 +36,18 @@ nnoremap <silent> <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <silent> <S-TAB> :bprevious<CR>
 
+" Splits
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>h :split<CR>
+
+" ====== Plugins Stuff =====
+":Goyo
+nnoremap <leader>z :Goyo<CR>
+
+" Floaterm
+nnoremap <leader>g :FloatermNew lazygit<CR>
+nnoremap <leader>r :FloatermNew lf<CR>
+nnoremap <leader>p :FloatermNew python<CR>
+nnoremap <leader>f :FloatermNew fzf<CR>
+"nnoremap <leader>m :MarkdownPreview<CR>
+

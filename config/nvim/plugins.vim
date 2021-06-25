@@ -13,7 +13,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Plug 'scrooloose/NERDTree'
 
 " Cool Icons
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
 " Better Syntax Support
@@ -27,17 +26,35 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Status Line
 Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 
 " Colorizer
-" Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 
 " Better Comments
 Plug 'tpope/vim-commentary'
 
+" Surround
+Plug 'tpope/vim-surround'
+
 " Start Scren
 Plug 'mhinz/vim-startify'
+
+" Terminal
+Plug 'voldikss/vim-floaterm'
+
+" Git
+Plug 'mhinz/vim-signify'
+"Plug 'tpope/vim-fugitive'
+"Plug 'junegunn/gv.vim'
+
+" HTML & CSS
+"Plug 'mattn/emmet-vim'
+
+" Zen mode
+Plug 'junegunn/goyo.vim'
+
+" Markown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 call plug#end()
 

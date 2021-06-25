@@ -8,7 +8,8 @@
 setfont ter-132n
 
 loadkeys es
-loadkeys la-latin ```
+loadkeys la-latin
+```
 
 ### Internet config
 
@@ -19,7 +20,7 @@ ping -c 3 google.com
 # Wifi
 systemctl enable dhcpcd
 systemctl start dhcpcd
-wifi-menu 
+wifi-menu
 # TODO: login...
 ```
 
@@ -28,19 +29,19 @@ wifi-menu
 ```bash
 # Disk Partition
 fdisk -l
-cfdisk /dev/<disk_id> # GPT 
+cfdisk /dev/<disk_id> # GPT
 # TODO: Write the partitions: efi, root, home, swap
 # sda1 > boot | type: EFI System
-# sda2 > root 
+# sda2 > root
 # sda3 > home
 # sda4 > swap
 
 
 # Format Partitions
 mkfs.fat -F 32 /dev/sda1 # efi ...
-mkfs.ext4 /dev/sda2 
-mkfs.ext4 /dev/sda3 # *or maybe not 
-mkfswap /dev/sda4  
+mkfs.ext4 /dev/sda2
+mkfs.ext4 /dev/sda3 # *or maybe not
+mkfswap /dev/sda4
 
 # Check partitions
 fdisk -l
@@ -103,7 +104,7 @@ ls /usr/share/zoneinfo/America
 ln -sf /usr/share/zoneinfo/America/Guayaquil /etc/localtime
 
 # Set clock
-hwclock -w 
+hwclock -w
 
 # Keyboard distribution
 echo KEYMAP=la-latin1 > /etc/vconsole.conf
@@ -126,12 +127,12 @@ vim /etc/hosts:
 
 # root password
 passwd root
-<<< type password >>> 
+<<< type password >>>
 
 # Add users
 useradd -m -g users -s /bin/bash/dgloor
 passwd dgloor
-<<< type password >>> 
+<<< type password >>>
 
 # Set sudo stuff
 vim /etc/sudoers
@@ -154,7 +155,7 @@ systemctl enable sshd
 ### Install Linux Stable Kernel
 
 ```bash
-pacman -S linux linux-firmware linux-headers mkinitcpio 
+pacman -S linux linux-firmware linux-headers mkinitcpio
 ```
 
 ### Grub setup, dual boot
@@ -179,8 +180,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ### Exit and reboot
 
 ```bash
-exit 
-umount -R /mnt 
+exit
+umount -R /mnt
 reboot
 ```
 
@@ -247,7 +248,7 @@ xdg-users-dirs-update
 ### Audio & video
 
 ```bash
-pacman -S pulseaudio pavucontrol pulseaudio-alsa  pulseaudio-equalizer 
+pacman -S pulseaudio pavucontrol pulseaudio-alsa  pulseaudio-equalizer
 pacman -S playerctl pamixer mpv
 paru -S spotify spotify-adblock
 ```
@@ -306,7 +307,7 @@ paru -S alacritty firefox github-cli # essentials
 pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
 pacman -S bspwm sxhkd rofi xsel xdo wmctrl
 paru -S bsp-layout polybar picom
-pacman -S 
+pacman -S
 
 # Bspwm & Sxhkd initial config
 mkdir -p ~/.config/{bspwm,sxhkd}
@@ -315,7 +316,7 @@ install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 chmod u+x ~/.config/bspwm/bspwmrc
 setxkbmap latam # latam keyboard layout
 # TODO: replace terminal in sxhkdrc
-# super + Return 
+# super + Return
 #   alacritty
 
 # Polybar initial config
@@ -367,7 +368,7 @@ paru -S lf dragon-drag-and-drop
 ### Software development
 
 ```bash
-pacman -S bpython lazygit gnome-keyring
+pacman -S python-pip bpython clang lazygit gnome-keyring
 paru -S color-picker figma-linux neovim-git visual-studio-code-bin
 ```
 
@@ -414,5 +415,5 @@ pacman -S numlockx
 pacman -S dunst bat lsd neofetch redshift redshift screenkey
 pacman -S speedtest-cli xwallpaper tty-clock
 pacman -S lxappearance pacman-contrib sysstat zip
-paru -S bottom cpufetch-git duf pfetch 
+paru -S bottom cpufetch-git duf pfetch
 ```

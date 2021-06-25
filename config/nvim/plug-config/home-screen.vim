@@ -38,7 +38,7 @@ let g:startify_bookmarks = [
 
 " Colors
 highlight StartifyHeader  ctermfg=0
-highlight StartifyPath    ctermfg=245
+" highlight StartifyPath    ctermfg=245
 " highlight StartifyNumber  ctermfg=215
 " highlight StartifyBracket ctermfg=240
 " highlight StartifyFile    ctermfg=240

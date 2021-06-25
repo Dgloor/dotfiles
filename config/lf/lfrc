@@ -151,6 +151,7 @@ map dc cpdragon
 map gt cd ~/.local/share/Trash/files
 map gc cd ~/.config
 map gs cd ~/.scripts
+map gm cd /run/media
 
 # autojump
 map J push :j<space>
