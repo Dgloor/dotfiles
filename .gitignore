@@ -1,6 +1,7 @@
 # Nvim stff
-config/nvim/autoload/plugged/
+config/nvim/autoload/
 config/nvim/session/
+config/nvim/.netrwhist
 
 # Mpv stuff
 config/mpv/scripts/total_playtime.list

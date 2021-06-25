@@ -83,6 +83,6 @@ bspc rule -a app.App state=floating
 bspc rule -a matplotlib state=floating
 bspc rule -a Droidcam state=tiled
 bspc rule -a Com.github.ronnydo.colorpicker state=tiled
-#bspc rule -a mpv state=fullscreen
+# bspc rule -a mpv state=fullscreen
 # bspc rule -a Gnome-pomodoro state=floating
 # bspc rule -a Anki state=fullscreen
