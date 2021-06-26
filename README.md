@@ -26,9 +26,10 @@
 ## Fonts
 
 - nerd-fonts-complete
-- noto
+- noto-fonts && noto-fonts-emoji
 - ttf-dejavu
 - ttf-ms-fonts
+- ttf-jetbrains-mono
 
 ## Aur Helper
 
@@ -53,14 +54,12 @@
 ## CLI
 
 - [Autojump-rs](https://github.com/xen0n/autojump-rs)
-- [Glow](https://github.com/charmbracelet/glow) - markdown render reader
 - [Lf](https://github.com/gokcehan/lf) - terminal file manager written in go
-  - [Pistol](https://github.com/doronbehar/pistol) - file previewer
   - [Dragon](https://github.com/mwh/dragon) - drag & drop source/target for X
 - [Fontpreview-ueberzug-git](https://github.com/OliverLew/fontpreview-ueberzug) - Minimal font previewer
 - [Starship](https://github.com/starship/starship) - minimalist shell prompt
 - [Trash-cli](https://wiki.archlinux.org/index.php/Trash_management) - garbage manager
-- [Zsh](https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol))
+- [Zsh](<https://wiki.archlinux.org/index.php/Zsh_(Espa%C3%B1ol)>)
 
 ## Software Development
 
@@ -73,6 +72,7 @@
 - [Neovim](https://github.com/neovim/neovim)
 - Visual-studio-code-bin
   - gnome-keyring
+- Rstudio-desktop-bin
 
 ## Comunication
 
@@ -90,6 +90,7 @@
 ## Office
 
 - [Zathura](https://wiki.archlinux.org/title/zathura) - document viewer with vi-style keybindings
+- Libreoffice-fresh - Office suit
 
 ## Search
 
@@ -104,7 +105,7 @@
 
 ## Keyboard stuff
 
-- [Numlockx](https://wiki.archlinux.org/title/Activating_numlock_on_bootup_(Espa%C3%B1ol)) - active num lock on start
+- [Numlockx](<https://wiki.archlinux.org/title/Activating_numlock_on_bootup_(Espa%C3%B1ol)>) - active num lock on start
 
 ## Media & Entertaiment
 

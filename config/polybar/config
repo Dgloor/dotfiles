@@ -66,10 +66,12 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
 
 modules-left = arch-logo bspwm 
 modules-center = date
-modules-right = updates cpu-temperature cpu memory pulseaudio keyboard 
+modules-right = updates cpu-temperature cpu memory pulseaudio xkeyboard 
 
 tray-position = right
 tray-padding = 3
+tray-scale = 1
+tray-maxsize = 15
 
 cursor-click = pointer
 cursor-scroll = default
@@ -161,14 +163,12 @@ ramp-volume-1 = 🔉
 ramp-volume-2 = 🔊
 click-right = pavucontrol
 
-[module/keyboard]
-type=custom/script
-exec= setxkbmap -query | awk 'NR == 3 {print($2)}'
-label = ⌨️ %output%
-interval = 1
-click-left = setxkbmap latam
-click-right = setxkbmap dvorak
-layout-underline = ${colors.secondary}
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = caps lock
+format = ⌨️ <label-layout>
+format-spacing = 0
 
 ; to review
 ;[module/date]
@@ -222,3 +222,11 @@ layout-underline = ${colors.secondary}
 ;scroll-up = ~/.scripts/polybar/polytimer increase 60 || ~/.scripts/polybar/polytimer new 1 '🍅 :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
 ;scroll-down = ~/.scripts/polybar/polytimer increase -60 ; ~/.scripts/polybar/polytimer update %pid%
 
+;[module/keyboard]
+;type =custom/script
+;exec = setxkbmap -query | awk 'NR == 3 {print($2)}'
+;label = ⌨️ %output%
+;interval = 1
+;click-left = setxkbmap latam
+;click-right = setxkbmap dvorak
+;layout-underline = ${colors.secondary}

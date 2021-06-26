@@ -13,7 +13,7 @@ xwallpaper --zoom ~/.config/wall.jpg &
 
 # Keyboard Stuff
 numlockx &
-setxkbmap latam
+setxkbmap latam &
 
 # Nofications
 # dunst &

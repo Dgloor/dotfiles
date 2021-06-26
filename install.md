@@ -5,7 +5,7 @@
 ### Keyboard and font setup
 
 ```bash
-setfont ter-132n
+setfont ter-p20n
 
 loadkeys es
 loadkeys la-latin
@@ -142,7 +142,7 @@ vim /etc/sudoers
 
 ```bash
 pacman -S networkmanager ifplugd
-systemctl enable Networkmanager
+systemctl enable NetworkManager
 
 pacman -S openssh
 systemctl enable sshd
@@ -159,7 +159,6 @@ pacman -S linux linux-firmware linux-headers mkinitcpio
 ```bash
 pacman -S grub efibootmgr os-prober
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Arch
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --removable
 
 vim /etc/default/grub
 
@@ -209,12 +208,15 @@ sudo vim /etc/pacman.conf
 Color
 Total Download
 CheckSpace
+# add:
+ILoveCandy
+
 # ...
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 
-# TODO: add:
-ILoveCandy
+# After:
+pacman -Syy
 ```
 
 ## Extra Packages Installation
@@ -244,77 +246,86 @@ LC_ALL=C xdg-users-dirs-update --force
 ### AUR Helper - Paru
 
 ```bash
+# Before install Paru:
+exit
+# TODO: Login as no-root user
+
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+
+cd ..
 ```
 
 ### Audio & video
 
 ```bash
-pacman -S pulseaudio pavucontrol pulseaudio-alsa pulseaudio-equalizer
-pacman -S playerctl pamixer mpv
+sudo pacman -S pulseaudio pavucontrol pulseaudio-alsa pulseaudio-equalizer
+sudo pacman -S playerctl pamixer mpv
 paru -S spotify spotify-adblock
 ```
 
 ### Archivers
 
 ```bash
-pacman -S xarchiver gzip tar zip p7zip unzip unrar
+sudo pacman -S xarchiver gzip tar zip p7zip unzip unrar
 ```
 
 ### Disk utils
 
 ```bash
-pacman -S libcddb gvfs gvfs-mtp ntfs-3g exfat-utils gpart
-paru -S simple-mptfs
+sudo pacman -S libcddb gvfs gvfs-mtp ntfs-3g exfat-utils gpart
+paru -S simple-mtpfs
 ```
 
 ### Display Manager: Ly
 
 ```bash
-pacman -S xorg xorg-xinit xterm
+sudo pacman -S xorg xorg-xinit xterm
 paru -S ly
 
-systemctl enable ly.service
+sudo systemctl enable ly.service
 ```
 
 ### Utilities for DE and WM's
 
 ```bash
-udiskie network-manager-applet udisks2 udiskie
+sudo pacman -S udiskie network-manager-applet udisks2
 ```
 
 ### Fonts
 
 ```bash
 # fc-list <- to see all fonts
-pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts ttf-font-awesome
-paru -S nerd-fonts-complete
+sudo pacman -S noto-fonts noto-fonts-emoji ttf-dejavu
+sudo pacman -S ttf-liberation ttf-font-awesome ttf-jetbrains-mono
+paru -S ttf-ms-fonts nerd-fonts-complete
 ```
 
-### XCFE
+### XFCE
 
 ```bash
-pacman -S xcfe-4 xcfe4-goodies
+sudo pacman -S xfce4 xfce4-goodies
 paru -S alacritty firefox github-cli # essentials
+
+# TODO:
+# logout and login "xfce4 session"
+setxkbmap latam # latam keyboard layout
 ```
 
 ### Bswpm
 
 ```bash
-pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
-pacman -S bspwm sxhkd rofi xsel xdo wmctrl
-paru -S bsp-layout polybar picom
-pacman -S
+sudo pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
+sudo pacman -S bspwm sxhkd rofi xsel xdo wmctrl
+paru -S bsp-layout polybar picom rofi-emoji
 
 # Bspwm & Sxhkd initial config
 mkdir -p ~/.config/{bspwm,sxhkd}
 install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
 install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 chmod u+x ~/.config/bspwm/bspwmrc
-setxkbmap latam # latam keyboard layout
 # TODO: replace terminal in sxhkdrc
 # super + Return
 #   alacritty
@@ -342,25 +353,28 @@ cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
 ### Apps
 
 ```bash
-pacman -S copyq flameshot sxiv rofi
+sudo pacman -S copyq flameshot sxiv
 paru -S anydesk-bin bitwarden balena-etcher google-chrome mailspring
 ```
 
 ### CLI
 
 ```bash
-pacman -S starship trash-cli zsh zsh-autosuggestions zsh-syntax-highlighting
+sudo pacman -S starship trash-cli zsh zsh-autosuggestions zsh-syntax-highlighting
 paru -S autojump-rs fontpreview-ueberzug-git
 
+# make zsh the default shell
+chsh -s /bin/zsh
+
 # lf stuff
-pacman -S python-pdftotext mediainfo bat catdoc docx2txt
+sudo pacman -S python-pdftotext mediainfo bat catdoc docx2txt
 paru -S lf dragon-drag-and-drop
 ```
 
 ### Software development
 
 ```bash
-pacman -S python-pip bpython clang lazygit gnome-keyring
+sudo pacman -S python-pip bpython clang lazygit gnome-keyring
 paru -S color-picker figma-linux neovim-git visual-studio-code-bin
 ```
 
@@ -379,33 +393,34 @@ paru -S anki obsidian
 ### Office
 
 ```bash
-pacman -S zathura zathura-pdf-mupdf
+sudo pacman -S zathura zathura-pdf-mupdf
+sudo pacman -S libreoffice-fresh libreoffice-fresh-es
 ```
 
 ### Search
 
 ```bash
-pacman -S fd fzf ripgrep
+sudo pacman -S fd fzf ripgrep
 ```
 
 ### Edition & Video recorders
 
 ```bash
-pacman -S obs-studio simplescreenrecorder
-paru -S gimp olive
+sudo pacman -S obs-studio simplescreenrecorder gimp
+paru -S olive
 ```
 
 ### Keyboard stuff
 
 ```bash
-pacman -S numlockx
+sudo pacman -S numlockx
 ```
 
 ### Utilities
 
 ```bash
-pacman -S dunst bat lsd neofetch redshift redshift screenkey
-pacman -S speedtest-cli xwallpaper tty-clock
-pacman -S lxappearance pacman-contrib sysstat zip
-paru -S bottom cpufetch-git duf pfetch
+sudo pacman -S dunst lsd neofetch redshift screenkey
+sudo pacman -S speedtest-cli xwallpaper
+sudo pacman -S lxappearance pacman-contrib sysstat
+paru -S bottom cpufetch-git duf pfetch tty-clock
 ```

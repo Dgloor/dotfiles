@@ -11,25 +11,20 @@ LNDIR       = ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
 LNFILE      = ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 
 # TARGETS
-APPS        = zsh scripts \
-						  alacritty bottom bspwm copyq dunst \
-						  flameshot lsd lf mpv nvim paru picom \
-							polybar rofi zathura \
-							mimeapps.list screenkey.json starship.toml
-
-#DIRECTORY 	:= $(sort $(dir $(wildcard $(DOTCONFIGS)/*/)))
+APPS        = zsh scriptsdir \
+              alacritty bottom bspwm sxhkd copyq dunst \
+              flameshot lsd lf mpv nvim paru picom \
+              polybar rofi zathura \
+              mimeapps.list screenkey.json starship.toml
 
 install: $(APPS)
 	echo "Now you can 4rch in peace."
-
-#test:
-#	echo ln -sf $(DIRECTORY)
 
 zsh:
 	ln -sf $(DOTCONFIGSF)/.zshrc $(HOME)/.zshrc
 	ln -sf $(DOTCONFIGSF)/.zshenv $(HOME)/.zshenv
 
-scripts:
+scriptsdir:
 	ln -sf $(DOTS)/scripts $(HOME)/.scripts
 
 alacritty:
