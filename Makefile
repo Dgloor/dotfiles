@@ -1,91 +1,106 @@
-# Directories
-HOME		= /home/dgloor
-CONFIGS		= $(HOME)/.config
-DOTS		= $(HOME)/repos/dotfiles
-DOTCONFIGS	= $(DOTS)/config
-DOTCONFIGSF 	= $(DOTS)/config-sf
+# DIRECTORIES
+HOME        = /home/dgloor
+CONFIGS     = $(HOME)/.config
+DOTS        = $(HOME)/repos/dotfiles
+DOTCONFIGS  = $(DOTS)/config
+DOTCONFIGSF = $(DOTS)/config-sf
 
-RMDIR		= [ -d $(DOTCONFIGS)/$@ ] && rm -rf $(CONFIGS)/$@
-LNDIR		= ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
-LNFILE		= ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
-MSG		= echo "== $@ configurado correctamente =="
+# ACTIONS
+RMDIR       = [ -d $(DOTCONFIGS)/$@ ] && rm -rf $(CONFIGS)/$@
+LNDIR       = ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
+LNFILE      = ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 
-main: alacritty bottom bspwm copyq dunst flameshot lsd lf mpv nvim picom polybar rofi zathura mimeapps.list screenkey.json starship.toml zsh scripts
-	echo "Todo configurado correctamente"
+# TARGETS
+APPS        = zsh scripts \
+						  alacritty bottom bspwm copyq dunst \
+						  flameshot lsd lf mpv nvim paru picom \
+							polybar rofi zathura \
+							mimeapps.list screenkey.json starship.toml
 
-alacritty:
-	$(RMDIR)
-	$(LNDIR) && $(MSG)
+#DIRECTORY 	:= $(sort $(dir $(wildcard $(DOTCONFIGS)/*/)))
 
-bottom:
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
+install: $(APPS)
+	echo "Now you can 4rch in peace."
 
-bspwm:
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-copyq:
-	$(RMDIR)
-	$(LNDIR) && $(MSG)
-
-dunst:
-	$(RMDIR)
-	$(LNDIR) && $(MSG)
-
-flameshot:
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-lf:
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-lsd:
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-mpv:
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-nvim: 
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-picom: 
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-rofi: 
-	$(RMDIR)
-	$(LNDIR) && $(MSG)
-
-polybar: 
-	$(RMDIR)
-	$(LNDIR) && $(MSG)
-
-sxhkd: 
-	$(RMDIR)
-	$(LNDIR) && $(MSG)
-
-zathura:
-	$(RMDIR) 
-	$(LNDIR) && $(MSG)
-
-mimeapps.list:
-	$(LNFILE) && $(MSG)
-
-screenkey.json: 
-	$(LNFILE) && $(MSG)
-
-starship.toml:
-	$(LNFILE) && $(MSG)
+#test:
+#	echo ln -sf $(DIRECTORY)
 
 zsh:
 	ln -sf $(DOTCONFIGSF)/.zshrc $(HOME)/.zshrc
 	ln -sf $(DOTCONFIGSF)/.zshenv $(HOME)/.zshenv
-	$(MSG)
 
 scripts:
 	ln -sf $(DOTS)/scripts $(HOME)/.scripts
+
+alacritty:
+	$(RMDIR)
+	$(LNDIR)
+
+bottom:
+	$(RMDIR)
+	$(LNDIR)
+
+bspwm:
+	$(RMDIR)
+	$(LNDIR)
+
+copyq:
+	$(RMDIR)
+	$(LNDIR)
+
+dunst:
+	$(RMDIR)
+	$(LNDIR)
+
+flameshot:
+	$(RMDIR)
+	$(LNDIR)
+
+lf:
+	$(RMDIR)
+	$(LNDIR)
+
+lsd:
+	$(RMDIR)
+	$(LNDIR)
+
+mpv:
+	$(RMDIR)
+	$(LNDIR)
+
+nvim:
+	$(RMDIR)
+	$(LNDIR)
+
+paru:
+	$(RMDIR)
+	$(LNDIR)
+
+picom:
+	$(RMDIR)
+	$(LNDIR)
+
+polybar:
+	$(RMDIR)
+	$(LNDIR)
+
+rofi:
+	$(RMDIR)
+	$(LNDIR)
+
+sxhkd:
+	$(RMDIR)
+	$(LNDIR)
+
+zathura:
+	$(RMDIR)
+	$(LNDIR)
+
+mimeapps.list:
+	$(LNFILE)
+
+screenkey.json:
+	$(LNFILE)
+
+starship.toml:
+	$(LNFILE)

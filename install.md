@@ -74,7 +74,6 @@ pacstrap /mnt dhcpcd netctl iwd net-tools
 
 # Wifi stuff
 pacstratp /mnt wireless_tools dialog wpa_supplicant
-
 ```
 
 ### Write partition table
@@ -118,7 +117,6 @@ vim /etc/hosts:
 # 127.0.0.1 [tab] localhost
 # ::1       [tab] localhost
 # 127.0.1.1 [tab] Jarvis.localdomain Jarvis
-
 ```
 
 ### Set Users
@@ -138,7 +136,6 @@ passwd dgloor
 vim /etc/sudoers
 # below "root ALL=(ALL) ALL" write:
 # dgloor ALL=(ALL) ALL
-
 ```
 
 ### Install Internet packages
@@ -146,7 +143,6 @@ vim /etc/sudoers
 ```bash
 pacman -S networkmanager ifplugd
 systemctl enable Networkmanager
-
 
 pacman -S openssh
 systemctl enable sshd
@@ -226,12 +222,12 @@ ILoveCandy
 ### Drivers
 
 ```bash
-pacman -S pfetch amd-ucode #or intel-ucode
+pacman -S mesa amd-ucode #or intel-ucode
 
 # drivers amd
 pacman -S mesa lib32-mesa
 pacman -S xf86-video-amdgpu
-pacman -S vulkan-radcon lib32-vulkan-radeon
+pacman -S vulkan-radeon lib32-vulkan-radeon
 
 # drivers intel
 pacman -S mesa lib32-mesa
@@ -242,32 +238,7 @@ pacman -S xf86-video-intel vulkan-intel
 
 ```bash
 pacman -S xdg-user-dirs
-xdg-users-dirs-update
-```
-
-### Audio & video
-
-```bash
-pacman -S pulseaudio pavucontrol pulseaudio-alsa  pulseaudio-equalizer
-pacman -S playerctl pamixer mpv
-paru -S spotify spotify-adblock
-```
-
-### Archivers
-
-```bash
-pacman -S ark xarchiver unarchiver binutils gzip lha lrzip
-pacman -S lzip lz4 p7zip tar xz bzip2 p7zip lbzip2 arj lzop
-pacman -S cpio unrar unzip zstd zip lzip unarj zstd
-```
-
-### Disk utils
-
-```bash
-pacman -S android-file-transfer android-tools msmtp
-pacman -S libcddb gvfs gvfs-afc gvfs-smb gvfs-gphoto2 gvfs-mtp
-pacman -S gvfs-goa gvfs-nfs gvfs-google
-pacman -S ntfs-3g exfat-utils udftools gpart mtools
+LC_ALL=C xdg-users-dirs-update --force
 ```
 
 ### AUR Helper - Paru
@@ -277,6 +248,27 @@ sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+```
+
+### Audio & video
+
+```bash
+pacman -S pulseaudio pavucontrol pulseaudio-alsa pulseaudio-equalizer
+pacman -S playerctl pamixer mpv
+paru -S spotify spotify-adblock
+```
+
+### Archivers
+
+```bash
+pacman -S xarchiver gzip tar zip p7zip unzip unrar
+```
+
+### Disk utils
+
+```bash
+pacman -S libcddb gvfs gvfs-mtp ntfs-3g exfat-utils gpart
+paru -S simple-mptfs
 ```
 
 ### Display Manager: Ly
@@ -291,13 +283,21 @@ systemctl enable ly.service
 ### Utilities for DE and WM's
 
 ```bash
-udiskie gvfs network-manager-applet udisks2 udiskie
+udiskie network-manager-applet udisks2 udiskie
+```
+
+### Fonts
+
+```bash
+# fc-list <- to see all fonts
+pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts ttf-font-awesome
+paru -S nerd-fonts-complete
 ```
 
 ### XCFE
 
 ```bash
-pacman -S xcfe-4 xcfe4-goodies  gvfs
+pacman -S xcfe-4 xcfe4-goodies
 paru -S alacritty firefox github-cli # essentials
 ```
 
@@ -339,18 +339,10 @@ mkdir -p ~/.config/picom
 cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
 ```
 
-### Fonts
-
-```bash
-# fc-list <- to see all fonts
-pacman -S ttf-dejavu ttf-liberation ttf-ms-fonts ttf-font-awesome
-paru -S nerd-fonts-complete
-```
-
 ### Apps
 
 ```bash
-pacman -S copyq xsel flameshot sxiv rofi
+pacman -S copyq flameshot sxiv rofi
 paru -S anydesk-bin bitwarden balena-etcher google-chrome mailspring
 ```
 
