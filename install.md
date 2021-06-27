@@ -375,7 +375,8 @@ paru -S lf dragon-drag-and-drop
 
 ```bash
 sudo pacman -S python-pip bpython clang lazygit gnome-keyring
-paru -S color-picker figma-linux neovim-git visual-studio-code-bin
+paru -S visual-studio-code-bin neovim-git
+paru -S color-picker figma-linux
 ```
 
 ### Comunication
@@ -420,7 +421,7 @@ sudo pacman -S numlockx
 
 ```bash
 sudo pacman -S dunst lsd neofetch redshift screenkey
-sudo pacman -S speedtest-cli xwallpaper
+sudo pacman -S speedtest-cli xwallpaper wget
 sudo pacman -S lxappearance pacman-contrib sysstat
 paru -S bottom cpufetch-git duf pfetch tty-clock
 ```

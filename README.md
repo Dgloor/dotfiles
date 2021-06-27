@@ -65,21 +65,18 @@
 
 ## Software Development
 
+- [Neovim](https://github.com/neovim/neovim)
 - [Bpython](https://github.com/bpython/bpython) - python interactive interpreter shell
 - Color-picker - A color picker for Elementary OS
 - [Figma-linux](https://www.figma.com/) - Interface design tool
 - [Lazygit](https://github.com/jesseduffield/lazygit) - git gui
-- [Intellij-idea-community-edition](https://www.jetbrains.com/es-es/idea/)
 - Netbeans 11
-- [Neovim](https://github.com/neovim/neovim)
-- Visual-studio-code-bin
-  - gnome-keyring
 - Rstudio-desktop-bin
 
 ## Comunication
 
 - Discord
-- Whatdesk-bin
+- Whatdesk-nativefier
 - Telegram
 - Zoom
 
