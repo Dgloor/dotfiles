@@ -1,10 +1,10 @@
 {
 	"name": "Vimium C",
-	"@time": "9/6/2021 17:06:14",
-	"time": 1623276374166,
+	"@time": "27/6/2021 18:27:04",
+	"time": 1624836424699,
 	"environment": {
-		"extension": "1.90.0",
-		"platform": "win",
+		"extension": "1.90.2",
+		"platform": "linux",
 		"chrome": 91
 	},
 	"autoDarkMode": false,
@@ -40,6 +40,10 @@
 		{
 			"passKeys": "",
 			"pattern": ":https://classroom.udacity.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://teleriumtv.com/"
 		}
 	],
 	"keyMappings": [
@@ -103,17 +107,22 @@
 	"showInIncognito": true,
 	"userDefinedCss": [
 		"/* #omni */",
-		"#bar { background: #282B34; }",
-		"#list { background: #282B34; }",
-		"#input { background: #1C1E24; }",
+		"#bar { background: #1E1F29; }",
+		"#list { background: #1E1F29; }",
+		"#input { background: #1E1F29; }",
+		".title { color: #F8F8F2; }",
+		".item a { color: #7C809C }",
+		".item:hover{ background-color: #44475A; }",
+		".item.s { background: #44475A; }",
+		"match { color: #CAA9FA; }",
 		""
 	],
 	"vimSync": true,
 	"vomnibarOptions": {
 		"actions": "",
 		"maxMatches": 8,
-		"queryInterval": 5,
+		"queryInterval": 333,
 		"sizes": "77,3,44",
-		"styles": "dark"
+		"styles": "mono-url"
 	}
 }
