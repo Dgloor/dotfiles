@@ -1,10 +1,11 @@
 #!/bin/sh
 
+# List all man pages and open the selected one in a terminal.
+
 choice=$(man -k . |
   awk '{ print $1 }' |
-  rofi -dmenu -i -p "man-pages" \
-    -sort -sorting-method fzf)
+  rofi -dmenu -i -p "man-pages" -sort -sorting-method fzf)
 
 if [ $choice ]; then
-  alacritty -e man $choice
+  $TERMINAL -e man $choice
 fi

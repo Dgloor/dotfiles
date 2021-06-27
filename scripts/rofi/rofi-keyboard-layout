@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Set the selected x keyboard layout
+
+_rofi() {
+    rofi \
+        -dmenu \
+        -i \
+        -width 30 \
+        -lines 3 \
+        -no-custom true \
+        -disable-history true \
+        -p "Keys" \
+        -sep '|' \
+        "$@"
+}
+
+OPTIONS="latam|dvorak|it"
+ENTRY=$(echo "$OPTIONS" | _rofi)
+
+setxkbmap $ENTRY

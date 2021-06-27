@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 awk '/^[a-zA-Z]/ && last {print "",$0,"\t",last,""} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc{,.common} |
     column -t -s $'\t' |

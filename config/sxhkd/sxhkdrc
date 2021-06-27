@@ -272,7 +272,11 @@ super + shift + u
 
 # Rofi - Powermenu
 super + shift + p
-	~/.scripts/rofi/rofi-powermenu
+	~/.scripts/rofi/rofi-powermenu &
+
+# Change Keyboard Layout
+super + space
+	~/.scripts/rofi/rofi-keyboard-layout &
 
 # Bswpm - Toggle Window Gaps
 #super + ctrl + g

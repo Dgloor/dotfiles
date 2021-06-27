@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 _rofi() {
     rofi \
@@ -13,20 +13,20 @@ _rofi() {
         "$@"
 }
 
-LINES="Restart|Log out|Suspend|Power off"
-CHENTRY=$(echo "$LINES" | _rofi)
+OPTIONS="Restart|Log out|Suspend|Power off"
+ENTRY=$(echo "$OPTIONS" | _rofi)
 
-if [ "$CHENTRY" = "Restart" ]; then
-    alacritty -e sudo reboot
+if [ "$ENTRY" = "Restart" ]; then
+    $TERMINAL -e sudo reboot
 
-elif [ "$CHENTRY" = "Log out" ]; then
+elif [ "$ENTRY" = "Log out" ]; then
     bspc quit
 
-elif [ "$CHENTRY" = "Suspend" ]; then
-    alacritty -e systemctl suspend
+elif [ "$ENTRY" = "Suspend" ]; then
+    $TERMINAL -e systemctl suspend
 
-elif [ "$CHENTRY" = "Power off" ]; then
-    alacritty -e sudo poweroff
+elif [ "$ENTRY" = "Power off" ]; then
+    $TERMINAL -e sudo poweroff
 
 else
     echo "err"
