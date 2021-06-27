@@ -424,3 +424,10 @@ sudo pacman -S speedtest-cli xwallpaper
 sudo pacman -S lxappearance pacman-contrib sysstat
 paru -S bottom cpufetch-git duf pfetch tty-clock
 ```
+
+### Theme
+
+```bash
+sudo pacman -S kvantum-qt5
+paru -S ant-dracula-kvantum-theme-git
+```

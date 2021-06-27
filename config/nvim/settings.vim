@@ -28,6 +28,7 @@ set relativenumber                      " Show numbers relative to current line
 set ruler																" Show the cursor position all the time
 set scrolloff=3                         " Min number of screen lines to keep above and below the cursor 
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set softtabstop=2                       " Number of space to insert for a <Tab>
 set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 set showtabline=2                       " Always show tabs
 set signcolumn=yes                      " Draw a signcolumn
