@@ -6,7 +6,7 @@ DOTCONFIGS  = $(DOTS)/config
 DOTCONFIGSF = $(DOTS)/config-sf
 
 # ACTIONS
-RMDIR       = [ -d $(DOTCONFIGS)/$@ ] && rm -rf $(CONFIGS)/$@
+RMDIR       = [ -d $(CONFIGS)/$@ ] && rm -rf $(CONFIGS)/$@
 LNDIR       = ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
 LNFILE      = ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 
