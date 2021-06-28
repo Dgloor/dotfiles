@@ -11,10 +11,12 @@ export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 export FZF_DEFAULT_OPTS="--ansi"
 
 # Deafult Apps
+export FILE_EXPLORER="thunar"
+export WEB_BROWSER="brave"
+export TERMINAL="alacritty"
+export READER="zathura"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export READER="zathura"
-export TERMINAL="alacritty"
 export IMAGE="sxiv"
 export PAGER="less"
 

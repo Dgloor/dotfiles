@@ -49,11 +49,7 @@ nnoremap <C-w> :bdelete<CR>
 nnoremap <leader>z :Goyo<CR>
 
 " Floaterm
-nnoremap <leader>g :FloatermNew lazygit<CR>
 nnoremap <leader>r :FloatermNew lf<CR>
-nnoremap <leader>p :FloatermNew python<CR>
-nnoremap <leader>f :FloatermNew fzf<CR>
+nnoremap <leader>fp :FloatermNew python<CR>
+nnoremap <leader>ff :FloatermNew fzf<CR>
 "nnoremap <leader>m :MarkdownPreview<CR>
-
-" NerdTree
-nnoremap <silent> <leader>e :NERDTreeToggle<CR>

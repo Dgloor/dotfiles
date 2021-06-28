@@ -4,7 +4,7 @@
 
 # Open Terminal
 super + Return
-	alacritty
+	$TERMINAL
 	
 # Run App Launcher
 super + shift + {Return,o}
@@ -20,11 +20,11 @@ super + period
 
 # File Explorer
 super + e 
-	thunar
+	$FILE_EXPLORER
 
 # Browser
 super + w
-	google-chrome-stable
+	$WEB_BROWSER
 
 # Music Player
 XF86HomePage

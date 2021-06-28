@@ -9,9 +9,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-" File Explorer
-Plug 'scrooloose/NERDTree'
-
 " Cool Icons
 Plug 'ryanoasis/vim-devicons'
 
@@ -44,17 +41,20 @@ Plug 'voldikss/vim-floaterm'
 
 " Git
 Plug 'mhinz/vim-signify'
-"Plug 'tpope/vim-fugitive'
-"Plug 'junegunn/gv.vim'
-
-" HTML & CSS
-"Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 
 " Zen mode
 Plug 'junegunn/goyo.vim'
 
+" HTML & CSS
+"Plug 'mattn/emmet-vim'
+
 " Markown
 "Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+" File Explorer
+" Plug 'scrooloose/NERDTree'
 
 call plug#end()
 
