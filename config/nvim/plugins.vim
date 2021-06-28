@@ -10,7 +10,7 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
 " File Explorer
-" Plug 'scrooloose/NERDTree'
+Plug 'scrooloose/NERDTree'
 
 " Cool Icons
 Plug 'ryanoasis/vim-devicons'

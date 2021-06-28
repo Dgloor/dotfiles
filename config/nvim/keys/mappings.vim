@@ -40,6 +40,10 @@ nnoremap <silent> <S-TAB> :bprevious<CR>
 nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>h :split<CR>
 
+" Buffers
+nnoremap <C-w> :bdelete<CR>
+
+
 " ====== Plugins Stuff =====
 ":Goyo
 nnoremap <leader>z :Goyo<CR>
@@ -51,3 +55,5 @@ nnoremap <leader>p :FloatermNew python<CR>
 nnoremap <leader>f :FloatermNew fzf<CR>
 "nnoremap <leader>m :MarkdownPreview<CR>
 
+" NerdTree
+nnoremap <silent> <leader>e :NERDTreeToggle<CR>
