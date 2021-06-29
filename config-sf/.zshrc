@@ -163,6 +163,8 @@ alias ss='sudo systemctl '
 alias ttime='tty-clock -S -c -b -n '
 alias nspeed='speedtest-cli '
 alias neofetch='neofetch --ascii ~/.config/neofetch/ascii'
+alias gw='gcc -Wall '
+alias gws='gcc -Wall -fsanitize=address,undefined '
 
 # ========== Aps Scritps ========== #
 # Autojump into Lf

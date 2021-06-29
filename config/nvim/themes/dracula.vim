@@ -4,5 +4,5 @@ colorscheme dracula
 highlight Normal guibg=NONE
 
 " Airline theme
-" let g:airline_theme = 'dracula'
+let g:airline_theme = 'dracula'
 

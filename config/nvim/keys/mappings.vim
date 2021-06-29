@@ -4,9 +4,7 @@ nnoremap <Space> <Nop>
 
 " Fuck Esc
 inoremap ññ <Esc>
-inoremap ÑÑ <Esc>
-
-" Quickly remove search highlights
+inoremap ÑÑ <Esc> " Quickly remove search highlights
 nmap <C-n> :nohl<CR>
 
 " Alternate way to save
@@ -53,8 +51,9 @@ nnoremap <leader>z :Goyo<CR>
 
 " Floaterm
 nnoremap <leader>r :FloatermNew lf<CR>
+nnoremap <leader>fg :FloatermNew lazygit<CR>
 nnoremap <leader>fp :FloatermNew python<CR>
-nnoremap <leader>ff :FloatermNew fzf<CR>
+nnoremap <leader>ff :FloatermNew fzf<CRk
 "nnoremap <leader>m :MarkdownPreview<CR>
 
 " Git Stuff

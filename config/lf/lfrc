@@ -1,6 +1,6 @@
 # ========== Basic Settings ========== #
 set preview true
-set drawbox true 
+set drawbox true
 set info size
 set icons true
 set ignorecase true
@@ -91,18 +91,18 @@ cmd mvdragon %mvdragon
 
 # ========== Key Bingings ========== #
 # Remove some defaults
-map m 
-map w 
-map n 
+map m
+map w
+map n
 map "'"
 map '"'
 map c
 map d
-map e 
-map f 
+map e
+map f
 map u
-map x 
-map y 
+map x
+map y
 
 # Open
 map ee $$EDITOR "$f"
@@ -127,15 +127,15 @@ map msf sudomkfile
 map x setwallpaper
 
 
-# Archive 
+# Archive
 map az zip
-map at tar 
+map at tar
 map ag targz
 map ab targz
 map au unarchive
 
-# Trash 
-map DD trash 
+# Trash
+map DD trash
 map tc clear_trash
 map tr restore_trash
 

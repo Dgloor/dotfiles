@@ -1,6 +1,6 @@
 #!/bin/sh
 
-bspc rule -r "*" 
+bspc rule -r "*"
 
 # ========== AutoStart  ========== #
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -8,7 +8,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Wallpaper
 xwallpaper --zoom ~/.config/wall.jpg &
 
-# Bar 
+# Bar
 ~/.scripts/polybar/launchpolybar &
 
 # Keyboard Stuff
@@ -24,10 +24,10 @@ xset r rate 200 30 &
 # Compositor
 picom &
 
-# Systray 
-copyq & 
+# Systray
+copyq
 # udiskie &
-# nm-applet & 
+# nm-applet &
 
 # Dwm swallow feature :D
 pgrep ~/.scripts/bspwm/bspwm-swallow || ~/.scripts/bspwm/bspwm-swallow &
