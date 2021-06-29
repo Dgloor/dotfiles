@@ -12,5 +12,8 @@ config/copyq/copyq-*
 config/copyq/copyq_*
 config/copyq/copyq.pub
 
+# Ranger stuff
+config/ranger/plugins
+
 # Scripts
 scripts/etc/emby

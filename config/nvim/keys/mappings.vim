@@ -43,6 +43,9 @@ nnoremap <leader>h :split<CR>
 " Buffers
 nnoremap <C-w> :bdelete<CR>
 
+" Format
+" nnoremap <C-A-l> :Format<CR>
+
 
 " ====== Plugins Stuff =====
 ":Goyo
