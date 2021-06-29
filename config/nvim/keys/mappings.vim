@@ -53,3 +53,10 @@ nnoremap <leader>r :FloatermNew lf<CR>
 nnoremap <leader>fp :FloatermNew python<CR>
 nnoremap <leader>ff :FloatermNew fzf<CR>
 "nnoremap <leader>m :MarkdownPreview<CR>
+
+" Git Stuff
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)
+nmap <leader>gJ 9999<leader>gj
+nmap <leader>gK 9999<leader>gk
+

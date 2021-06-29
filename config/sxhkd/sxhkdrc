@@ -5,21 +5,21 @@
 # Open Terminal
 super + Return
 	$TERMINAL
-	
+
 # Run App Launcher
 super + shift + {Return,o}
 	rofi -show {drun,run}
 
 # Window Switcher
-super + o 
+super + o
 	rofi -show window
 
 # Rofi emoji
-super + period
-	rofi -show emoji
+#super + period
+# rofi -show emoji
 
 # File Explorer
-super + e 
+super + e
 	$FILE_EXPLORER
 
 # Browser
@@ -34,20 +34,20 @@ XF86HomePage
 super + shift + i
 	copyq toggle
 
-# Redshift 
-super + {_,shift} + r 
+# Redshift
+super + {_,shift} + r
 	redshift {-O 4500,-x}
 
 # Screeshots
-super + shift + s 
+super + shift + s
 	flameshot gui
 
 # Toggle Compositor
 super + p
-	killall -q picom || picom 
+	killall -q picom || picom
 
 # Pomodoro
-#super + shift + p 
+#super + shift + p
 #	gnome-pomodoro
 
 # Mail Client
@@ -68,7 +68,7 @@ Print
 #
 
 # Quit bspwm
-#super + ctrl + t 
+#super + ctrl + t
 #	~/.scripts/rofi/rofi-prompt "Quit bspwm?" "bspc quit"
 
 # Close window
@@ -81,7 +81,7 @@ super + m
 	bspc desktop -l next
 
 # Balance Nodes
-super + shift + m 
+super + shift + m
 	bspc node @/ -B
 
 # Toggle fullscreen
@@ -90,7 +90,7 @@ super + shift + f
 
 # Toggle floating mode
 super + f
-    bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
+	bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
 
 # Flip the tree from the current nodes parent
 super + ctrl + {Left,Down,Up,Right}
@@ -106,7 +106,7 @@ super + shift + y
 
 # Swap nodes the tree from the current nodes parent
 super + alt + {Up,Down}
-  bspc node @parent -C {forward, backward}
+	bspc node @parent -C {forward, backward}
 
 # Rotate the tree from the current nodes parent
 super + alt + {Right,Left}
@@ -233,13 +233,22 @@ super + {Left,Down,Up,Right}
 XF86AudioPlay
 	playerctl play-pause
 
+super + period
+	playerctl play-pause
+
 # Previous/Next Video/Music
 XF86Audio{Prev,Next}
 	playerctl {previous,next}
 
+super + shift + {comma, minus}
+	playerctl {previous,next}
+
 # Volume Up/Down
-XF86Audio{RaiseVolume,LowerVolume}
-	~/.scripts/media/volume-notifier {up,down} 2
+XF86Audio{LowerVolume, RaiseVolume}
+	~/.scripts/media/volume-notifier {down,up} 2
+
+super + {comma, minus}
+	~/.scripts/media/volume-notifier {down,up} 2
 
 # Mute Sound
 super + F1
@@ -248,7 +257,7 @@ super + F1
 
 #
 # ========== ETC  ========== #
-#   
+#
 
 # Reload bspwm
 super + ctrl + r
@@ -266,8 +275,8 @@ super + ctrl + p
 super + u
 	~/.scripts/rofi/rofi-sxhkd-help &
 
-# Rofi - List and open Man Pages 
-super + shift + u 
+# Rofi - List and open Man Pages
+super + shift + u
 	~/.scripts/rofi/rofi-man &
 
 # Rofi - Powermenu
@@ -278,6 +287,3 @@ super + shift + p
 super + space
 	~/.scripts/rofi/rofi-keyboard-layout &
 
-# Bswpm - Toggle Window Gaps
-#super + ctrl + g
-#	~/.scripts/bspwm/bspwm-gaps

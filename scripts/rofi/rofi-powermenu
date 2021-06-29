@@ -13,19 +13,19 @@ _rofi() {
         "$@"
 }
 
-OPTIONS="Restart|Log out|Suspend|Power off"
-ENTRY=$(echo "$OPTIONS" | _rofi)
+options="Restart|Log out|Suspend|Power off"
+choice=$(echo "$options" | _rofi)
 
-if [ "$ENTRY" = "Restart" ]; then
+if [ "$choice" = "Restart" ]; then
     $TERMINAL -e sudo reboot
 
-elif [ "$ENTRY" = "Log out" ]; then
+elif [ "$choice" = "Log out" ]; then
     bspc quit
 
-elif [ "$ENTRY" = "Suspend" ]; then
+elif [ "$choice" = "Suspend" ]; then
     $TERMINAL -e systemctl suspend
 
-elif [ "$ENTRY" = "Power off" ]; then
+elif [ "$choice" = "Power off" ]; then
     $TERMINAL -e sudo poweroff
 
 else

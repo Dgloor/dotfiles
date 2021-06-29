@@ -26,7 +26,7 @@ picom &
 
 # Systray 
 copyq & 
-udiskie &
+# udiskie &
 # nm-applet & 
 
 # Dwm swallow feature :D
@@ -63,7 +63,7 @@ wmname LG3D & # fix for some Java apps
 
 
 # ========== Monitor and Desktop Settings  ========== #
-bspc config top_padding 35
+bspc config top_padding 30
 bspc config bottom_padding 5
 bspc config left_padding 5
 bspc config right_padding 5

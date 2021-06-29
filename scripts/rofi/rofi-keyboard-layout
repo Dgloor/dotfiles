@@ -7,7 +7,7 @@ _rofi() {
         -dmenu \
         -i \
         -width 30 \
-        -lines 3 \
+        -lines $lines \
         -no-custom true \
         -disable-history true \
         -p "Keys" \
@@ -15,7 +15,9 @@ _rofi() {
         "$@"
 }
 
-OPTIONS="latam|dvorak|it"
-ENTRY=$(echo "$OPTIONS" | _rofi)
+options="latam|dvorak|it"
 
-setxkbmap $ENTRY
+lines="$(awk -F '|' '{print NF}' <<< "$options")"
+choice=$(echo "$options" | _rofi)
+
+setxkbmap $choice
