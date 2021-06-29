@@ -13,7 +13,7 @@ LNFILE      = ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 # TARGETS
 APPS        = zsh scriptsdir \
               alacritty bottom bspwm sxhkd copyq dunst \
-              flameshot lsd lf mpv nvim paru picom \
+              flameshot lsd lf mpv neofetch nvim paru picom \
               polybar rofi zathura \
               mimeapps.list screenkey.json starship.toml
 
@@ -60,6 +60,10 @@ lsd:
 	$(LNDIR)
 
 mpv:
+	$(RMDIR)
+	$(LNDIR)
+
+neofetch:
 	$(RMDIR)
 	$(LNDIR)
 

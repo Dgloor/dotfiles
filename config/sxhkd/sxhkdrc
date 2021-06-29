@@ -244,7 +244,7 @@ super + shift + {comma, minus}
 	playerctl {previous,next}
 
 # Volume Up/Down
-XF86Audio{LowerVolume, RaiseVolume}
+XF86Audio{LowerVolume,RaiseVolume}
 	~/.scripts/media/volume-notifier {down,up} 2
 
 super + {comma, minus}

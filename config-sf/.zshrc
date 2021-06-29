@@ -1,4 +1,4 @@
-# TABLE OF CONTENT
+# TABLE OF CONTENTS
 # 1. Options
 # 2. Variables
 # 3. Modules
@@ -42,7 +42,7 @@ unsetopt CORRECT
 # Job Control
 setopt AUTO_RESUME
 setopt AUTO_CONTINUE
-setopt LONG_LIST_JOBS 
+setopt LONG_LIST_JOBS
 setopt NOTIFY
 setopt NO_HUP
 unsetopt BG_NICE
@@ -160,11 +160,11 @@ alias n='nvim '
 alias si='sxiv '
 alias z='zathura '
 alias ss='sudo systemctl '
-alias ttime='tty-clock -S -c -b -n'
-alias nspeed='speedtest-cli'
+alias ttime='tty-clock -S -c -b -n '
+alias nspeed='speedtest-cli '
+alias neofetch='neofetch --ascii ~/.config/neofetch/ascii'
 
 # ========== Aps Scritps ========== #
-
 # Autojump into Lf
 r() {
   if [ "$1" != "" ]; then
@@ -180,6 +180,6 @@ r() {
 }
 
 # ========== AutoStart ========== #
-pfetch
-#neofetch
+#pfetch
 #zwaves
+neofetch
