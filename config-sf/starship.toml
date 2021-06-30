@@ -30,3 +30,7 @@ disabled = true
 
 [lua]
 disabled = true
+  
+[rlang]
+disabled = true
+

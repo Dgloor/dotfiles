@@ -3,31 +3,19 @@
 bspc rule -r "*"
 
 # ========== AutoStart  ========== #
-pgrep -x sxhkd > /dev/null || sxhkd &
-
-# Wallpaper
-xwallpaper --zoom ~/.config/wall.jpg &
-
-# Bar
-~/.scripts/polybar/launchpolybar &
-
-# Keyboard Stuff
-numlockx &
 setxkbmap latam &
-
-# Nofications
-# dunst &
-
-# Typematic Delay
+numlockx &
 xset r rate 200 30 &
 
-# Compositor
-picom &
+pgrep -x sxhkd > /dev/null || sxhkd &
+xwallpaper --zoom ~/.config/wall.jpg &
 
-# Systray
-copyq
-# udiskie &
-# nm-applet &
+picom &
+copyq &
+#udiskie &
+#nm-applet &
+
+~/.scripts/polybar/launchpolybar &
 
 # Dwm swallow feature :D
 pgrep ~/.scripts/bspwm/bspwm-swallow || ~/.scripts/bspwm/bspwm-swallow &

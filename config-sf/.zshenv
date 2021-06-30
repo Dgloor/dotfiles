@@ -30,6 +30,9 @@ export CM_LAUNCHER=rofi
 # Bat
 export BAT_THEME="Dracula"
 
+# Bspwm Java Fix
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # Lf Icons
 export LF_ICONS="\
 tw=:\
