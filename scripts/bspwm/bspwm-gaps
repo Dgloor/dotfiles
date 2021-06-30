@@ -1,15 +1,15 @@
-#!/bin/sh 
+#!/bin/sh
 
 # Increase or decrease bspwm gaps by 1.
 
 current_gap=$(expr $(bspc config window_gap))
 
 if [ $1 = "increase" ]; then
-  bspc config window_gap $(expr $current_gap + 1)
+  bspc config window_gap $(expr $current_gap + 2)
 elif [ $1 = "decrease" ]; then
   if [ ${current_gap} != 0 ]; then
-    bspc config window_gap $(expr $current_gap - 1)
-  else 
+    bspc config window_gap $(expr $current_gap - 2)
+  else
     echo "What are you trying to do? D:"
   fi
 else

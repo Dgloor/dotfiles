@@ -7,17 +7,14 @@ setxkbmap latam &
 numlockx &
 xset r rate 200 30 &
 
-pgrep -x sxhkd > /dev/null || sxhkd &
 xwallpaper --zoom ~/.config/wall.jpg &
-
-#picom &
 copyq &
 #udiskie &
 #nm-applet &
+#picom &
 
-~/.scripts/polybar/launchpolybar &
-
-# Dwm swallow feature :D
+pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x polybar > /dev/null || ~/.scripts/polybar/launchpolybar &
 pgrep ~/.scripts/bspwm/bspwm-swallow || ~/.scripts/bspwm/bspwm-swallow &
 
 
@@ -51,12 +48,12 @@ wmname LG3D & # fix for some Java apps
 
 
 # ========== Monitor and Desktop Settings  ========== #
-bspc config top_padding 30
-bspc config bottom_padding 5
-bspc config left_padding 5
-bspc config right_padding 5
+# bspc config top_padding 30
+# bspc config bottom_padding 5
+# bspc config left_padding 5
+# bspc config right_padding 5
 bspc config border_width 2
-bspc config window_gap 5
+bspc config window_gap 0
 
 
 # ========== Rules ========== #
