@@ -12,12 +12,12 @@ set fileencoding=utf-8                  " The encoding written to file
 set formatoptions-=cro                  " Stop newline continution of comments
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set ignorecase                          " case insensitive search
-set incsearch                           " Show the pattern while search
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set laststatus=0                        " Always display the status line
 set mouse=a                             " Enable your mouse
 set nobackup                            " This is recommended by coc
 set noerrorbells                        " No beep or screen flash for error messages
+set nohlsearch                          " Turn off highlit when search
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set noswapfile                          " Disable creating swap file
 set nowrap                              " Display long lines as just one line
@@ -42,7 +42,6 @@ set t_Co=256                            " Support 256 colors
 set tabstop=2                           " Insert 2 spaces for a tab
 set timeoutlen=300                      " By default timeoutlen is 1000 ms
 set updatetime=300                      " Faster completion
-"set guicursor=                          " Disable cursor-styling (always show a block)
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
