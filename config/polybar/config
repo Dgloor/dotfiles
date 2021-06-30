@@ -44,7 +44,7 @@ offset-y = 0
 width = 100%
 height = 28
 radius = 0.0
-separator = "  "
+separator = "  "
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -54,7 +54,7 @@ line-size = 2
 border-size = 0
 border-color = ${colors.background}
 
-padding-left = 1
+padding-left = 0
 padding-right = 0
 
 module-margin-left = 0
@@ -65,8 +65,8 @@ font-1 = RobotoMono Nerd Font:weight=bold:pixelsize=10;
 font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
 
 modules-left = arch-logo bspwm
-modules-center = date
-modules-right = updates cpu-temperature cpu memory pulseaudio xkeyboard
+;modules-center = date
+modules-right = updates cpu-temperature cpu memory pulseaudio xkeyboard date
 
 tray-position = right
 tray-padding = 3
@@ -100,23 +100,23 @@ label-empty-padding = 1
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
-label-separator = 
+label-separator = ""
 
 [module/arch-logo]
 type = custom/text
-content = 
+content = " "
 click-left = rofi -show drun
 click-right = ~/.scripts/rofi/rofi-powermenu
 
 [module/date]
 type = internal/date
 interval = 1
-;date = %d/%m/%y
-date = %a, %b %d
+date = %d/%m/%y
+;date = %a, %b %d
 time = %H:%M
 date-alt = %a, %b %d
 time-alt = %H:%M:%S
-label = %date% - %time%
+label = 📅 %date%  🕓 %time% 
 label-font = 1
 
 [module/updates]
@@ -169,6 +169,7 @@ blacklist-0 = num lock
 blacklist-1 = caps lock
 format = ⌨️ <label-layout>
 format-spacing = 0
+click-left = ~/.scripts/rofi/rofi-keyboard-layout
 
 ; to review
 ;[module/date]
@@ -186,12 +187,12 @@ format-spacing = 0
 ;interval = 5
 ;click-left = mailspring
 
-;[module/xwindow]
-;type = internal/xwindow
-;label = %title:0:30:...%
-;format-underline =
-;format-background =
-;format-padding = 1
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:20:...%
+format-underline =
+format-background =
+format-padding = 1
 
 ;[module/player]
 ;type = custom/script

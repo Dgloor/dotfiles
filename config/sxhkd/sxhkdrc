@@ -36,7 +36,7 @@ super + shift + i
 
 # Redshift
 super + {_,shift} + r
-	redshift {-O 4500,-x}
+	redshift {-O 5000,-x}
 
 # Screeshots
 super + shift + s
@@ -290,3 +290,9 @@ super + shift + p
 super + space
 	~/.scripts/rofi/rofi-keyboard-layout &
 
+# Increase/Reduce Bspwm Gaps
+super + shift + KP_8
+	~/.scripts/bspwm/bspwm-gaps increase &
+
+super + shift + KP_2
+	~/.scripts/bspwm/bspwm-gaps decrease &
