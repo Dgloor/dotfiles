@@ -17,6 +17,11 @@ cmd setwallpaper %{{
   cp "$f" ~/.config/wall.jpg && xwallpaper --zoom "$f"
 }}
 
+cmd stripspace ${{
+  newname=$(echo "$f" | sed 's/ /-/g')
+  mv "$f" "$newname"
+}}
+
 cmd j %{{
   lf -remote "send $id cd '$(autojump $1)'"
 }}
@@ -125,7 +130,7 @@ map md mkdir
 map mf mkfile
 map msf sudomkfile
 map x setwallpaper
-
+map ss stripspace
 
 # Archive
 map az zip
