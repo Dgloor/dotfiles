@@ -356,7 +356,7 @@ significantly affect the smoothness of animations, and it is subject to the
 accuracy limits imposed by the scheduler mpv uses. Probably not worth changing
 unless you have major performance problems.
 ]]
-settings['animation-duration'] = 0.30
+settings['animation-duration'] = 0.25
 helpText['animation-duration'] = [[Controls how long the UI animations take. A value of 0 disables all animations
 (which breaks the pause indicator).
 ]]

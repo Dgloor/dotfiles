@@ -10,7 +10,7 @@ xset r rate 200 30 &
 pgrep -x sxhkd > /dev/null || sxhkd &
 xwallpaper --zoom ~/.config/wall.jpg &
 
-picom &
+#picom &
 copyq &
 #udiskie &
 #nm-applet &

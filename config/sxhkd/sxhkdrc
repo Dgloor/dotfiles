@@ -254,6 +254,9 @@ super + {comma, minus}
 super + F1
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+super + ctrl + period
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
 
 #
 # ========== ETC  ========== #
