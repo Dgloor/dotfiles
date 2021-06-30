@@ -64,9 +64,9 @@ font-0 = RobotoMono Nerd Font:weight=bold:pixelsize=9;
 font-1 = RobotoMono Nerd Font:weight=bold:pixelsize=10;
 font-2 = NotoColorEmoji:fontformat=truetype:scale=12:antialias=false;
 
-modules-left = arch-logo bspwm
 ;modules-center = date
-modules-right = updates cpu-temperature cpu memory pulseaudio xkeyboard date
+modules-left = arch-logo bspwm
+modules-right = timer updates cpu-temperature cpu memory pulseaudio xkeyboard date
 
 tray-position = right
 tray-padding = 3
@@ -114,8 +114,6 @@ interval = 1
 date = %d/%m/%y
 ;date = %a, %b %d
 time = %H:%M
-date-alt = %d/%m/%y
-time-alt = %H:%M:%S
 label = 📅 %date%  🕓 %time% 
 label-font = 1
 
@@ -124,9 +122,7 @@ type = custom/script
 exec = ~/.scripts/polybar/polyupdates
 interval = 1800
 format-prefix = "📦 "
-# click-left = alacritty -e sudo pacman -Syu
 click-left = alacritty -e paru
-click-right = alacritty -e paru -Sua
 
 [module/cpu-temperature]
 type = custom/script
@@ -171,28 +167,23 @@ format = ⌨️ <label-layout>
 format-spacing = 0
 click-left = ~/.scripts/rofi/rofi-keyboard-layout
 
-; to review
-;[module/date]
-;type = custom/script
-;exec = date '+%d/%m/%Y'
-;label = 📅 %output%
-;interval = 5
-;click-left = alacritty -e calcurse
-;click-left = obsidian
-
-;[module/time]
-;type = custom/script
-;exec = date '+%H:%M'
-;label = 🕓 %output%
-;interval = 5
-;click-left = mailspring
-
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:20:...%
 format-underline =
 format-background =
 format-padding = 1
+
+[module/timer]
+type = custom/script
+tail = true
+exec = ~/.scripts/polybar/polytimer tail '🍅 15' 5
+click-right = ~/.scripts/polybar/polytimer cancel ; ~/.scripts/polybar/polytimer update %pid%
+click-left = ~/.scripts/polybar/polytimer new 15 '🍅:' 'notify-send "Session finished"' ; ~/.scripts/polybar/polytimer update %pid%
+click-middle = ~/.scripts/polybar/polytimer new 5 '☕:' 'notify-send "Break finished"' ; ~/.scripts/polybar/polytimer update %pid%
+scroll-up = ~/.scripts/polybar/polytimer increase 60 || ~/.scripts/polybar/polytimer new 15 '🍅:' 'notify-send -u critical "Timer expired."' ; ~/.scripts/polybar/polytimer update %pid%
+scroll-down = ~/.scripts/polybar/polytimer increase -60 || ~/.scripts/polybar/polytimer new 15 '🍅:' 'notify-send -u critical "Timer expired."' ; ~/.scripts/polybar/polytimer update %pid%
+
 
 ;[module/player]
 ;type = custom/script
@@ -213,15 +204,6 @@ format-padding = 1
 ;exec = echo "怜"
 ;format = <label>
 ;click-left = playerctl next
-
-;[module/polytimer]
-;type = custom/script
-;exec = ~/.scripts/polybar/polytimer tail '🍅 0' 5
-;tail = true
-
-;click-right = ~/.scripts/polybar/polytimer cancel ; ~/.scripts/polybar/polytimer update %pid%
-;scroll-up = ~/.scripts/polybar/polytimer increase 60 || ~/.scripts/polybar/polytimer new 1 '🍅 :' 'notify-send -u critical "Timer Finalizado"' ; ~/scripts/polybar/polytimer update %pid%
-;scroll-down = ~/.scripts/polybar/polytimer increase -60 ; ~/.scripts/polybar/polytimer update %pid%
 
 ;[module/keyboard]
 ;type =custom/script

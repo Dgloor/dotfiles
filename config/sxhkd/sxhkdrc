@@ -159,11 +159,11 @@ super + Tab
 
 # Send to desktop
 super + shift + {1-9}
-	~/.scripts/bspwm/bspwm-crystal --send {1-9}
+	bspc node -d {1-9} --follow
 
 # Send and Swap to desktop
 super + ctrl + {1-9}
-	bspc node -d {1-9} --follow
+	~/.scripts/bspwm/bspwm-crystal --send {1-9}
 
 # # focus the node for the given path jump
 # super + {p,b,comma,period}
