@@ -12,6 +12,7 @@ set fileencoding=utf-8                  " The encoding written to file
 set formatoptions-=cro                  " Stop newline continution of comments
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set ignorecase                          " case insensitive search
+set incsearch                           " Show the pattern while search
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set laststatus=0                        " Always display the status line
 set mouse=a                             " Enable your mouse
@@ -26,7 +27,7 @@ set numberwidth=1												" Line numbers width
 set pumheight=10                        " Makes popup menu smaller
 set relativenumber                      " Show numbers relative to current line
 set ruler																" Show the cursor position all the time
-set scrolloff=3                         " Min number of screen lines to keep above and below the cursor 
+set scrolloff=3                         " Min number of screen lines to keep above and below the cursor
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set softtabstop=2                       " Number of space to insert for a <Tab>
 set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.

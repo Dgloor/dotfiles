@@ -156,15 +156,16 @@ alias glog='git log --oneline --decorate --graph '
 
 # Apps
 alias b='btm '
-alias n='nvim '
-alias si='sxiv '
-alias z='zathura '
-alias ss='sudo systemctl '
-alias ttime='tty-clock -S -c -b -n '
-alias nspeed='speedtest-cli '
-alias neofetch='neofetch --ascii ~/.config/neofetch/ascii'
 alias gw='gcc -Wall '
 alias gws='gcc -Wall -fsanitize=address,undefined '
+alias lf='lf-ueberzug '
+alias n='nvim '
+alias neofetch='neofetch --ascii ~/.config/neofetch/ascii'
+alias nspeed='speedtest-cli '
+alias si='sxiv '
+alias ss='sudo systemctl '
+alias ttime='tty-clock -S -c -b -n '
+alias z='zathura '
 
 # ========== Aps Scritps ========== #
 # Autojump into Lf

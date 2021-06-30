@@ -44,6 +44,9 @@ nnoremap <C-w> :bdelete<CR>
 " Format
 " nnoremap <C-A-l> :Format<CR>
 
+" Fix identation
+map <F7> gg=G<C-o>
+
 
 " ====== Plugins Stuff =====
 ":Goyo
