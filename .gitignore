@@ -1,19 +1,23 @@
-# Nvim stff
+# Nvim
 config/nvim/autoload/
 config/nvim/session/
 config/nvim/.netrwhist
 
-# Mpv stuff
+# Mpv
 config/mpv/scripts/total_playtime.list
 config/mpv/watch_later/
 
-# Copyq stuff
+# Copyq
 config/copyq/copyq-*
 config/copyq/copyq_*
 config/copyq/copyq.pub
 
-# Ranger stuff
+# Ranger
 config/ranger/plugins
+
+# Dwm
+config/dwm/*.o
+config/dwm/dwm
 
 # Scripts
 scripts/etc/emby

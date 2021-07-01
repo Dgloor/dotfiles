@@ -233,7 +233,7 @@ super + {Left,Down,Up,Right}
 XF86AudioPlay
 	playerctl play-pause
 
-super + period
+super + shift + period
 	playerctl play-pause
 
 # Previous/Next Video/Music
