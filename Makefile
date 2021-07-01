@@ -6,16 +6,16 @@ DOTCONFIGS  = $(DOTS)/config
 DOTCONFIGSF = $(DOTS)/config-sf
 
 # ACTIONS
-RMDIR       = [ -d $(CONFIGS)/$@ ] && rm -rf $(CONFIGS)/$@
+RMDIR       = rm -rf $(CONFIGS)/$@
 LNDIR       = ln -sf $(DOTCONFIGS)/$@ $(CONFIGS)/$@
 LNFILE      = ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 
 # TARGETS
 APPS        = zsh scriptsdir \
-              alacritty bottom bspwm sxhkd copyq dunst \
-              flameshot lsd lf mpv neofetch nvim paru picom \
-              polybar rofi zathura \
-              mimeapps.list screenkey.json starship.toml
+							alacritty bottom bspwm dwm sxhkd copyq dunst \
+							flameshot lsd lf mpv neofetch nvim paru picom \
+							polybar rofi zathura \
+							mimeapps.list screenkey.json starship.toml
 
 install: $(APPS)
 	echo "Now you can 4rch in peace."
@@ -44,6 +44,10 @@ copyq:
 	$(LNDIR)
 
 dunst:
+	$(RMDIR)
+	$(LNDIR)
+
+dwm:
 	$(RMDIR)
 	$(LNDIR)
 
