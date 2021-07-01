@@ -2,7 +2,7 @@
 
 ## Screenshots
 
-- ![nah](https://raw.githubusercontent.com/Dgloor/dotfiles/main/screenshots/01.png)
+![nah](https://raw.githubusercontent.com/Dgloor/dotfiles/main/screenshots/01.png)
 
 ## Display Manager
 
