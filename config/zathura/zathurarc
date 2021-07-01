@@ -46,24 +46,24 @@ set recolor-darkcolor           "#f8f8f2" # Foreground
 #
 set adjust-open width
 set recolor false
-set guioptions none
+set guioptions v
 
-# 
+#
 # Basic config
-# 
+#
 set selection-clipboard "clipboard"
 set sandbox none
 
 set font "FiraCode Nerd Font 10"
 
-set statusbar-h-padding 0 
-set statusbar-v-padding 0 
+set statusbar-h-padding 0
+set statusbar-v-padding 0
 
-set page-padding 1 
+set page-padding 1
 
 map D toggle_page_mode
 
-map u scroll half-up 
+map u scroll half-up
 map d scroll half-down
 map K scroll full-up
 map J scroll full-down

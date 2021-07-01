@@ -124,10 +124,8 @@ application/pdf=org.pwmt.zathura.desktop
 application/xml=nvim.desktop
 application/xhtml+xml=nvim.desktop
 application/json+xml=nvim.desktop
-
-
-application/msword=wps-office-wpp.desktop
-application/vnd.openxmlformats-officedocument.wordprocessingml.document=wps-office-wpp.desktop
+application/msword=wps-office-wps.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=wps-office-wps.desktop
 application/vnd.ms-excel=wps-office-et.desktop
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=wps-office-et.desktop
 application/vnd.ms-powerpoint=wps-office-wpp.desktop

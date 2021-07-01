@@ -8,10 +8,10 @@ numlockx &
 xset r rate 200 30 &
 
 xwallpaper --zoom ~/.config/wall.jpg &
+picom &
 copyq &
 #udiskie &
 #nm-applet &
-#picom &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x polybar > /dev/null || ~/.scripts/polybar/launchpolybar &

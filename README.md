@@ -22,6 +22,7 @@
 - Lxappearance - Gtk theme sticher
 - Kvantum-qt5 - Theme engine for Qt5
   - Ant-dracula-kvantum-theme-git
+- Papirus-icon-theme & Papirus-folders-git
 - [Dracula Theme](https://draculatheme.com/)
 - [Vimix Cursors](https://www.pling.com/p/1358330/)
 
