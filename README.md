@@ -1,5 +1,9 @@
 # Arch Dotfiles
 
+## Screenshots
+
+- ![nah]()
+
 ## Display Manager
 
 - [Ly](https://github.com/nullgemm/ly)
@@ -77,7 +81,7 @@
 ## Comunication
 
 - Discord
-- Whatdesk-nativefier
+- Whatsdesk-bin
 - Telegram
 - Zoom
 
