@@ -89,7 +89,7 @@
 ## Office
 
 - [Zathura](https://wiki.archlinux.org/title/zathura) - document viewer with vi-style keybindings
-- Libreoffice-fresh - Office suit
+- Wps Office - Office suit
 
 ## Search
 

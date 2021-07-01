@@ -395,7 +395,7 @@ paru -S anki obsidian
 
 ```bash
 sudo pacman -S zathura zathura-pdf-mupdf
-sudo pacman -S libreoffice-fresh libreoffice-fresh-es
+sudo pacman -S wps-office wps-office-mime ttf-wps-fonts
 ```
 
 ### Search

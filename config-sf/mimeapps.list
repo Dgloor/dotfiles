@@ -4,12 +4,12 @@ x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
 
-inode/x-empty=nvim.desktop;
+inode/x-empty=nvim.desktop
 
-text/markdown=nvim.desktop;
+text/markdown=nvim.desktop
 text/html=nvim.desktop
-text/x-python3=nvim.desktop;
-text/x-python=nvim.desktop;
+text/x-python3=nvim.desktop
+text/x-python=nvim.desktop
 text/x-csrc=nvim.desktop
 text/x-moc=nvim.desktop
 text/x-makefile=nvim.desktop
@@ -21,11 +21,11 @@ text/x-pascal=nvim.desktop
 text/x-c++src=nvim.desktop
 text/x-java=nvim.desktop
 text/x-tex=nvim.desktop
-text/x-r-source=nvim.desktop;
-text/x-csharp=nvim.desktop;
-text/csv=libreoffice-calc.desktop;visual-studio-code.desktop;org.kde.kate.desktop;nvim.desktop
+text/x-r-source=nvim.desktop
+text/x-csharp=nvim.desktop
+text/csv=nvim.desktop
 
-image/jpg=sxiv.desktop;
+image/jpg=sxiv.desktop
 image/jpeg=sxiv.desktop
 image/gif=sxiv.desktop
 image/png=sxiv.desktop
@@ -63,8 +63,8 @@ audio/x-vorbis+ogg=mpv.desktop
 audio/x-adpcm=mpv.desktop
 audio/vnd.dts=mpv.desktop
 
-video/mp4=mpv.desktop;
-video/x-matroska=mpv.desktop;
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
 
 application/x-shorten=mpv.desktop
 application/mxf=mpv.desktop
@@ -125,3 +125,10 @@ application/xml=nvim.desktop
 application/xhtml+xml=nvim.desktop
 application/json+xml=nvim.desktop
 
+
+application/msword=wps-office-wpp.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=wps-office-wpp.desktop
+application/vnd.ms-excel=wps-office-et.desktop
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=wps-office-et.desktop
+application/vnd.ms-powerpoint=wps-office-wpp.desktop
+application/vnd.openxmlformats-officedocument.presentationml.presentation=wps-office-wpp.desktop
