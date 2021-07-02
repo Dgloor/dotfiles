@@ -344,4 +344,17 @@ schemes:
             cyan:    '#34E2E2'
             white:   '#EEEEEC'
 
+# Themes:
+# - argonaut
+# - ayu_dark
+# - ayu_mirage
+# - base_16_dark
+# - dracula
+# - material_ocean
+# - molokai
+# - nord
+# - oceanic_next
+# - onedark
+# - ubuntu
+# - vs_code
 colors: *dracula

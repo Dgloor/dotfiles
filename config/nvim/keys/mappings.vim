@@ -45,7 +45,10 @@ nnoremap <C-w> :bdelete<CR>
 " nnoremap <C-A-l> :Format<CR>
 
 " Fix identation
-map <F7> gg=G<C-o>
+nnoremap <F7> gg=G<C-o>
+
+" Remove whitespaces
+nnoremap <F8> :%s/\s\+$//<CR>
 
 
 " ====== Plugins Stuff =====

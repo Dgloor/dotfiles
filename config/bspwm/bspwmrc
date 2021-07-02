@@ -8,7 +8,7 @@ numlockx &
 xset r rate 200 30 &
 
 xwallpaper --zoom ~/.config/wall.jpg &
-picom &
+#picom &
 copyq &
 #udiskie &
 #nm-applet &
@@ -52,7 +52,7 @@ bspc config presel_feedback_color "#6272A4"
 # bspc config bottom_padding 5
 # bspc config left_padding 5
 # bspc config right_padding 5
-bspc config border_width 2
+bspc config border_width 1
 bspc config window_gap 0
 
 
