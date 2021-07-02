@@ -423,7 +423,7 @@ sudo pacman -S numlockx
 sudo pacman -S dunst lsd neofetch redshift screenkey
 sudo pacman -S speedtest-cli xwallpaper wget
 sudo pacman -S lxappearance pacman-contrib sysstat
-paru -S bottom cpufetch-git duf pfetch tty-clock
+paru -S bottom cpufetch-git duf pfetch unclutter-xfixes-git
 ```
 
 ### Theme

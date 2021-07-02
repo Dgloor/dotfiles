@@ -14,10 +14,6 @@ super + shift + {Return,o}
 super + o
 	rofi -show window
 
-# Rofi emoji
-#super + period
-# rofi -show emoji
-
 # File Explorer
 super + e
 	$FILE_EXPLORER
@@ -46,10 +42,6 @@ super + shift + s
 super + p
 	killall -q picom || picom
 
-# Pomodoro
-#super + shift + p
-#	gnome-pomodoro
-
 # Mail Client
 XF86Mail
 	mailspring
@@ -66,10 +58,6 @@ Print
 #
 # ========== Bspwm Hotkeys  ========== #
 #
-
-# Quit bspwm
-#super + ctrl + t
-#	~/.scripts/rofi/rofi-prompt "Quit bspwm?" "bspc quit"
 
 # Close window
 super + q
@@ -93,12 +81,12 @@ super + f
 	bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
 
 # Flip the tree from the current nodes parent
-super + ctrl + {Left,Down,Up,Right}
+super + ctrl + {h,j,k,l}
 	bspc node @parent -F {vertical, horizontal, horizontal, vertical}
 
-# Toggle Mater Layout | bsp-layout
-super + ctrl + m
-	bsp-layout cycle --layouts tall,tiled
+# Toggle Master Layout | bsp-layout
+# super + ctrl + m
+#		bsp-layout cycle --layouts tall,tiled
 
 # Send the newest marked node to the newest preselected node
 super + shift + y
@@ -112,7 +100,7 @@ super + alt + {Up,Down}
 super + alt + {Right,Left}
 	bspc node @parent --rotate {90,270}
 
-# # swap the current node and the biggest window
+# Swap the current node and the biggest window
 # super + g
 # 	bspc node -s biggest.window
 
@@ -165,15 +153,15 @@ super + shift + {1-9}
 super + ctrl + {1-9}
 	~/.scripts/bspwm/bspwm-crystal --send {1-9}
 
-# # focus the node for the given path jump
+# Focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# # Focus the node for the given path jump
 # super + {p,b,comma,period}
 # 	bspc node -f @{parent,brother,first,second}
 
-# # focus the next/previous desktop in the current monitor
-# super + bracket{left,right}
-# 	bspc desktop -f {prev,next}.local
-
-# # focus the older or newer node in the focus history
+# # Focus the older or newer node in the focus history
 # super + {o,i}
 # 	bspc wm -h off; \
 # 	bspc node {older,newer} -f; \
@@ -184,8 +172,8 @@ super + ctrl + {1-9}
 # ========== Preselect  ========== #
 #
 
-# preselect the direction
-super + ctrl + {h,j,k,l}
+# Preselect the direction
+super + ctrl + {Left,Down,Up,Right}
 	bspc node -p {west,south,north,east}
 
 # Cancel the preselection for the focused node
@@ -240,20 +228,17 @@ super + shift + period
 XF86Audio{Prev,Next}
 	playerctl {previous,next}
 
-super + shift + {comma, minus}
+super + {comma, minus}
 	playerctl {previous,next}
 
 # Volume Up/Down
 XF86Audio{LowerVolume,RaiseVolume}
 	~/.scripts/media/volume-notifier {down,up} 2
 
-super + {comma, minus}
+super + shift + {comma, minus}
 	~/.scripts/media/volume-notifier {down,up} 2
 
 # Mute Sound
-super + F1
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
-
 super + ctrl + period
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
@@ -275,11 +260,11 @@ super + ctrl + p
 	~/.scripts/polybar/launchpolybar &
 
 # Rofi - List Sxhkd Hotkeys
-super + u
+super + shift + u
 	~/.scripts/rofi/rofi-sxhkd-help &
 
 # Rofi - List and open Man Pages
-super + shift + u
+super + u
 	~/.scripts/rofi/rofi-man &
 
 # Rofi - Powermenu

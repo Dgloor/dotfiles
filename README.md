@@ -132,6 +132,7 @@
 - [Redshift](https://wiki.archlinux.org/index.php/redshift) - night mode screen
 - [Screenkey](https://www.thregr.org/~wavexx/software/screenkey/) - screencast tool
 - [Speedtest-cli](https://github.com/sivel/speedtest-cli) - network speed
+- [Unclutter-xfixes-git](https://github.com/Airblader/unclutter-xfixes) - hide X cursor
 
 ## References
 
