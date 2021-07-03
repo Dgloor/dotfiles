@@ -29,14 +29,14 @@ require('packer').startup(function()
   use 'junegunn/gv.vim'
   use 'mhinz/vim-signify'
 
-  -- Terminal
+  -- Floating terminal
   use 'voldikss/vim-floaterm'
 
   -- Better comments
   use 'tpope/vim-commentary'
 
-  -- Start Scren
-  use 'mhinz/vim-startify'
+  -- Vim Dashboard
+  use 'glepnir/dashboard-nvim'
 
   -- Colorizer
   use 'norcalli/nvim-colorizer.lua'
@@ -70,5 +70,8 @@ require('packer').startup(function()
   use 'dracula/vim'
 
   -- Telescope
-  -- use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+  }
 end)

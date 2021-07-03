@@ -70,3 +70,14 @@ map('n', '<leader>gj', '<plug>(signify-next-hunk)', {})
 map('n', '<leader>gk', '<plug>(signify-prev-hunk)', {})
 map('n', '<leader>gJ', '9999<leader>gj)', {})
 map('n', '<leader>gK', '9999<leader>gk)', {})
+
+-- Telescope
+-- Find files using Telescope command-line sugar.
+map('n', '<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<cr>', { noremap = true })
+map('n', '<leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', { noremap = true })
+map('n', '<leader>fb', '<cmd>lua require("telescope.builtin").buffers()<cr>', { noremap = true })
+map('n', '<leader>fh', '<cmd>lua require("telescope.builtin").help_tags()<cr>', { noremap = true })
+
+-- Dashboard
+map('n', '<Leader>ss', ':<C-u>SessionSave<CR>', {})
+map('n', '<Leader>sl', ':<C-u>SessionLoad<CR>', {})

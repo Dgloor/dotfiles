@@ -14,21 +14,7 @@ require'lualine'.setup {
     lualine_y = {'encoding', 'fileformat', 'filetype'},    
     lualine_z = {'location'} 
   },
-  inactive_sections = {
-    lualine_a = {}, 
-    lualine_b = {}, 
-    lualine_c = {}, 
-    lualine_x = {},  
-    lualine_y = {},    
-    lualine_z = {} 
-  },
-  tabline = {
-    -- lualine_a = {'filename'}, 
-    -- lualine_b = {}, 
-    -- lualine_c = {}, 
-    -- lualine_x = {},  
-    -- lualine_y = {},    
-    -- lualine_z = {} 
-  },
+  inactive_sections = {},
+  tabline = {},
   extensions = {}
 }

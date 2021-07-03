@@ -3,8 +3,8 @@ require('plugins')
 require('settings')
 
 -- Plug Config
-require('plug-config/plug-colorizer')
-require('plug-config/home-screen')
+require('plug-config/colorizer')
+require('plug-config/dashboard')
 require('plug-config/floaterm')
 require('plug-config/git')
 require('plug-config/focus')

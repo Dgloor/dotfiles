@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
   ["goyo.vim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/goyo.vim"
@@ -109,6 +113,18 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
   vim = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim"
@@ -132,10 +148,6 @@ _G.packer_plugins = {
   ["vim-signify"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-signify"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,
