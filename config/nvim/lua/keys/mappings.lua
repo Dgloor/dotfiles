@@ -51,7 +51,6 @@ map('n', '<F7>', 'gg=G<C-o>', { noremap=true })
 
 -- Remove whitespaces
 map('n', '<F8>', ':%s/\\s\\+$//<cr>', { noremap=true })
--- nnoremap <F8> :%s/\s\+$//<CR>
 
 -- Yolo
 map('c', 'w!!', 'w !sudo tee %', {})
