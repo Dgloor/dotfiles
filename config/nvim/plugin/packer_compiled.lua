@@ -121,6 +121,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
   },
+  ["vim-signify"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-signify"
+  },
   ["vim-startify"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-startify"

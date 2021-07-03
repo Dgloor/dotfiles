@@ -1,23 +1,24 @@
 local map = vim.api.nvim_set_keymap
 
 -- Leader key
-map('n', '<Space>', '', {})
-vim.g.mapleader = ' '
+map('', '<Space>', '<Nop>', { noremap = true, silent=true })
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
  
 -- Fuck Esc
-map('i', 'ññ', '<Esc>', { noremap = true, })
-map('i', 'ÑÑ', '<Esc>', { noremap = true})
+map('i', 'ññ', '<Esc>', { noremap = true })
+map('i', 'ÑÑ', '<Esc>', { noremap = true })
 
 -- " Quickly remove search highlights
 map ('n', '<C-n>', ':nohl<CR>', { noremap = true })
  
 -- Alternate way to save
+map('n','<C-s>', ':w<CR>', { noremap = true, silent= true })
 -- nnoremap <silent> <C-s> :w<CR>
-map('n','<C-s>', ':w<CR>', { noremap = true, silent= true})
  
 -- " Alternate way to quit
+map('n','<C-Q>', ':wq!<CR>', { noremap = true, silent= true })
 -- nnoremap <silent> <C-Q> :wq!<CR>
-map('n','<C-Q>', ':wq!<CR>', { noremap = true, silent= true})
  
 -- Better window navigation
 -- nnoremap <C-h> <C-w>h
@@ -26,6 +27,10 @@ map('n','<C-Q>', ':wq!<CR>', { noremap = true, silent= true})
 -- nnoremap <C-l> <C-w>l
  
 -- " Use alt + hjkl to resize windows
+-- map('n','<M-j>', ':rezise -2<cr>', { noremap = true, silent= true })
+-- map('n','<M-k>', ':rezise +2<cr>', { noremap = true, silent= true })
+-- map('n','<M-h>', ':vertical rezise -2<cr>', { noremap = true, silent= true })
+-- map('n','<M-l>', ':vertical rezise +2<cr>', { noremap = true, silent= true })
 -- nnoremap <silent> <M-j> :resize -2<CR>
 -- nnoremap <silent> <M-k> :resize +2<CR>
 -- nnoremap <silent> <M-h> :vertical resize -2<CR>
@@ -64,9 +69,10 @@ map('n', '<C-w>', ':bdelete<cr>', { noremap=true})
 
 -- ***** Plugins Stuff *****
 -- Goyo
--- nnoremap <leader>z :Goyo<CR>
--- 
+map('n', '<leader>z', ':Goyo<cr>', { noremap=true })
+ 
 -- " Floaterm
+map('n', '<leader>r', ':FloatermNew lf<cr>', { noremap=true })
 -- nnoremap <leader>r :FloatermNew lf<CR>
 -- nnoremap <leader>fg :FloatermNew lazygit<CR>
 -- nnoremap <leader>fp :FloatermNew python<CR>
@@ -78,5 +84,3 @@ map('n', '<C-w>', ':bdelete<cr>', { noremap=true})
 -- nmap <leader>gk <plug>(signify-prev-hunk)
 -- nmap <leader>gJ 9999<leader>gj
 -- nmap <leader>gK 9999<leader>gk
- 
-

@@ -14,6 +14,7 @@ vim.api.nvim_exec([[
 ]], false)
 
 local use = require('packer').use
+
 require('packer').startup(function()
   -- Package manager
   use 'wbthomason/packer.nvim'
@@ -26,6 +27,7 @@ require('packer').startup(function()
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'junegunn/gv.vim'
+  use 'mhinz/vim-signify'
 
   -- Terminal 
   use 'voldikss/vim-floaterm'
@@ -44,7 +46,6 @@ require('packer').startup(function()
 
   -- Status bar
   use 'itchyny/lightline.vim'
-  
   
   -- Focus mode
   use 'junegunn/goyo.vim'
