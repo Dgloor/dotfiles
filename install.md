@@ -262,7 +262,7 @@ cd ..
 
 ```bash
 sudo pacman -S pulseaudio pavucontrol pulseaudio-alsa pulseaudio-equalizer
-sudo pacman -S playerctl pamixer mpv
+sudo pacman -S playerctl pamixer mpv mpv-mpris
 paru -S spotify spotify-adblock
 ```
 
