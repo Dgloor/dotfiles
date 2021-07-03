@@ -45,7 +45,16 @@ require('packer').startup(function()
   use 'tpope/vim-surround'
 
   -- Status bar
-  -- use 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+  -- use {
+  --   'glepnir/galaxyline.nvim',
+  --   branch = 'main',
+  --   config = function() require'my_statusline' end,
+  --   requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  -- }
+  use {
+    'hoob3rt/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
   -- use 'itchyny/lightline.vim'
   -- use 'vim-airline/vim-airline'
 

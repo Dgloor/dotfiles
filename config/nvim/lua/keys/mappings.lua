@@ -14,11 +14,9 @@ map ('n', '<C-n>', ':nohl<CR>', { noremap = true })
 
 -- Alternate way to save
 map('n','<C-s>', ':w<CR>', { noremap = true, silent= true })
--- nnoremap <silent> <C-s> :w<CR>
 
 -- " Alternate way to quit
 map('n','<C-Q>', ':wq!<CR>', { noremap = true, silent= true })
--- nnoremap <silent> <C-Q> :wq!<CR>
 
 -- Better window navigation
 -- nnoremap <C-h> <C-w>h
@@ -48,17 +46,13 @@ map('n', '<S-TAB>', ':bprevious<cr>', { noremap=true })
 -- Splits
 map('n', '<leader>v', ':vsplit<cr>', { noremap=true })
 map('n', '<leader>h', ':split<cr>', { noremap=true })
--- nnoremap <leader>v :vsplit<CR>
--- nnoremap <leader>h :split<CR>
 
 -- " Buffers
 map('n', '<C-w>', ':bdelete<cr>', { noremap=true })
--- nnoremap <C-w> :bdelete<CR>
 
 
 -- Fix identation
 map('n', '<F7>', 'gg=G<C-o>', { noremap=true})
--- nnoremap <F7> gg=G<C-o>
 
 -- Remove whitespaces
 -- nnoremap <F8> :%s/\s\+$//<CR>
@@ -75,14 +69,10 @@ map('n', '<leader>z', ':Goyo<cr>', { noremap=true })
 
 -- " Floaterm
 map('n', '<leader>r', ':FloatermNew lf<cr>', { noremap=true })
--- nnoremap <leader>r :FloatermNew lf<CR>
--- nnoremap <leader>fg :FloatermNew lazygit<CR>
--- nnoremap <leader>fp :FloatermNew python<CR>
--- nnoremap <leader>ff :FloatermNew fzf<CRk
--- "nnoremap <leader>m :MarkdownPreview<CR>
+map('n', '<leader>fp', ':FloatermNew python<cr>', { noremap=true })
 
 -- " Git Stuff
--- nmap <leader>gj <plug>(signify-next-hunk)
--- nmap <leader>gk <plug>(signify-prev-hunk)
--- nmap <leader>gJ 9999<leader>gj
--- nmap <leader>gK 9999<leader>gk
+map('n', '<leader>gj', '<plug>(signify-next-hunk)', {})
+map('n', '<leader>gk', '<plug>(signify-prev-hunk)', {})
+map('n', '<leader>gJ', '9999<leader>gj)', {})
+map('n', '<leader>gK', '9999<leader>gk)', {})
