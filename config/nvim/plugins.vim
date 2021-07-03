@@ -9,6 +9,12 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+" LSP
+Plug 'neovim/nvim-lspconfig'
+
+" Intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Cool Icons
 Plug 'ryanoasis/vim-devicons'
 
@@ -17,9 +23,6 @@ Plug 'sheerun/vim-polyglot'
 
 " Themes
 Plug 'dracula/vim'
-
-" Intellisense
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Status Line
 Plug 'vim-airline/vim-airline'
