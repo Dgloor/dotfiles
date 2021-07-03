@@ -7,12 +7,12 @@ require('plug-config/plug-colorizer')
 require('plug-config/home-screen')
 require('plug-config/floaterm')
 require('plug-config/git')
-require('plug-config/lualine')
 require('plug-config/focus')
+require('plug-config/lualine')
+require('plug-config/bufferline')
 
 -- Themes
 require('themes/dracula')
--- require('themes/lightline')
 
 -- Lsp
 require('lsp/lsp')

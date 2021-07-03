@@ -85,6 +85,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["nvim-bufferline.lua"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"

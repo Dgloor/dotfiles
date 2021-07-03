@@ -45,18 +45,22 @@ require('packer').startup(function()
   use 'tpope/vim-surround'
 
   -- Status bar
-  -- use {
-  --   'glepnir/galaxyline.nvim',
-  --   branch = 'main',
-  --   config = function() require'my_statusline' end,
-  --   requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  -- }
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
-  -- use 'itchyny/lightline.vim'
-  -- use 'vim-airline/vim-airline'
+
+  -- Tabssss
+  use {
+    'akinsho/nvim-bufferline.lua',
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
+
+  -- using packer.nvim
+  use {
+    'akinsho/nvim-bufferline.lua',
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
 
   -- Focus mode
   use 'junegunn/goyo.vim'
@@ -64,9 +68,6 @@ require('packer').startup(function()
 
   -- Themes
   use 'dracula/vim'
-
-  -- Cool Icons
-  -- use 'ryanoasis/vim-devicons'
 
   -- Telescope
   -- use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }

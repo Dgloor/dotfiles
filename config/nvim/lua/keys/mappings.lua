@@ -19,24 +19,20 @@ map('n','<C-s>', ':w<CR>', { noremap = true, silent= true })
 map('n','<C-Q>', ':wq!<CR>', { noremap = true, silent= true })
 
 -- Better window navigation
--- nnoremap <C-h> <C-w>h
--- nnoremap <C-j> <C-w>j
--- nnoremap <C-k> <C-w>k
--- nnoremap <C-l> <C-w>l
+map('n','<C-h>', '<C-w>h', { noremap = true, silent= true })
+map('n','<C-j>', '<C-w>j', { noremap = true, silent= true })
+map('n','<C-k>', '<C-w>k', { noremap = true, silent= true })
+map('n','<C-l>', '<C-w>l', { noremap = true, silent= true })
 
--- " Use alt + hjkl to resize windows
--- map('n','<M-j>', ':rezise -2<cr>', { noremap = true, silent= true })
--- map('n','<M-k>', ':rezise +2<cr>', { noremap = true, silent= true })
--- map('n','<M-h>', ':vertical rezise -2<cr>', { noremap = true, silent= true })
--- map('n','<M-l>', ':vertical rezise +2<cr>', { noremap = true, silent= true })
--- nnoremap <silent> <M-j> :resize -2<CR>
--- nnoremap <silent> <M-k> :resize +2<CR>
--- nnoremap <silent> <M-h> :vertical resize -2<CR>
--- nnoremap <silent> <M-l> :vertical resize +2<CR>
+-- Use alt + hjkl to resize windows
+map('n','<M-j>', ':resize -2<cr>', { noremap = true, silent= true })
+map('n','<M-k>', ':resize +2<cr>', { noremap = true, silent= true })
+map('n','<M-h>', ':vertical resize -2<cr>', { noremap = true, silent= true })
+map('n','<M-l>', ':vertical resize +2<cr>', { noremap = true, silent= true })
 
 -- " Better indenting
--- vnoremap < <gv
--- vnoremap > >gv
+map('v','<', '<gv', { noremap = true })
+map('v','>', '>gv', { noremap = true })
 
 -- TAB in general mode will move to text buffer
 map('n', '<TAB>', ':bnext<cr>', { noremap=true})
@@ -50,18 +46,16 @@ map('n', '<leader>h', ':split<cr>', { noremap=true })
 -- " Buffers
 map('n', '<C-w>', ':bdelete<cr>', { noremap=true })
 
-
 -- Fix identation
-map('n', '<F7>', 'gg=G<C-o>', { noremap=true})
+map('n', '<F7>', 'gg=G<C-o>', { noremap=true })
 
 -- Remove whitespaces
+map('n', '<F8>', ':%s/\\s\\+$//<cr>', { noremap=true })
 -- nnoremap <F8> :%s/\s\+$//<CR>
 
 -- Yolo
--- cmap w!! w !sudo tee %
+map('c', 'w!!', 'w !sudo tee %', {})
 
--- " Format
--- " nnoremap <C-A-l> :Format<CR>
 
 -- ***** Plugins Stuff *****
 -- Goyo
