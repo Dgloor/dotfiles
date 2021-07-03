@@ -15,6 +15,7 @@ o.pumheight=10						-- Makes popup menu smaller
 o.ruler = true						-- Show the cursor position all the time
 o.scrolloff = 3					 	-- Min number of screen lines to keep above and below the cursor
 o.shiftwidth = 4					-- Change the number of space characters inserted for indentation
+o.shortmess = o.shortmess .. 'c'	-- Don't pass messages to |ins-completion-menu|.
 o.showmode = false					-- We don't need to see things like -- INSERT -- anymore
 o.showtabline = 2                   -- Always show tabs
 o.smartcase = true					-- Smart case search if there is uppercase
@@ -49,7 +50,6 @@ bo.smartindent = true				-- Makes indenting smart
 -- set laststatus=0                        " Always display the status line
 -- set nobackup                            " This is recommended by coc
 -- set nowritebackup                       " This is recommended by coc
--- set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 
 -- " checks if your terminal has 24-bit color support
 -- if (has("termguicolors"))

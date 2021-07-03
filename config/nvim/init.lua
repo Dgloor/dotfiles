@@ -14,6 +14,9 @@ require('plug-config/git')
 require('themes/dracula')
 require('themes/lightline')
 -- source $HOME/.config/nvim/themes/airline.vim
+
+-- Lsp
+require('lsp/lsp')
  
 -- Key Mappings
 require('keys/mappings')
