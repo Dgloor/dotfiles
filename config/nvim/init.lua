@@ -3,17 +3,16 @@ require('plugins')
 require('settings')
 
 -- Plug Config
--- source $HOME/.config/nvim/lsp/lsp.vim
--- source $HOME/.config/nvim/plug-config/home-screen.vim
--- source $HOME/.config/nvim/plug-config/git.vim
 require('plug-config/plug-colorizer')
+require('plug-config/home-screen')
 require('plug-config/floaterm')
 require('plug-config/git')
+require('plug-config/airline')
+require('plug-config/focus')
 
 -- Themes
 require('themes/dracula')
-require('themes/lightline')
--- source $HOME/.config/nvim/themes/airline.vim
+-- require('themes/lightline')
 
 -- Lsp
 require('lsp/lsp')

@@ -7,10 +7,10 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
 end
 
 vim.api.nvim_exec([[
-  augroup Packer
-    autocmd!
-    autocmd BufWritePost init.lua PackerCompile
-  augroup end
+augroup Packer
+autocmd!
+autocmd BufWritePost init.lua PackerCompile
+augroup end
 ]], false)
 
 local use = require('packer').use
@@ -23,13 +23,13 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
 
-  -- Git 
+  -- Git
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'junegunn/gv.vim'
   use 'mhinz/vim-signify'
 
-  -- Terminal 
+  -- Terminal
   use 'voldikss/vim-floaterm'
 
   -- Better comments
@@ -45,16 +45,20 @@ require('packer').startup(function()
   use 'tpope/vim-surround'
 
   -- Status bar
-  use 'itchyny/lightline.vim'
-  
+  -- use 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+  -- use 'itchyny/lightline.vim'
+  -- use 'vim-airline/vim-airline'
+
   -- Focus mode
   use 'junegunn/goyo.vim'
   use 'junegunn/limelight.vim'
 
   -- Themes
   use 'dracula/vim'
-  
-  -- Telescope 
-  -- use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
 
-  end)
+  -- Cool Icons
+  -- use 'ryanoasis/vim-devicons'
+
+  -- Telescope
+  -- use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
+end)

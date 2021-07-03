@@ -1,10 +1,12 @@
-local cmd = vim.cmd
+-- Just to show off my wallpaper
+vim.api.nvim_command([[
+  augroup ChangeBackgroudColour
+    autocmd colorscheme * :hi normal guibg=NONE
+  augroup END
+]])
 
 -- Colorscheme
-cmd [[colorscheme dracula]]
+vim.cmd [[silent! colorscheme dracula]]
 
--- Just to show off my wallpaper
-cmd [[highlight Normal guibg=NONE]]
-
--- " Airline theme
--- let g:airline_theme = 'dracula'
+-- Status Line theme
+vim.g.lightline = { colorscheme = 'dracula' }

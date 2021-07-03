@@ -77,10 +77,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gv.vim"
   },
-  ["lightline.vim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lightline.vim"
-  },
   ["limelight.vim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/limelight.vim"
