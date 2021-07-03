@@ -7,10 +7,10 @@ require('settings')
 -- source $HOME/.config/nvim/plug-config/home-screen.vim
 -- source $HOME/.config/nvim/plug-config/floaterm.vim
 -- source $HOME/.config/nvim/plug-config/git.vim
--- luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+require('plug-config/plug-colorizer')
 
 -- Themes
--- source $HOME/.config/nvim/themes/dracula.vim
+require('themes/dracula')
 -- source $HOME/.config/nvim/themes/airline.vim
  
 -- Key Mappings

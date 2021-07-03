@@ -15,24 +15,45 @@ vim.api.nvim_exec([[
 
 local use = require('packer').use
 require('packer').startup(function()
-  use 'wbthomason/packer.nvim'       -- Package manager
+  -- Package manager
+  use 'wbthomason/packer.nvim'
 
   -- Lsp
-  use 'neovim/nvim-lspconfig'        -- Collection of configurations for built-in LSP client
-  use 'hrsh7th/nvim-compe'           -- Autocompletion plugin
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/nvim-compe'
 
   -- Git 
-  use 'tpope/vim-fugitive'           -- Git commands in nvim
-  use 'tpope/vim-rhubarb'            -- Fugitive-companion to interact with github
-  use 'tpope/vim-commentary'         -- "gc" to comment visual regions/lines
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
+  use 'junegunn/gv.vim'
+
+  -- Terminal 
+  use 'voldikss/vim-floaterm'
+
+  -- Better comments
+  use 'tpope/vim-commentary'
+
+  -- Start Scren
+  use 'mhinz/vim-startify'
+
+  -- Colorizer
+  use 'norcalli/nvim-colorizer.lua'
+
+  -- Surround
+  use 'tpope/vim-surround'
 
   -- Status bar
-  use 'itchyny/lightline.vim'        -- Fancier statusline
+  use 'itchyny/lightline.vim'
   
-  -- use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
   
   -- Focus mode
-  use "junegunn/goyo.vim"
-  use "junegunn/limelight.vim"
+  use 'junegunn/goyo.vim'
+  use 'junegunn/limelight.vim'
+
+  -- Themes
+  use 'dracula/vim'
+  
+  -- Telescope 
+  -- use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
 
   end)

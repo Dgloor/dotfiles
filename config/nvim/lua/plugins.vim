@@ -9,8 +9,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-" LSP
-Plug 'neovim/nvim-lspconfig'
 
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -21,35 +19,9 @@ Plug 'ryanoasis/vim-devicons'
 " Better Syntax Support
 Plug 'sheerun/vim-polyglot'
 
-" Themes
-Plug 'dracula/vim'
 
-" Status Line
-Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 
-" Colorizer
-Plug 'norcalli/nvim-colorizer.lua'
 
-" Better Comments
-Plug 'tpope/vim-commentary'
-
-" Surround
-Plug 'tpope/vim-surround'
-
-" Start Scren
-Plug 'mhinz/vim-startify'
-
-" Terminal
-Plug 'voldikss/vim-floaterm'
-
-" Git
-Plug 'mhinz/vim-signify'
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-
-" Zen mode
-Plug 'junegunn/goyo.vim'
 
 " HTML & CSS
 "Plug 'mattn/emmet-vim'
