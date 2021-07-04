@@ -1,7 +1,7 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'dracula',
+    theme = 'palenight',
     component_separators = {'', ''},
     section_separators = {'', ''},
     disabled_filetypes = {}
@@ -10,8 +10,8 @@ require'lualine'.setup {
     lualine_a = {'mode'}, 
     lualine_b = {'branch'}, 
     lualine_c = {'filename'}, 
-    lualine_x = {},  
-    lualine_y = {'encoding', 'fileformat', 'filetype'},    
+    lualine_x = {'encoding', 'fileformat', 'filetype'},    
+    lualine_y = {'progress'},  
     lualine_z = {'location'} 
   },
   inactive_sections = {},

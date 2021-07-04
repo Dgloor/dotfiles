@@ -77,6 +77,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/goyo.vim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gruvbox"
+  },
   ["gv.vim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gv.vim"

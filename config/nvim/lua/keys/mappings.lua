@@ -57,9 +57,9 @@ map('n', '<F8>', ':%s/\\s\\+$//<cr>', { noremap=true })
 map('c', 'w!!', 'w !sudo tee %', {})
 
 
--- ***** Plugins Stuff *****
+-- *************** Plugins Stuff ***************
 -- Goyo
-map('n', '<leader>z', ':Goyo<cr>', { noremap=true })
+map('n', '<leader>z', ':Goyo<cr>', { noremap=true, silent=true })
 
 -- " Floaterm
 map('n', '<leader>r', ':FloatermNew lf<cr>', { noremap=true })
@@ -72,7 +72,6 @@ map('n', '<leader>gJ', '9999<leader>gj)', {})
 map('n', '<leader>gK', '9999<leader>gk)', {})
 
 -- Telescope
--- Find files using Telescope command-line sugar.
 map('n', '<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<cr>', { noremap = true })
 map('n', '<leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<cr>', { noremap = true })
 map('n', '<leader>fb', '<cmd>lua require("telescope.builtin").buffers()<cr>', { noremap = true })

@@ -17,6 +17,7 @@ require('themes/dracula')
 
 -- Lsp
 require('lsp/lsp')
+require('lsp/compe')
  
 -- Key Mappings
 require('keys/mappings')

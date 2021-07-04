@@ -21,16 +21,21 @@ require('packer').startup(function()
 
   -- Lsp
   use 'neovim/nvim-lspconfig'
+
+  -- Treesitter
+
+  -- Completion
   use 'hrsh7th/nvim-compe'
 
   -- Themes
   use 'dracula/vim'
+  use 'morhetz/gruvbox'
 
   -- Git
-  use 'tpope/vim-fugitive'
-  use 'tpope/vim-rhubarb'
-  use 'junegunn/gv.vim'
-  use 'mhinz/vim-signify'
+  -- use 'tpope/vim-fugitive'
+  -- use 'tpope/vim-rhubarb'
+  -- use 'junegunn/gv.vim'
+  -- use 'mhinz/vim-signify'
 
   -- Floating terminal
   use 'voldikss/vim-floaterm'
@@ -51,21 +56,18 @@ require('packer').startup(function()
   use 'junegunn/goyo.vim'
   use 'junegunn/limelight.vim'
 
+  -- Icons
+  use 'kyazdani42/nvim-web-devicons'
+
   -- Status bar
   use {
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
+  } 
 
-  -- Tabssss
+  -- Tabsss
   use {
-    'akinsho/nvim-bufferline.lua',
-    requires = 'kyazdani42/nvim-web-devicons'
-  }
-
-  -- using packer.nvim
-  use {
-    'akinsho/nvim-bufferline.lua',
+    'akinsho/nvim-bufferline.lua', 
     requires = 'kyazdani42/nvim-web-devicons'
   }
 

@@ -7,6 +7,3 @@ vim.api.nvim_command([[
 
 -- Colorscheme
 vim.cmd [[silent! colorscheme dracula]]
-
--- Status Line theme
-vim.g.lightline = { colorscheme = 'dracula' }
