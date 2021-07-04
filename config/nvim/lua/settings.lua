@@ -28,7 +28,7 @@ o.tabstop = 2                           -- Insert 4 spaces for a tab
 o.termguicolors = true                  -- Enables 24-bit RGB color in the TUI
 o.timeoutlen = 300                      -- By default timeoutlen is 1000 ms
 o.updatetime = 250                      -- Faster completion
-o.showtabline = 2                      -- Always show tabs
+o.showtabline = 2                       -- Always show tabs
 
 -- Window-local options
 wo.number = true                        -- Line numbers
@@ -43,15 +43,7 @@ bo.autoindent = true                    -- Good auto indent
 bo.fileencoding = 'utf-8'               -- The encoding written to file
 bo.smartindent = true                   -- Makes indenting smart
 bo.expandtab = true                     -- Converts tabs to spaces
--- bo.iskeyword = bo.iskeyword .. '-'		-- Treat dash separated words as a word text object
+
+-- Don't know how to fix this?
+-- bo.iskeyword = bo.iskeyword .. '-'		  -- Treat dash separated words as a word text object
 -- bo.formatoptions = bo.formatoptions .. 'cro'	-- Stop newline continution of comments
-
--- set nobackup                            " This is recommended by coc
--- set nowritebackup                       " This is recommended by coc
-
--- " checks if your terminal has 24-bit color support
--- if (has("termguicolors"))
--- hi LineNr ctermbg=NONE guibg=NONE
--- endif
-
--- au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC

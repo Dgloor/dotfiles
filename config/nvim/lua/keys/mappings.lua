@@ -34,10 +34,11 @@ map('n','<M-l>', ':vertical resize +2<cr>', { noremap = true, silent= true })
 map('v','<', '<gv', { noremap = true })
 map('v','>', '>gv', { noremap = true })
 
--- TAB in general mode will move to text buffer
-map('n', '<TAB>', ':bnext<cr>', { noremap=true})
--- SHIFT-TAB will go back
+-- TAB / SHIFT + TAB for move to next/prev buffer, pUp and pDown too
+map('n', '<TAB>', ':bnext<cr>', { noremap=true })
+map('n', '<S-PageDown>', ':bnext<CR>', { noremap=true })
 map('n', '<S-TAB>', ':bprevious<cr>', { noremap=true })
+map('n', '<S-PageUp>', ':bprevious<CR>', { noremap=true })
 
 -- Splits
 map('n', '<leader>v', ':vsplit<cr>', { noremap=true })
@@ -78,5 +79,5 @@ map('n', '<leader>fb', '<cmd>lua require("telescope.builtin").buffers()<cr>', { 
 map('n', '<leader>fh', '<cmd>lua require("telescope.builtin").help_tags()<cr>', { noremap = true })
 
 -- Dashboard
-map('n', '<Leader>ss', ':<C-u>SessionSave<CR>', {})
-map('n', '<Leader>sl', ':<C-u>SessionLoad<CR>', {})
+map('n', '<leader>ss', ':<C-u>SessionSave<CR>', {})
+map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', {})
