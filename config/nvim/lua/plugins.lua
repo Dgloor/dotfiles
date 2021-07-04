@@ -23,6 +23,9 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
 
+  -- Themes
+  use 'dracula/vim'
+
   -- Git
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
@@ -44,6 +47,10 @@ require('packer').startup(function()
   -- Surround
   use 'tpope/vim-surround'
 
+  -- Focus mode
+  use 'junegunn/goyo.vim'
+  use 'junegunn/limelight.vim'
+
   -- Status bar
   use {
     'hoob3rt/lualine.nvim',
@@ -61,13 +68,6 @@ require('packer').startup(function()
     'akinsho/nvim-bufferline.lua',
     requires = 'kyazdani42/nvim-web-devicons'
   }
-
-  -- Focus mode
-  use 'junegunn/goyo.vim'
-  use 'junegunn/limelight.vim'
-
-  -- Themes
-  use 'dracula/vim'
 
   -- Telescope
   use {

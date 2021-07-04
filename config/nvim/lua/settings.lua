@@ -4,6 +4,7 @@ local bo = vim.bo
 
 -- Global options
 o.background = 'dark'                   -- Tell vim what the background color looks like
+o.backup = false                        -- Creates a backup file
 o.clipboard = 'unnamedplus'             -- Copy paste between vim and everything else
 o.cursorline = true                     -- Enable highlighting of the current line
 o.encoding = 'utf-8'                    -- The encoding displayed
@@ -44,6 +45,6 @@ bo.fileencoding = 'utf-8'               -- The encoding written to file
 bo.smartindent = true                   -- Makes indenting smart
 bo.expandtab = true                     -- Converts tabs to spaces
 
--- Don't know how to fix this?
--- bo.iskeyword = bo.iskeyword .. '-'		  -- Treat dash separated words as a word text object
--- bo.formatoptions = bo.formatoptions .. 'cro'	-- Stop newline continution of comments
+-- Nah
+vim.cmd('set iskeyword+=-')
+vim.cmd('set formatoptions-=cro')

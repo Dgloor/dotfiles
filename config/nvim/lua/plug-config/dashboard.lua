@@ -1,4 +1,4 @@
-vim.g.dashboard_session_directory = '~/.config/nvim/session'
+vim.g.dashboard_session_directory = '~/.cache/nvim/session'
 
 vim.g.dashboard_custom_header = {
 	' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
