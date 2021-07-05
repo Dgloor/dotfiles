@@ -4,7 +4,7 @@ require'lualine'.setup {
     theme = 'palenight',
     component_separators = {'', ''},
     section_separators = {'', ''},
-    disabled_filetypes = {}
+    disabled_filetypes = {'dashboard'}
   },
   sections = {
     lualine_a = {'mode'}, 

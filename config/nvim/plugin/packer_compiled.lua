@@ -11,7 +11,7 @@ local no_errors = pcall(function()
 
   local time
   local profile_info
-  local should_profile = false
+  local should_profile = true
   if should_profile then
     local hrtime = vim.loop.hrtime
     profile_info = {}
@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -106,6 +110,12 @@ _G.packer_plugins = {
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["nvim-lspconfig"] = {
+    config = {
+      profile = {
+        enable = true,
+        threshold = 1
+      }
+    },
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
@@ -145,10 +155,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-startify"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-surround"
@@ -156,6 +162,9 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+time([[Config for nvim-lspconfig]], false)
 if should_profile then save_profiles() end
 
 end)

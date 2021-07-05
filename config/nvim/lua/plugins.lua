@@ -38,7 +38,6 @@ require('packer').startup(function()
 		'lewis6991/gitsigns.nvim',
 		requires = { 'nvim-lua/plenary.nvim' }
 	}
-	-- use 'mhinz/vim-signify'
 
 	-- Floating terminal
 	use 'voldikss/vim-floaterm'
@@ -72,6 +71,12 @@ require('packer').startup(function()
 	use {
 		'akinsho/nvim-bufferline.lua', 
 		requires = 'kyazdani42/nvim-web-devicons'
+	}
+
+	-- FZF native
+	use {
+		'nvim-telescope/telescope-fzf-native.nvim', 
+		run = 'make'
 	}
 
 	-- Telescope

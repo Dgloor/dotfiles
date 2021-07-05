@@ -1,1 +1,1 @@
-vim.g.dashboard_default_executive ='telescope'
+require('telescope').load_extension('fzf')
