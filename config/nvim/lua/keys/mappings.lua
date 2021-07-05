@@ -12,13 +12,13 @@ vim.g.maplocalleader = ' '
 map('i', 'ññ', '<Esc>', noremap)
 map('i', 'ÑÑ', '<Esc>', noremap)
 
--- " Quickly remove search highlights
+-- Quickly remove search highlights
 map ('n', '<C-n>', ':nohl<CR>', noremap)
 
 -- Alternate way to save
 map('n','<C-s>', ':w<CR>', snoremap)
 
--- " Alternate way to quit
+-- Alternate way to quit
 map('n','<C-Q>', ':wq!<CR>', snoremap)
 
 -- Better window navigation
@@ -33,22 +33,20 @@ map('n','<M-k>', ':resize +2<CR>', snoremap)
 map('n','<M-h>', ':vertical resize -2<CR>', snoremap)
 map('n','<M-l>', ':vertical resize +2<CR>', snoremap)
 
--- " Better indenting
+-- Better indenting
 map('v','<', '<gv', noremap)
 map('v','>', '>gv', noremap)
 
--- TAB / SHIFT + TAB for move to next/prev buffer, pUp and pDown too
-map('n', '<TAB>', ':bnext<CR>', noremap)
-map('n', '<S-PageDown>', ':bnext<CR>', noremap)
-map('n', '<S-TAB>', ':bprevious<CR>', noremap)
-map('n', '<S-PageUp>', ':bprevious<CR>', noremap)
+-- Buffers
+map('n', '<TAB>', ':bnext<CR>', snoremap)
+map('n', '<S-PageDown>', ':bnext<CR>', snoremap)
+map('n', '<S-TAB>', ':bprevious<CR>', snoremap)
+map('n', '<S-PageUp>', ':bprevious<CR>', snoremap)
+map('n', '<C-w>', ':bdelete<CR>', snoremap)
 
 -- Splits
 map('n', '<leader>v', ':vsplit<CR>', noremap)
 map('n', '<leader>h', ':split<CR>', noremap)
-
--- " Buffers
-map('n', '<C-w>', ':bdelete<CR>', noremap)
 
 -- Fix identation
 map('n', '<F7>', 'gg=G<C-o>', noremap)
@@ -70,9 +68,9 @@ map('i', '<C-Space>', 'v:lua.tab_complete()', { expr = true })
 -- Goyo
 map('n', '<leader>z', ':Goyo<CR>', snoremap)
 
--- " Floaterm
-map('n', '<leader>r', ':FloatermNew lf<CR>', noremap)
-map('n', '<leader>fp', ':FloatermNew python<CR>', noremap)
+-- Floaterm
+map('n', '<leader>r', ':FloatermNew lf<CR>', snoremap)
+map('n', '<leader>fp', ':FloatermNew python<CR>', snoremap)
 
 -- " Git Stuff
 map('n', '<leader>gj', ':Gitsigns next_hunk<CR>', snoremap)

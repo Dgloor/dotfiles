@@ -1,12 +1,12 @@
 vim.g.dashboard_custom_header = {
-	' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
-	' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
-	' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
-	' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
-	' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
-	' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
-	'																												',
-	'									  [ Arch Rocks btw ]									',
+  ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
+  ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
+  ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
+  ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
+  ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
+  ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
+  '																												',
+  '									  [ Arch Rocks btw ]									',
 }
 
 vim.g.dashboard_custom_footer = {
@@ -19,34 +19,34 @@ vim.g.dashboard_custom_footer = {
 vim.g.dashboard_default_executive ='telescope'
 vim.g.dashboard_session_directory = '~/.config/nvim/session'
 vim.g.dashboard_custom_section = {
-	a = {
-		description = { '  Find File           ' },
-		command = 'Telescope find_files',
-	},
-	b = {
-		description = { '  Recently Used Files ' },
-		command = 'Telescope oldfiles',
-	},
-	c = {
-		description = { '  Load Last Session   ' },
-		command = 'SessionLoad',
-	},
-	d = {
-		description = { '  Find Word           ' },
-		command = 'Telescope live_grep',
-	},
-	e = {
-		description = { '  Dotfiles Configs    ' },
-		command = 'Telescope file_browser cwd="~/repos/dotfiles/"',
-	},
-	f = {
-		description = { '  Neovim Configs      ' },
-		command = 'Telescope file_browser cwd="~/.config/nvim/lua"',
-	},
-	g = {
-		description = { '  New Empty File      ' },
-		command = ':DashboardNewFile',
-	}
+  a = {
+    description = { '  Find File           ' },
+    command = 'Telescope find_files',
+  },
+  b = {
+    description = { '  Recently Used Files ' },
+    command = 'Telescope oldfiles',
+  },
+  c = {
+    description = { '  Load Last Session   ' },
+    command = 'SessionLoad',
+  },
+  d = {
+    description = { '  Find Word           ' },
+    command = 'Telescope live_grep',
+  },
+  e = {
+    description = { '  Dotfiles Configs    ' },
+    command = 'Telescope file_browser cwd="~/repos/dotfiles/"',
+  },
+  f = {
+    description = { '  Neovim Configs      ' },
+    command = 'Telescope file_browser cwd="~/.config/nvim/lua"',
+  },
+  g = {
+    description = { '  New Empty File      ' },
+    command = ':DashboardNewFile',
+  }
 }
 
 -- Hide Tabline

@@ -6,7 +6,7 @@ local bo = vim.bo
 o.background = 'dark'                   -- Tell vim what the background color looks like
 o.backup = false                        -- Creates a backup file
 o.clipboard = 'unnamedplus'             -- Copy paste between vim and everything else
-o.completeopt = "menuone,noselect"			-- Options for Insert mode completion 
+o.completeopt = "menuone,noselect"			-- Options for Insert mode completion
 o.cursorline = true                     -- Enable highlighting of the current line
 o.encoding = 'utf-8'                    -- The encoding displayed
 o.errorbells = false                    -- No beep or screen flash for error messages
@@ -26,7 +26,7 @@ o.splitbelow = true                     -- Horizontal splits will automatically 
 o.splitright = true                     -- Vertical splits will automatically be to the right
 o.swapfile = false                      -- Disable creating swap file
 o.syntax = 'enable'                     -- Enable syntax highlighting
-o.tabstop = 2                           -- Insert 4 spaces for a tab
+o.tabstop = 2                           -- Insert 2 spaces for a tab
 o.termguicolors = true                  -- Enables 24-bit RGB color in the TUI
 o.timeoutlen = 300                      -- By default timeoutlen is 1000 ms
 o.updatetime = 250                      -- Faster completion
@@ -47,5 +47,5 @@ bo.smartindent = true                   -- Makes indenting smart
 bo.expandtab = true                     -- Converts tabs to spaces
 
 -- Nah
-vim.cmd('set iskeyword+=-')
-vim.cmd('set formatoptions-=cro')
+vim.cmd('set iskeyword+=-')							-- Treat '-' separate words as a word text object
+vim.cmd('set formatoptions-=cro')				-- Stop newline continution of comments

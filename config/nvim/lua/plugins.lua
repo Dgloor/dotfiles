@@ -3,7 +3,7 @@ local exec = vim.api.nvim_command
 local install_path = vim.fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-	exec('!git clone https://github.com/wbthomason/packer.nvim '.. install_path)
+  exec('!git clone https://github.com/wbthomason/packer.nvim '.. install_path)
 end
 
 vim.api.nvim_exec([[
@@ -11,85 +11,86 @@ augroup Packer
 autocmd!
 autocmd BufWritePost init.lua PackerCompile
 augroup end
-	]], false)
-
-local use = require('packer').use
+  ]], false)
 
 require('packer').startup(function()
-	-- Package manager
-	use 'wbthomason/packer.nvim'
+  -- Package manager
+  use 'wbthomason/packer.nvim'
 
-	-- Lsp
-	use 'neovim/nvim-lspconfig'
+  -- Lsp
+  use 'neovim/nvim-lspconfig'
 
-	-- Treesitter
-	use {
-		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
-	}
-	-- use 'nvim-treesitter/playground'
+  -- Completion
+  use 'hrsh7th/nvim-compe'
 
-	-- Completion
-	use 'hrsh7th/nvim-compe'
+  -- Themes
+  use 'dracula/vim'
 
-	-- Themes
-	use 'dracula/vim'
-	use 'morhetz/gruvbox'
+  -- Floating terminal
+  use 'voldikss/vim-floaterm'
 
-	-- Git
-	use 'tpope/vim-fugitive'
-	use 'junegunn/gv.vim'
-	use {
-		'lewis6991/gitsigns.nvim',
-		requires = { 'nvim-lua/plenary.nvim' }
-	}
+  -- Better comments
+  use 'tpope/vim-commentary'
 
-	-- Floating terminal
-	use 'voldikss/vim-floaterm'
+  -- Dashboard
+  use 'glepnir/dashboard-nvim'
 
-	-- Better comments
-	use 'tpope/vim-commentary'
+  -- Colorizer
+  use 'norcalli/nvim-colorizer.lua'
 
-	-- Dashboard
-	use 'glepnir/dashboard-nvim'
+  -- Surround
+  use 'tpope/vim-surround'
 
-	-- Colorizer
-	use 'norcalli/nvim-colorizer.lua'
+  -- Auto pairs
+  use 'windwp/nvim-autopairs'
 
-	-- Surround
-	use 'tpope/vim-surround'
+  -- Icons
+  use 'kyazdani42/nvim-web-devicons'
 
-	-- Focus mode
-	use 'junegunn/goyo.vim'
-	use 'junegunn/limelight.vim'
+  -- Focus mode
+  use 'junegunn/goyo.vim'
+  use 'junegunn/limelight.vim'
 
-	-- Auto pairs
-	use 'windwp/nvim-autopairs'
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
-	-- Icons
-	use 'kyazdani42/nvim-web-devicons'
+  -- Tabsss
+  use {
+    'akinsho/nvim-bufferline.lua', 
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
 
-	-- Status bar
-	use {
-		'hoob3rt/lualine.nvim',
-		requires = {'kyazdani42/nvim-web-devicons', opt = true}
-	} 
+  -- FZF native
+  use {
+    'nvim-telescope/telescope-fzf-native.nvim', 
+    run = 'make'
+  }
 
-	-- Tabsss
-	use {
-		'akinsho/nvim-bufferline.lua', 
-		requires = 'kyazdani42/nvim-web-devicons'
-	}
+  -- Status bar
+  use {
+    'hoob3rt/lualine.nvim',
+    requires = {
+      'kyazdani42/nvim-web-devicons', opt = true
+    }
+  } 
 
-	-- FZF native
-	use {
-		'nvim-telescope/telescope-fzf-native.nvim', 
-		run = 'make'
-	}
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {
+      {'nvim-lua/popup.nvim'}, 
+      {'nvim-lua/plenary.nvim'}
+    }
+  }
 
-	-- Telescope
-	use {
-		'nvim-telescope/telescope.nvim',
-		requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-	}
+  -- Git
+  use 'tpope/vim-fugitive'
+  use 'junegunn/gv.vim'
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
 end)
