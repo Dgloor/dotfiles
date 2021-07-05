@@ -58,6 +58,9 @@ require('packer').startup(function()
 	use 'junegunn/goyo.vim'
 	use 'junegunn/limelight.vim'
 
+	-- Auto pairs
+	use 'windwp/nvim-autopairs'
+
 	-- Icons
 	use 'kyazdani42/nvim-web-devicons'
 

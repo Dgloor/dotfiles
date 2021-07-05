@@ -10,6 +10,7 @@ require('lsp/lsp')
 require('lsp/compe')
  
 -- Plug Config
+require('plug-config/autopairs')
 require('plug-config/bufferline')
 require('plug-config/colorizer')
 require('plug-config/dashboard')

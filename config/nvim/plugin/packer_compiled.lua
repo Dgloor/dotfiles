@@ -11,7 +11,7 @@ local no_errors = pcall(function()
 
   local time
   local profile_info
-  local should_profile = true
+  local should_profile = false
   if should_profile then
     local hrtime = vim.loop.hrtime
     profile_info = {}
@@ -97,6 +97,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+  },
   ["nvim-bufferline.lua"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
@@ -110,12 +114,6 @@ _G.packer_plugins = {
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["nvim-lspconfig"] = {
-    config = {
-      profile = {
-        enable = true,
-        threshold = 1
-      }
-    },
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
@@ -134,6 +132,10 @@ _G.packer_plugins = {
   ["popup.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -162,9 +164,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-time([[Config for nvim-lspconfig]], false)
 if should_profile then save_profiles() end
 
 end)

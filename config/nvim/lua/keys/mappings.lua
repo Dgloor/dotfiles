@@ -61,6 +61,12 @@ map('c', 'w!!', 'w !sudo tee %', {})
 
 
 -- *************** Plugins Stuff ***************
+-- Completion
+map('i', '<CR>', 'compe#confirm("<CR>")', { expr = true, silent = true })
+map('i', '<Tab>', 'v:lua.tab_complete()', { expr = true })
+map('i', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
+map('i', '<C-Space>', 'v:lua.tab_complete()', { expr = true })
+
 -- Goyo
 map('n', '<leader>z', ':Goyo<CR>', snoremap)
 
