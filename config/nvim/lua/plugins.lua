@@ -11,7 +11,7 @@ augroup Packer
 autocmd!
 autocmd BufWritePost init.lua PackerCompile
 augroup end
-]], false)
+	]], false)
 
 local use = require('packer').use
 
@@ -23,6 +23,12 @@ require('packer').startup(function()
 	use 'neovim/nvim-lspconfig'
 
 	-- Treesitter
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
+
+	use 'nvim-treesitter/playground'
 
 	-- Completion
 	use 'hrsh7th/nvim-compe'
