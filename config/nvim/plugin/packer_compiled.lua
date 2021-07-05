@@ -69,9 +69,9 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["dashboard-nvim"] = {
+  ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
   ["goyo.vim"] = {
     loaded = true,
@@ -145,13 +145,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
-  ["vim-rhubarb"] = {
+  ["vim-startify"] = {
     loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
-  },
-  ["vim-signify"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-signify"
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,
