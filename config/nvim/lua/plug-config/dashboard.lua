@@ -20,31 +20,31 @@ vim.g.dashboard_default_executive ='telescope'
 vim.g.dashboard_session_directory = '~/.config/nvim/session'
 vim.g.dashboard_custom_section = {
   a = {
-    description = { '  Find File           ' },
+    description = { '  Find File               SPC f p ' },
     command = 'Telescope find_files',
   },
   b = {
-    description = { '  Recently Used Files ' },
+    description = { '  Recently Used Files     SPC f o ' },
     command = 'Telescope oldfiles',
   },
   c = {
-    description = { '  Load Last Session   ' },
-    command = 'SessionLoad',
-  },
-  d = {
-    description = { '  Find Word           ' },
+    description = { '  Find Word               SPC f w ' },
     command = 'Telescope live_grep',
   },
+  d = {
+    description = { '  Dotfiles Configs        SPC f d ' },
+    command = 'lua require("telescope.builtin").find_files({search_dirs={"~/repos/dotfiles/"}})'
+  },
   e = {
-    description = { '  Dotfiles Configs    ' },
-    command = 'Telescope file_browser cwd="~/repos/dotfiles/"',
+    description = { '  Neovim Configs          SPC f n ' },
+    command = 'lua require("telescope.builtin").find_files({search_dirs={"~/.config/nvim/"}})'
   },
   f = {
-    description = { '  Neovim Configs      ' },
-    command = 'Telescope file_browser cwd="~/.config/nvim/lua"',
+    description = { '  Load Last Session       SPC s l ' },
+    command = 'SessionLoad',
   },
   g = {
-    description = { '  New Empty File      ' },
+    description = { '  New Empty File          SPC e e ' },
     command = ':DashboardNewFile',
   }
 }

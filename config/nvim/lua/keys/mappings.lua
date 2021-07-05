@@ -12,6 +12,10 @@ vim.g.maplocalleader = ' '
 map('i', 'ññ', '<Esc>', noremap)
 map('i', 'ÑÑ', '<Esc>', noremap)
 
+-- Disable some stuff
+map('n', 'Q', '<nop>', noremap)
+map('n', 'q:', '<nop>', noremap)
+
 -- Quickly remove search highlights
 map ('n', '<C-n>', ':nohl<CR>', noremap)
 
@@ -68,10 +72,6 @@ map('i', '<C-Space>', 'v:lua.tab_complete()', { expr = true })
 -- Goyo
 map('n', '<leader>z', ':Goyo<CR>', snoremap)
 
--- Floaterm
-map('n', '<leader>r', ':FloatermNew lf<CR>', snoremap)
-map('n', '<leader>fp', ':FloatermNew python<CR>', snoremap)
-
 -- " Git Stuff
 map('n', '<leader>gj', ':Gitsigns next_hunk<CR>', snoremap)
 map('n', '<leader>gk', ':Gitsigns prev_hunk<CR>', snoremap)
@@ -79,11 +79,16 @@ map('n', '<leader>gp', ':Gitsigns preview_hunk<CR>', snoremap)
 map('n', '<leader>gb', ':Gitsings blame_line()<CR>', snoremap)
 
 -- Telescope
-map('n', '<leader>ff', ':Telescope find_files<CR>', noremap)
-map('n', '<leader>fg', ':Telescope live_grep<CR>', noremap)
-map('n', '<leader>fb', ':Telescope buffers<CR>', noremap)
-map('n', '<leader>fh', ':Telescope help_tags<CR>', noremap)
+map('n', '<leader>fh', ':Telescope ', noremap)
+map('n', '<leader>fw', ':Telescope live_grep<CR>', snoremap)
+map('n', '<leader>r', ':Telescope find_files<CR>', snoremap)
+map('n', '<leader>fp', ':Telescope find_files<CR>', snoremap)
+map('n', '<leader>fo', ':Telescope oldfiles<CR>', snoremap)
+
+-- Floaterm
+map('n', '<leader>fr', ':FloatermNew lf<CR>', snoremap)
 
 -- Dashboard
 map('n', '<leader>ss', ':<C-u>SessionSave<CR>', noremap)
 map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', noremap)
+map('n', '<leader>ee', ':<C-u>DashboardNewFile<CR>', snoremap)
