@@ -27,8 +27,7 @@ require('packer').startup(function()
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}
-
-	use 'nvim-treesitter/playground'
+	-- use 'nvim-treesitter/playground'
 
 	-- Completion
 	use 'hrsh7th/nvim-compe'

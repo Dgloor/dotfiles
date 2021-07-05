@@ -19,7 +19,7 @@ require('plug-config/focus')
 require('plug-config/git')
 require('plug-config/lualine')
 require('plug-config/telescope')
--- require('plug-config/treesitter')
+require('plug-config/treesitter')
 
 -- Key Mappings
 require('keys/mappings')
