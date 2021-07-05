@@ -84,6 +84,10 @@ map('n', '<leader>fw', ':Telescope live_grep<CR>', snoremap)
 map('n', '<leader>r', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fp', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fo', ':Telescope oldfiles<CR>', snoremap)
+map('n', '<leader>fd', 
+	':lua require("telescope.builtin").find_files({search_dirs={"~/repos/dotfiles/"}})<CR>', snoremap)
+map('n', '<leader>fn', 
+	':lua require("telescope.builtin").find_files({search_dirs={"~/.config/nvim/"}})<CR>', snoremap)
 
 -- Floaterm
 map('n', '<leader>fr', ':FloatermNew lf<CR>', snoremap)
