@@ -1,6 +1,6 @@
 import:
-    - ~/.config/alacritty/config.yml
-    - ~/.config/alacritty/font.yml
-    - ~/.config/alacritty/keys.yml
+  - ~/.config/alacritty/config.yml
+  - ~/.config/alacritty/font.yml
+  - ~/.config/alacritty/keys.yml
+  - ~/.config/alacritty/theme.yml
     #- ~/.config/alacritty/schemes.yml
-    - ~/.config/alacritty/theme.yml
