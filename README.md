@@ -14,7 +14,6 @@
   - [Sxhkd](https://github.com/baskerville/sxhkd) - hotkey daemon
   - [Polybar](https://github.com/polybar/polybar) - status bar
     - [Polybar scripts](https://github.com/Dgloor/dotfiles/tree/main/scripts/polybar)
-  - [Bsp-layout](https://github.com/phenax/bsp-layout) - more layouts for bspwm
   - [Picom](https://github.com/yshui/picom) - lightweight compositor
 
 ## Desktop Environments

@@ -41,12 +41,10 @@ map('n','<M-l>', ':vertical resize +2<CR>', snoremap)
 map('v','<', '<gv', noremap)
 map('v','>', '>gv', noremap)
 
--- Buffers
-map('n', '<TAB>', ':bnext<CR>', snoremap)
-map('n', '<S-PageDown>', ':bnext<CR>', snoremap)
-map('n', '<S-TAB>', ':bprevious<CR>', snoremap)
-map('n', '<S-PageUp>', ':bprevious<CR>', snoremap)
+-- Buffers (replace with BufferLine)
 map('n', '<C-w>', ':bdelete<CR>', snoremap)
+-- map('n', '<TAB>', ':bnext<CR>', snoremap)
+-- map('n', '<S-TAB>', ':bprevious<CR>', snoremap)
 
 -- Splits
 map('n', '<leader>v', ':vsplit<CR>', noremap)
@@ -64,7 +62,6 @@ map('c', 'w!!', 'w !sudo tee %', {})
 
 -- *************** Plugins Stuff ***************
 -- Completion
-map('i', '<CR>', 'compe#confirm("<CR>")', { expr = true, silent = true })
 map('i', '<Tab>', 'v:lua.tab_complete()', { expr = true })
 map('i', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
 map('i', '<C-Space>', 'v:lua.tab_complete()', { expr = true })
@@ -84,15 +81,25 @@ map('n', '<leader>fw', ':Telescope live_grep<CR>', snoremap)
 map('n', '<leader>r', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fp', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fo', ':Telescope oldfiles<CR>', snoremap)
+map('n', '<leader>gs', ':Telescope git_status<CR>', snoremap)
 map('n', '<leader>fd', 
 	':lua require("telescope.builtin").find_files({search_dirs={"~/repos/dotfiles/"}})<CR>', snoremap)
 map('n', '<leader>fn', 
 	':lua require("telescope.builtin").find_files({search_dirs={"~/.config/nvim/"}})<CR>', snoremap)
 
 -- Floaterm
+-- Open lf explorer in a floating window
 map('n', '<leader>e', ':FloatermNew lf<CR>', snoremap)
 
 -- Dashboard
 map('n', '<leader>ss', ':<C-u>SessionSave<CR>', noremap)
 map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', noremap)
 map('n', '<leader>se', ':<C-u>DashboardNewFile<CR>', snoremap)
+
+-- BufferLine
+-- Go to prev/next buffer
+map('n', '<TAB>', ':BufferLineCycleNext<CR>', snoremap)
+map('n', '<S-TAB>', ':BufferLineCyclePrev<CR>', snoremap)
+-- Move the current buffer backwards or forwards in the bufferline
+map('n', '<leader>bl', ':BufferLineMoveNext<CR>', snoremap)
+map('n', '<leader>bh', ':BufferLineMovePrev<CR>', snoremap)

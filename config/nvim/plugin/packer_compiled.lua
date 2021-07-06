@@ -69,10 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["dashboard-nvim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -81,13 +77,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/goyo.vim"
   },
-  gruvbox = {
+  ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gruvbox"
-  },
-  ["gv.vim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gv.vim"
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
   },
   ["limelight.vim"] = {
     loaded = true,
@@ -96,6 +88,10 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lush.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -108,6 +104,10 @@ _G.packer_plugins = {
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-comment"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -125,17 +125,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
-  ["onedark.vim"] = {
+  ["onedark.nvim"] = {
     loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/onedark.vim"
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/packer.nvim"
-  },
-  ["palenight.vim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/palenight.vim"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -157,21 +153,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim"
   },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-commentary"
-  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-floaterm"
   },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-fugitive"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-surround"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vscode.nvim"
   }
 }
 

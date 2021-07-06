@@ -12,6 +12,7 @@ o.encoding = 'utf-8'                    -- The encoding displayed
 o.errorbells = false                    -- No beep or screen flash for error messages
 o.hidden = true                         -- Required to keep multiple buffers open multiple buffers
 o.ignorecase = true                     -- Case insensitive search
+o.lazyredraw = true											-- No redrawn the screen while executing macros
 o.mouse = 'a'                           -- Enable mouse
 o.pumheight = 10                        -- Makes popup menu smaller
 o.ruler = true                          -- Show the cursor position all the time
@@ -19,6 +20,7 @@ o.scrolloff = 3                         -- Min number of screen lines to keep ab
 o.shiftwidth = 2                        -- Change the number of space characters inserted for indentation
 o.shortmess = o.shortmess .. 'c'        -- Don't pass messages to |ins-completion-menu|.
 o.showmode = false                      -- We don't need to see things like -- INSERT -- anymore
+o.showtabline = 2                       -- Always show tabs
 o.smartcase = true                      -- Smart case search if there is uppercase
 o.smarttab = true                       -- Makes tabbing smarter will realize you have 2 vs 4
 o.softtabstop = 2                       -- Number of space to insert for a <Tab>
@@ -30,7 +32,6 @@ o.tabstop = 2                           -- Insert 2 spaces for a tab
 o.termguicolors = true                  -- Enables 24-bit RGB color in the TUI
 o.timeoutlen = 300                      -- By default timeoutlen is 1000 ms
 o.updatetime = 250                      -- Faster completion
-o.showtabline = 2                       -- Always show tabs
 
 -- Window-local options
 wo.number = true                        -- Line numbers
