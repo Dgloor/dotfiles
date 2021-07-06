@@ -93,6 +93,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lush.nvim"
   },
+  neogit = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/neogit"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
@@ -116,10 +120,6 @@ _G.packer_plugins = {
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
-  },
-  ["nvim-toggleterm.lua"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-toggleterm.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -156,6 +156,10 @@ _G.packer_plugins = {
   vim = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim"
+  },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-floaterm"
   },
   ["vim-surround"] = {
     loaded = true,

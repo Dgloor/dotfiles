@@ -18,6 +18,7 @@ require('plug-config/goyo')
 require('plug-config/git')
 require('plug-config/lualine')
 require('plug-config/telescope')
+-- require('plug-config/dashboard')
 
 -- Key Mappings
 require('keys/mappings')

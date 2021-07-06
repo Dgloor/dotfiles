@@ -64,6 +64,11 @@ map('c', 'w!!', 'w !sudo tee %', {})
 
 
 -- *************** Plugins Stuff ***************
+-- Dashboard
+-- map('n', '<leader>ss', ':<C-u>SessionSave<CR>', noremap)
+-- map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', noremap)
+-- map('n', '<leader>se', ':<C-u>DashboardNewFile<CR>', snoremap)
+
 -- Completion
 map('i', '<Tab>', 'v:lua.tab_complete()', { expr = true })
 map('i', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
@@ -84,19 +89,10 @@ map('n', '<leader>fw', ':Telescope live_grep<CR>', snoremap)
 map('n', '<leader>r', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fp', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fo', ':Telescope oldfiles<CR>', snoremap)
-map('n', '<leader>fd', 
-	':lua require("telescope.builtin").find_files({search_dirs={"~/repos/dotfiles/"}})<CR>', snoremap)
-map('n', '<leader>fn', 
-	':lua require("telescope.builtin").find_files({search_dirs={"~/.config/nvim/"}})<CR>', snoremap)
 
 -- Floaterm
 -- Open lf explorer in a floating window
 map('n', '<leader>e', ':FloatermNew lf<CR>', snoremap)
-
--- Dashboard
--- map('n', '<leader>ss', ':<C-u>SessionSave<CR>', noremap)
--- map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', noremap)
--- map('n', '<leader>se', ':<C-u>DashboardNewFile<CR>', snoremap)
 
 -- BufferLine
 -- Go to prev/next buffer
