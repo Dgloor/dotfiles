@@ -319,7 +319,7 @@ setxkbmap latam # latam keyboard layout
 ```bash
 sudo pacman -S libxcb xcb-util xcb-util-wm xcb-util-keysyms # dependencies
 sudo pacman -S bspwm sxhkd rofi xsel xdo wmctrl wmname
-paru -S bsp-layout-git polybar picom rofi-emoji
+paru -S polybar picom rofi-emoji
 
 # Bspwm & Sxhkd initial config
 mkdir -p ~/.config/{bspwm,sxhkd}

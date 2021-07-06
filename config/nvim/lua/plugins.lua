@@ -11,9 +11,12 @@ augroup Packer
 autocmd!
 autocmd BufWritePost init.lua PackerCompile
 augroup end
-  ]], false)
+]], false)
 
 require('packer').startup(function()
+  -- Dashboard
+  -- use 'glepnir/dashboard-nvim'
+
   -- Package manager
   use 'wbthomason/packer.nvim'
 
@@ -23,34 +26,23 @@ require('packer').startup(function()
   -- Completion
   use 'hrsh7th/nvim-compe'
 
-  -- Themes
-  use 'dracula/vim'
-	use 'morhetz/gruvbox'
-	use 'Mofiqul/vscode.nvim'
-	use 'navarasu/onedark.nvim'
-	use 'NTBBloodbath/doom-one.nvim'
-	use 'drewtempelmeyer/palenight.vim'
-
   -- Floating terminal
   use 'voldikss/vim-floaterm'
 
   -- Better comments
-  use 'tpope/vim-commentary'
-
-  -- Dashboard
-  use 'glepnir/dashboard-nvim'
+  use 'terrortylor/nvim-comment'
 
   -- Colorizer
   use 'norcalli/nvim-colorizer.lua'
+
+  -- Icons
+  use 'kyazdani42/nvim-web-devicons'
 
   -- Surround
   use 'tpope/vim-surround'
 
   -- Auto pairs
   use 'windwp/nvim-autopairs'
-
-  -- Icons
-  use 'kyazdani42/nvim-web-devicons'
 
   -- Focus mode
   use 'junegunn/goyo.vim'
@@ -64,38 +56,49 @@ require('packer').startup(function()
 
   -- Tabsss
   use {
-    'akinsho/nvim-bufferline.lua', 
+    'akinsho/nvim-bufferline.lua',
     requires = {'kyazdani42/nvim-web-devicons'}
   }
 
   -- FZF native
   use {
-    'nvim-telescope/telescope-fzf-native.nvim', 
+    'nvim-telescope/telescope-fzf-native.nvim',
     run = 'make'
   }
 
-  -- Status bar
+  -- Themes
+  use 'dracula/vim'
+  use 'Mofiqul/vscode.nvim'
+  use 'navarasu/onedark.nvim'
+  use {
+    'npxbr/gruvbox.nvim',
+    requires = { 'rktjmp/lush.nvim' }
+  }
+
+  -- Status Line
   use {
     'hoob3rt/lualine.nvim',
     requires = {
       'kyazdani42/nvim-web-devicons', opt = true
     }
-  } 
+  }
 
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
     requires = {
-      {'nvim-lua/popup.nvim'}, 
+      {'nvim-lua/popup.nvim'},
       {'nvim-lua/plenary.nvim'}
     }
   }
 
   -- Git
-  use 'tpope/vim-fugitive'
-  use 'junegunn/gv.vim'
   use {
     'lewis6991/gitsigns.nvim',
     requires = { 'nvim-lua/plenary.nvim' }
   }
+	use {
+		'TimUntersberger/neogit', 
+		requires = 'nvim-lua/plenary.nvim' 
+	}
 end)

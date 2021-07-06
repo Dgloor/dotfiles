@@ -17,7 +17,7 @@ vim.g.dashboard_custom_footer = {
   ' “When all else fails … reboot.” '
 }
 vim.g.dashboard_default_executive ='telescope'
-vim.g.dashboard_session_directory = '~/.config/nvim/session'
+vim.g.dashboard_session_directory = '~/.cache/vim/session'
 vim.g.dashboard_custom_section = {
   a = {
     description = { '  Find File               SPC f p ' },
@@ -50,6 +50,6 @@ vim.g.dashboard_custom_section = {
 }
 
 -- Hide Tabline
-vim.cmd([[
-autocmd FileType dashboard set showtabline=0 | autocmd WinLeave <buffer> set showtabline=2
-]])
+-- vim.cmd([[
+-- autocmd FileType dashboard set showtabline=0 | autocmd WinLeave <buffer> set showtabline=2
+-- ]])

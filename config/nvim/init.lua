@@ -1,23 +1,23 @@
 -- General Stuff
-require('plugins')
 require('settings')
-require('theme')
+require('plugins')
+require('themes')
 
 -- Lsp
 require('lsp/lsp')
 require('lsp/compe')
- 
+require('lsp/treesitter')
+
 -- Plug Config
 require('plug-config/autopairs')
 require('plug-config/bufferline')
 require('plug-config/colorizer')
-require('plug-config/dashboard')
+require('plug-config/comments')
 require('plug-config/floaterm')
-require('plug-config/focus')
+require('plug-config/goyo')
 require('plug-config/git')
 require('plug-config/lualine')
 require('plug-config/telescope')
-require('plug-config/treesitter')
 
 -- Key Mappings
 require('keys/mappings')

@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   autopairs = {
-    enable = false,
+    enable = true,
   },
   highlight = {
     enable = true,

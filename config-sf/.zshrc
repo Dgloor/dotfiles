@@ -106,6 +106,10 @@ alias ...='cd ../.. '
 alias .3='cd ../../.. '
 alias .4='cd ../../../.. '
 alias .5='cd ../../../../.. '
+alias nb='nvim ~/.config/bspwm/bspwmrc '
+alias nn='cd ~/.config/nvim && nvim ~/.config/nvim/init.lua '
+alias np='nvim ~/.config/polybar/config '
+alias ns='nvim ~/.config/sxhkd/sxhkdrc '
 alias nz='nvim ~/.zshrc '
 
 # Utils
