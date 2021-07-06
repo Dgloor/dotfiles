@@ -1,3 +1,10 @@
+-- Neogit
+require('neogit').setup {
+  disable_signs = false,
+  disable_context_highlighting = true,
+  disable_commit_confirmation = false,
+}
+
 -- Git signs
 require('gitsigns').setup {
   signs = {
@@ -23,9 +30,4 @@ require('gitsigns').setup {
   word_diff = false,
   use_decoration_api = true,
   use_internal_diff = true,  -- If luajit is present
-}
-
--- Neogit
-require('neogit').setup {
-  disable_context_highlighting = true,
 }
