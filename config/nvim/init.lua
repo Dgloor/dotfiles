@@ -1,9 +1,7 @@
 -- General Stuff
 require('plugins')
 require('settings')
-
--- Themes
-require('themes/dracula')
+require('theme')
 
 -- Lsp
 require('lsp/lsp')

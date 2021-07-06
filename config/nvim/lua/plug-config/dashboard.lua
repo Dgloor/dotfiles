@@ -44,7 +44,7 @@ vim.g.dashboard_custom_section = {
     command = 'SessionLoad',
   },
   g = {
-    description = { '  New Empty File          SPC e e ' },
+    description = { '  New Empty File          SPC s e ' },
     command = ':DashboardNewFile',
   }
 }

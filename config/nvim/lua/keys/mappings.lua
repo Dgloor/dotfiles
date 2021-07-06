@@ -90,9 +90,9 @@ map('n', '<leader>fn',
 	':lua require("telescope.builtin").find_files({search_dirs={"~/.config/nvim/"}})<CR>', snoremap)
 
 -- Floaterm
-map('n', '<leader>fr', ':FloatermNew lf<CR>', snoremap)
+map('n', '<leader>e', ':FloatermNew lf<CR>', snoremap)
 
 -- Dashboard
 map('n', '<leader>ss', ':<C-u>SessionSave<CR>', noremap)
 map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', noremap)
-map('n', '<leader>ee', ':<C-u>DashboardNewFile<CR>', snoremap)
+map('n', '<leader>se', ':<C-u>DashboardNewFile<CR>', snoremap)

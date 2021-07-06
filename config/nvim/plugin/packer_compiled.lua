@@ -81,6 +81,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/goyo.vim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gruvbox"
+  },
   ["gv.vim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gv.vim"
@@ -121,9 +125,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
+  ["onedark.vim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/onedark.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["palenight.vim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/palenight.vim"
   },
   ["plenary.nvim"] = {
     loaded = true,

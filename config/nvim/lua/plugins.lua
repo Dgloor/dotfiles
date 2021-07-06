@@ -25,6 +25,11 @@ require('packer').startup(function()
 
   -- Themes
   use 'dracula/vim'
+	use 'morhetz/gruvbox'
+	use 'Mofiqul/vscode.nvim'
+	use 'navarasu/onedark.nvim'
+	use 'NTBBloodbath/doom-one.nvim'
+	use 'drewtempelmeyer/palenight.vim'
 
   -- Floating terminal
   use 'voldikss/vim-floaterm'
