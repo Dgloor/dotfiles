@@ -17,7 +17,7 @@ map('n', 'Q', '<nop>', noremap)
 map('n', 'q:', '<nop>', noremap)
 
 -- Quickly remove search highlights
-map ('n', '<C-n>', ':nohl<CR>', noremap)
+map ('n', '<C-n>', ':nohl<CR>', snoremap)
 
 -- Alternate way to save
 map('n','<C-s>', ':w<CR>', snoremap)
@@ -71,6 +71,7 @@ map('c', 'w!!', 'w !sudo tee %', {})
 
 -- Completion
 map('i', '<Tab>', 'v:lua.tab_complete()', { expr = true })
+map('i', '<C-e>', 'compe#close("<C-e>")', { expr = true, silent = true })
 map('i', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
 map('i', '<C-Space>', 'v:lua.tab_complete()', { expr = true })
 
@@ -89,8 +90,8 @@ map('n', '<leader>gb', ':Gitsigns blame_line<CR>', snoremap)
 map('n', '<leader>fh', ':Telescope ', noremap)
 map('n', '<leader>fw', ':Telescope live_grep<CR>', snoremap)
 map('n', '<leader>r', ':Telescope find_files<CR>', snoremap)
-map('n', '<leader>fp', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fo', ':Telescope oldfiles<CR>', snoremap)
+map('n', '<leader>fi', ':Telescope help_tags<CR>', snoremap)
 
 -- Floaterm
 -- Open lf explorer in a floating window

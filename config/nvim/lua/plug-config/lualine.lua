@@ -2,12 +2,13 @@ require'lualine'.setup {
   options = {
     icons_enabled = true,
     -- theme = 'auto',
+    -- theme = 'dracula',
+    theme = 'gruvbox',
+    -- theme = 'gruvbox_material',
+    -- theme = 'nightfly',
     -- theme = 'onedark',
     -- theme = 'palenight',
-    theme = 'dracula',
-    -- theme = 'nightfly',
     -- theme = 'vscode',
-    -- theme = 'gruvbox_material',
     component_separators = {'', ''},
     section_separators = {'', ''},
     disabled_filetypes = {'dashboard'}

@@ -6,10 +6,17 @@
 -- ]])
 
 -- Onedark Theme
--- require('onedark').setup{}
+-- vim.g.onedark_style = 'darker'
 
 -- VsCode Theme
-vim.g.vscode_style = "dark"
+vim.g.vscode_style = 'dark'
+
+-- Gruvbox Themes
+vim.g.gruvbox_bold = true
+vim.g.gruvbox_italic = true
+vim.g.gruvbox_underline = true
+vim.g.gruvbox_contrast_dark = 'hard'
+vim.g.gruvbox_italicize_comments = true
 
 -- ColorScheme
-vim.cmd [[silent! colorscheme dracula]]
+vim.cmd [[colorscheme gruvbox]]
