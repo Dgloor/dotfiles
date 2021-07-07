@@ -15,7 +15,7 @@ vim.g.vscode_style = 'dark'
 vim.g.gruvbox_bold = true
 vim.g.gruvbox_italic = true
 vim.g.gruvbox_underline = true
-vim.g.gruvbox_contrast_dark = 'hard'
+vim.g.gruvbox_contrast_dark = 'medium'
 vim.g.gruvbox_italicize_comments = true
 
 -- ColorScheme

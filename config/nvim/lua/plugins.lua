@@ -60,6 +60,12 @@ require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons'}
   }
 
+	-- Git
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
+
   -- FZF native
   use {
     'nvim-telescope/telescope-fzf-native.nvim',
@@ -69,8 +75,7 @@ require('packer').startup(function()
   -- Themes
   use 'dracula/vim'
   use 'Mofiqul/vscode.nvim'
-	use 'ful1e5/onedark.nvim'
-	use 'matsuuu/pinkmare'
+	use 'navarasu/onedark.nvim'
   use {
     'npxbr/gruvbox.nvim',
     requires = { 'rktjmp/lush.nvim' }
@@ -91,11 +96,5 @@ require('packer').startup(function()
       {'nvim-lua/popup.nvim'},
       {'nvim-lua/plenary.nvim'}
     }
-  }
-
-  -- Git
-  use {
-    'lewis6991/gitsigns.nvim',
-    requires = { 'nvim-lua/plenary.nvim' }
   }
 end)
