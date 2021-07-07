@@ -12,7 +12,7 @@ LNFILE      = ln -sf $(DOTCONFIGSF)/$@ $(CONFIGS)/$@
 
 # TARGETS
 APPS        = zsh scriptsdir \
-							alacritty bottom bspwm sxhkd copyq dunst \
+							alacritty bottom bspwm sxhkd copyq dunst vim \
 							flameshot lsd lf mpv neofetch nvim paru picom \
 							polybar rofi zathura \
 							mimeapps.list screenkey.json starship.toml
@@ -23,6 +23,9 @@ install: $(APPS)
 zsh:
 	ln -sf $(DOTCONFIGSF)/.zshrc $(HOME)/.zshrc
 	ln -sf $(DOTCONFIGSF)/.zshenv $(HOME)/.zshenv
+
+vim:
+	ln -sf $(DOTCONFIGSF)/.vimrc $(HOME)/.vimrc
 
 scriptsdir:
 	ln -sf $(DOTS)/scripts $(HOME)/.scripts
