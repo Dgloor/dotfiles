@@ -69,7 +69,8 @@ require('packer').startup(function()
   -- Themes
   use 'dracula/vim'
   use 'Mofiqul/vscode.nvim'
-  use 'navarasu/onedark.nvim'
+	use 'ful1e5/onedark.nvim'
+	use 'matsuuu/pinkmare'
   use {
     'npxbr/gruvbox.nvim',
     requires = { 'rktjmp/lush.nvim' }

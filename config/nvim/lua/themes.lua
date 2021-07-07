@@ -6,8 +6,7 @@
 -- ]])
 
 -- Onedark Theme
--- darker, cool, deep, warm (default: comment)
--- vim.g.onedark_style = 'darker' 
+-- require('onedark').setup{}
 
 -- VsCode Theme
 vim.g.vscode_style = "dark"

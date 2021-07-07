@@ -133,6 +133,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
+  pinkmare = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/pinkmare"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/plenary.nvim"

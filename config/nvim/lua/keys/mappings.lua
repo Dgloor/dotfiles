@@ -81,7 +81,7 @@ map('n', '<leader>z', ':Goyo<CR>', snoremap)
 map('n', '<leader>gj', ':Gitsigns next_hunk<CR>', snoremap)
 map('n', '<leader>gk', ':Gitsigns prev_hunk<CR>', snoremap)
 map('n', '<leader>gp', ':Gitsigns preview_hunk<CR>', snoremap)
-map('n', '<leader>gb', ':Gitsings blame_line()<CR>', snoremap)
+map('n', '<leader>gb', ':Gitsigns blame_line<CR>', snoremap)
 
 -- Telescope
 map('n', '<leader>fh', ':Telescope ', noremap)
@@ -89,11 +89,12 @@ map('n', '<leader>fw', ':Telescope live_grep<CR>', snoremap)
 map('n', '<leader>r', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fp', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fo', ':Telescope oldfiles<CR>', snoremap)
-map('n', '<leader>gg', ':Telescope git_status<CR>', snoremap)
 
 -- Floaterm
 -- Open lf explorer in a floating window
 map('n', '<leader>e', ':FloatermNew lf<CR>', snoremap)
+-- Git TUI for lazy people
+map('n', '<leader>gg', ':FloatermNew lazygit<CR>', snoremap)
 
 -- BufferLine
 -- Go to prev/next buffer
