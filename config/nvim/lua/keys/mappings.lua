@@ -74,8 +74,10 @@ map('i', '<Tab>', 'v:lua.tab_complete()', { expr = true })
 map('i', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
 map('i', '<C-Space>', 'v:lua.tab_complete()', { expr = true })
 
--- Goyo
+-- Focus Mode & Presentations
 map('n', '<leader>z', ':Goyo<CR>', snoremap)
+map('n', '<F5>', ':Limelight<CR>', snoremap)
+map('n', '<F6>', ':Limelight!<CR>', snoremap)
 
 -- " Git Stuff
 map('n', '<leader>gj', ':Gitsigns next_hunk<CR>', snoremap)
