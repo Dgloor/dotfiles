@@ -93,10 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lush.nvim"
   },
-  neogit = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/neogit"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-autopairs"

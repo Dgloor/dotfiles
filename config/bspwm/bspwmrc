@@ -39,12 +39,12 @@ bspc config remove_disabled_monitors true
 bspc config pointer_follows_focus false
 bspc config focus_follows_pointer false
 
-bspc config single_monocle true
-bspc config gapless_monocle true
-bspc config top_monocle_padding 15
-bspc config right_monocle_padding 15
-bspc config left_monocle_padding 15
-bspc config bottom_monocle_padding 15
+# bspc config single_monocle true
+# bspc config gapless_monocle true
+# bspc config top_monocle_padding 15
+# bspc config right_monocle_padding 15
+# bspc config left_monocle_padding 15
+# bspc config bottom_monocle_padding 15
 
 bspc config normal_border_color "#44475A"
 bspc config active_border_color "#6272A4"

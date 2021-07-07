@@ -1,10 +1,3 @@
--- Neogit
-require('neogit').setup {
-  disable_signs = false,
-  disable_context_highlighting = true,
-  disable_commit_confirmation = false,
-}
-
 -- Git signs
 require('gitsigns').setup {
   signs = {

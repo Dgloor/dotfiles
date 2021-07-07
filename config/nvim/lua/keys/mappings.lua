@@ -89,6 +89,7 @@ map('n', '<leader>fw', ':Telescope live_grep<CR>', snoremap)
 map('n', '<leader>r', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fp', ':Telescope find_files<CR>', snoremap)
 map('n', '<leader>fo', ':Telescope oldfiles<CR>', snoremap)
+map('n', '<leader>gg', ':Telescope git_status<CR>', snoremap)
 
 -- Floaterm
 -- Open lf explorer in a floating window
@@ -101,6 +102,3 @@ map('n', '<S-TAB>', ':BufferLineCyclePrev<CR>', snoremap)
 -- Move the current buffer backwards or forwards in the bufferline
 map('n', '<leader>bl', ':BufferLineMoveNext<CR>', snoremap)
 map('n', '<leader>bh', ':BufferLineMovePrev<CR>', snoremap)
-
--- Neogit 
-map('n', '<leader>gg', ':Neogit<CR>', snoremap)
