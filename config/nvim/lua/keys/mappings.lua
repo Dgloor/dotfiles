@@ -18,7 +18,7 @@ map('n', 'Q', '<nop>', noremap)
 map('n', 'q:', '<nop>', noremap)
 
 -- Quickly remove search highlights
-map ('n', '<C-n>', ':nohl<CR>', snoremap)
+map ('n', '<C-n>', ':set hlsearch!<CR>', snoremap)
 
 -- Alternate way to save
 map('n','<C-s>', ':w<CR>', snoremap)

@@ -1,9 +1,9 @@
--- Just to show off my wallpaper
-vim.api.nvim_command([[
-  augroup ChangeBackgroudColour
-    autocmd colorscheme * :hi normal guibg=NONE
-  augroup END
-]])
+-- -- Just to show off my wallpaper
+-- vim.api.nvim_command([[
+--   augroup ChangeBackgroudColour
+--     autocmd colorscheme * :hi normal guibg=NONE
+--   augroup END
+-- ]])
 
 -- Onedark Theme
 -- vim.g.onedark_style = 'darker'
