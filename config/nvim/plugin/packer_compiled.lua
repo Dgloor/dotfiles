@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  dracula = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/dracula"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -77,21 +81,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/goyo.vim"
   },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
-  },
   ["limelight.vim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/limelight.vim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/lush.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -125,10 +117,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/onedark.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/packer.nvim"
@@ -149,10 +137,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
-  vim = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim"
-  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-floaterm"
@@ -160,10 +144,6 @@ _G.packer_plugins = {
   ["vim-surround"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vim-surround"
-  },
-  ["vscode.nvim"] = {
-    loaded = true,
-    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/vscode.nvim"
   }
 }
 

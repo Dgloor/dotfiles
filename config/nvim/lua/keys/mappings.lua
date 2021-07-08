@@ -10,7 +10,8 @@ vim.g.maplocalleader = ' '
 
 -- Fuck Esc
 map('i', 'ññ', '<Esc>', noremap)
-map('i', 'ÑÑ', '<Esc>', noremap)
+map('v', 'ññ', '<Esc>', noremap)
+map('c', 'ññ', '<Esc>', noremap)
 
 -- Disable some stuff
 map('n', 'Q', '<nop>', noremap)
@@ -59,8 +60,8 @@ map('n', '<F7>', 'gg=G<C-o>', noremap)
 -- Remove whitespaces
 map('n', '<F8>', ':%s/\\s\\+$//<CR>', noremap)
 
--- Yolo
-map('c', 'w!!', 'w !sudo tee %', {})
+-- Yolo (not working)
+map('c', 'w!!', ':w !sudo tee %', {})
 
 
 -- *************** Plugins Stuff ***************

@@ -7,8 +7,8 @@ background_opacity: 0.90
 
 window:
   padding:
-    x: 10
-    y: 10
+    x: 0
+    y: 0
 
   title: Alacritty
 

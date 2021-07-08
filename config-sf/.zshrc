@@ -188,6 +188,6 @@ r() {
 }
 
 # ========== AutoStart ========== #
-#pfetch
+pfetch
 #zwaves
-neofetch
+#neofetch

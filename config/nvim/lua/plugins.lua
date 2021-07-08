@@ -16,6 +16,7 @@ augroup end
 require('packer').startup(function()
   -- Dashboard
   -- use 'glepnir/dashboard-nvim'
+  -- use 'kyazdani42/nvim-web-devicons'
 
   -- Package manager
   use 'wbthomason/packer.nvim'
@@ -34,9 +35,6 @@ require('packer').startup(function()
 
   -- Colorizer
   use 'norcalli/nvim-colorizer.lua'
-
-  -- Icons
-  use 'kyazdani42/nvim-web-devicons'
 
   -- Surround
   use 'tpope/vim-surround'
@@ -63,7 +61,7 @@ require('packer').startup(function()
 	-- Git
   use {
     'lewis6991/gitsigns.nvim',
-    requires = { 'nvim-lua/plenary.nvim' }
+    requires = {'nvim-lua/plenary.nvim'}
   }
 
   -- FZF native
@@ -73,13 +71,13 @@ require('packer').startup(function()
   }
 
   -- Themes
-  use 'dracula/vim'
-  use 'Mofiqul/vscode.nvim'
-	use 'navarasu/onedark.nvim'
-  use {
-    'npxbr/gruvbox.nvim',
-    requires = { 'rktjmp/lush.nvim' }
-  }
+  use {'dracula/vim', as='dracula'}
+	-- use 'navarasu/onedark.nvim'
+  -- use 'Mofiqul/vscode.nvim'
+  -- use {
+  --   'npxbr/gruvbox.nvim',
+  --   requires = { 'rktjmp/lush.nvim' }
+  -- }
 
   -- Status Line
   use {

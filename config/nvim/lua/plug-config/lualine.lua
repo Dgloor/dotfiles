@@ -2,8 +2,8 @@ require'lualine'.setup {
   options = {
     icons_enabled = true,
     -- theme = 'auto',
-    -- theme = 'dracula',
-    theme = 'gruvbox',
+    theme = 'dracula',
+    -- theme = 'gruvbox',
     -- theme = 'gruvbox_material',
     -- theme = 'nightfly',
     -- theme = 'onedark',
