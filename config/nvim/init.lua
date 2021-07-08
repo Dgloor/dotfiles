@@ -8,6 +8,9 @@ require('lsp/lsp')
 require('lsp/compe')
 require('lsp/treesitter')
 
+-- Modules
+require('modules/vanilla_line')
+
 -- Plug Config
 require('plug-config/autopairs')
 require('plug-config/bufferline')
@@ -16,9 +19,9 @@ require('plug-config/comments')
 require('plug-config/floaterm')
 require('plug-config/git')
 require('plug-config/goyo')
-require('plug-config/lualine')
 require('plug-config/telescope')
--- require('plug-config/dashboard')
+-- require('plug-config/archived/lualine')
+-- require('plug-config/archived/dashboard')
 
 -- Key Mappings
 require('keys/mappings')

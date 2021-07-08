@@ -80,12 +80,12 @@ require('packer').startup(function()
   -- }
 
   -- Status Line
-  use {
-    'hoob3rt/lualine.nvim',
-    requires = {
-      'kyazdani42/nvim-web-devicons', opt = true
-    }
-  }
+  -- use {
+  --   'hoob3rt/lualine.nvim',
+  --   requires = {
+  --     'kyazdani42/nvim-web-devicons', opt = true
+  --   }
+  -- }
 
   -- Telescope
   use {

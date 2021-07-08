@@ -32,7 +32,7 @@ o.tabstop = 2                           -- Insert 2 spaces for a tab
 o.termguicolors = true                  -- Enables 24-bit RGB color in the TUI
 o.timeoutlen = 300                      -- By default timeoutlen is 1000 ms
 o.updatetime = 250                      -- Faster completion
-o.guicursor=''
+-- o.guicursor=''
 
 -- Window-local options
 wo.number = true                        -- Line numbers
