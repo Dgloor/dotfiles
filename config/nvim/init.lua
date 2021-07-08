@@ -20,8 +20,6 @@ require('plug-config/floaterm')
 require('plug-config/git')
 require('plug-config/goyo')
 require('plug-config/telescope')
--- require('plug-config/archived/lualine')
--- require('plug-config/archived/dashboard')
 
 -- Key Mappings
 require('keys/mappings')
