@@ -24,4 +24,4 @@ require('modules/vanilla_line')
 require('themes')
 
 -- Key Mappings
-require('keys/mappings')
+require('mappings')
