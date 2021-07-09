@@ -1,9 +1,12 @@
+local u = require('utils')
+
 -- -- Just to show off my wallpaper
--- vim.api.nvim_command([[
---   augroup ChangeBackgroudColour
---     autocmd colorscheme * :hi normal guibg=NONE
---   augroup END
--- ]])
+-- u.create_augroup('ChangeBackgroundColour' , {
+-- 	{ 'colorscheme * :hi normal guibg=NONE' },
+-- })
+
+-- ColorScheme
+vim.cmd [[colorscheme dracula]]
 
 -- Onedark Theme
 -- vim.g.onedark_style = 'darker'
@@ -17,6 +20,3 @@
 -- vim.g.gruvbox_underline = true
 -- vim.g.gruvbox_contrast_dark = 'hard'
 -- vim.g.gruvbox_italicize_comments = true
-
--- ColorScheme
-vim.cmd [[colorscheme dracula]]

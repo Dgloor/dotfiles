@@ -10,7 +10,6 @@ o.completeopt = 'menuone,noselect'      -- Options for Insert mode completion
 o.cursorline = true                     -- Enable highlighting of the current line
 o.encoding = 'utf-8'                    -- The encoding displayed
 o.errorbells = false                    -- No beep or screen flash for error messages
-o.guicursor=''                          -- Always show a block for cursor 
 o.hidden = true                         -- Required to keep multiple buffers open multiple buffers
 o.hlsearch = false                      -- Disable highlighting while searching
 o.ignorecase = true                     -- Case insensitive search
@@ -34,6 +33,7 @@ o.tabstop = 2                           -- Insert 2 spaces for a tab
 o.termguicolors = true                  -- Enables 24-bit RGB color in the TUI
 o.timeoutlen = 300                      -- By default timeoutlen is 1000 ms
 o.updatetime = 250                      -- Faster completion
+-- o.guicursor=''                          -- Always show a block for cursor 
 
 -- Window-local options
 wo.number = true                        -- Line numbers

@@ -14,10 +14,6 @@ augroup end
 ]], false)
 
 require('packer').startup(function()
-  -- Dashboard
-  -- use 'glepnir/dashboard-nvim'
-  -- use 'kyazdani42/nvim-web-devicons'
-
   -- Package manager
   use 'wbthomason/packer.nvim'
 
@@ -58,7 +54,7 @@ require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons'}
   }
 
-	-- Git
+  -- Git
   use {
     'lewis6991/gitsigns.nvim',
     requires = {'nvim-lua/plenary.nvim'}
@@ -72,20 +68,6 @@ require('packer').startup(function()
 
   -- Themes
   use {'dracula/vim', as='dracula'}
-	-- use 'navarasu/onedark.nvim'
-  -- use 'Mofiqul/vscode.nvim'
-  -- use {
-  --   'npxbr/gruvbox.nvim',
-  --   requires = { 'rktjmp/lush.nvim' }
-  -- }
-
-  -- Status Line
-  -- use {
-  --   'hoob3rt/lualine.nvim',
-  --   requires = {
-  --     'kyazdani42/nvim-web-devicons', opt = true
-  --   }
-  -- }
 
   -- Telescope
   use {
@@ -95,4 +77,20 @@ require('packer').startup(function()
       {'nvim-lua/plenary.nvim'}
     }
   }
-end)
+
+  -- Nah
+  -- use 'glepnir/dashboard-nvim'
+  -- use 'kyazdani42/nvim-web-devicons'
+  -- use 'navarasu/onedark.nvim'
+  -- use 'Mofiqul/vscode.nvim'
+  -- use {
+    --   'npxbr/gruvbox.nvim',
+    --   requires = { 'rktjmp/lush.nvim' }
+    -- }
+    -- use {
+      --   'hoob3rt/lualine.nvim',
+      --   requires = {
+        --     'kyazdani42/nvim-web-devicons', opt = true
+        --   }
+        -- }
+      end)
