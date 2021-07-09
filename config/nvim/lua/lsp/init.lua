@@ -23,5 +23,5 @@ require'lspconfig'.cssls.setup {
 	capabilities = capabilities,
 }
 
--- JS & TS
+-- JS & TS 
 -- require'lspconfig'.denols.setup{}
