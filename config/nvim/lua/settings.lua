@@ -20,7 +20,6 @@ o.ruler = true                          -- Show the cursor position all the time
 o.scrolloff = 5                         -- Min number of screen lines to keep above and below the cursor
 o.shiftwidth = 2                        -- Change the number of space characters inserted for indentation
 o.shortmess = o.shortmess .. 'c'        -- Don't pass messages to |ins-completion-menu|.
-o.showmode = false                      -- We don't need to see things like -- INSERT -- anymore
 o.showtabline = 2                       -- Always show tabs
 o.smartcase = true                      -- Smart case search if there is uppercase
 o.smarttab = true                       -- Makes tabbing smarter will realize you have 2 vs 4
@@ -33,7 +32,8 @@ o.tabstop = 2                           -- Insert 2 spaces for a tab
 o.termguicolors = true                  -- Enables 24-bit RGB color in the TUI
 o.timeoutlen = 300                      -- By default timeoutlen is 1000 ms
 o.updatetime = 250                      -- Faster completion
--- o.guicursor=''                          -- Always show a block for cursor 
+o.guicursor=''                          -- Always show a block for cursor 
+-- o.showmode = false                      -- We don't need to see things like -- INSERT -- anymore
 
 -- Window-local options
 wo.number = true                        -- Line numbers
