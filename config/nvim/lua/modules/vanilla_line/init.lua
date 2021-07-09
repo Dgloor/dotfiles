@@ -11,11 +11,11 @@ local stline = {
   ' %r',																						 -- Read-only flag
   ' %m',																						 -- Modified [+] tag
   ' %=',																						 -- Right align
-  ' [  %Y',																				 -- File type
-  ' ] [ %{&fileencoding?&fileencoding:&encoding}',   -- File enconding
-  ' ] [ %{&ff}',                                     -- File format
-  ' ] [ Col:%2c',                                    -- Line, column current number
-  ' ] [ %2p%%'..'  %L ]',					                 -- Percentage of file  Total line number
+  '  %Y',																				 -- File type
+  '  %{&fileencoding?&fileencoding:&encoding}',   -- File enconding
+  '  %{&ff}',                                     -- File format
+  '  :%2c',                                    -- Line, column current number
+  '  %2p%%'..'  %L ',					                 -- Percentage of file  Total line number
 }
 
 vim.o.statusline = table.concat(stline)
