@@ -33,7 +33,7 @@ o.termguicolors = true                  -- Enables 24-bit RGB color in the TUI
 o.timeoutlen = 300                      -- By default timeoutlen is 1000 ms
 o.updatetime = 250                      -- Faster completion
 o.guicursor=''                          -- Always show a block for cursor 
--- o.showmode = false                      -- We don't need to see things like -- INSERT -- anymore
+-- o.showmode = false                      -- Show mode below status line 
 
 -- Window-local options
 wo.number = true                        -- Line numbers

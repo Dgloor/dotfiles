@@ -1,18 +1,15 @@
-local u = require('utils')
 require('modules/branch_name')
 
 local stline = {
   '   ',                                  -- Some sugar
-  '%f ',                                   -- File name (relative)
-  '%y',                                    -- Fyle Type
-  '%{&readonly||!&modifiable?"  ":""}',   -- Read-only
+  '%f',                                    -- File name (relative)
+  '%{&readonly||!&modifiable?"  ":""}',   -- Read-only flag
+  '%{b:gitbranch}',                        -- Branch name
   '%m',                                    -- Modified [+] tag
   '%=',                                    -- Right align
-  '%{b:gitbranch} ',                       -- Branch name
-  '%{&fenc?&fenc:&enc} ',                  -- File enconding
-  '[%{&ff}]  ',	                           -- File format
-  ':%02c  ',                              -- Line, column current number
-  '%2p%%'..'  %L ',                       -- Percentage of file  Total line number
+  '%30{&ff}  ',	                           -- File format
+  '%2l,%2c  ',                             -- Line, column current number
+  '%3p%% ',			                           -- Percentage of file  Total line number
 }
 
 vim.o.statusline = table.concat(stline)

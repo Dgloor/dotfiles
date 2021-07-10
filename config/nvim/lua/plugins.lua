@@ -78,19 +78,13 @@ require('packer').startup(function()
     }
   }
 
-  -- Nah
-  -- use 'glepnir/dashboard-nvim'
-  -- use 'kyazdani42/nvim-web-devicons'
-  -- use 'navarasu/onedark.nvim'
-  -- use 'Mofiqul/vscode.nvim'
-  -- use {
-  --   'npxbr/gruvbox.nvim',
-  --   requires = { 'rktjmp/lush.nvim' }
-  -- }
-	-- use {
-	--   'hoob3rt/lualine.nvim',
-	--   requires = {
-	--       'kyazdani42/nvim-web-devicons', opt = true
-	--     }
-	--   }
+  --   -- Nah
+  --   use 'glepnir/dashboard-nvim'
+  --   use 'kyazdani42/nvim-web-devicons'
+  --   use 'navarasu/onedark.nvim'
+  --   use 'Mofiqul/vscode.nvim'
+  --   use { 'npxbr/gruvbox.nvim', requires = { 'rktjmp/lush.nvim' } } 
+  --   use { 'hoob3rt/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  --   }
+
 end)

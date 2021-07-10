@@ -1,9 +1,10 @@
 " -- Global options --
 colorscheme koehler
+syntax on
 
 set autoindent
 set background=dark
-set clipboard='unamedplus'
+set clipboard=unnamedplus
 set encoding=utf-8
 set expandtab
 set fileencoding=utf-8
@@ -33,21 +34,19 @@ set splitbelow
 set splitright
 set t_Co=256
 set tabstop=2
-set visualbell
 " set termguicolors
-
-syntax on
 
 " -- Key Mappings --
 let mapleader = ' '
 
 inoremap ññ <Esc>
-inoremap ÑÑ <Esc>
+vnoremap ññ <Esc>
+cnoremap ññ <Esc>
 
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :wq!<CR>
 
-nnoremap <C-n> :nohl<CR>
+nnoremap <C-n> :set hlsearch!<CR>
 
 vnoremap < <gv
 vnoremap > <gv

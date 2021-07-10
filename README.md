@@ -70,7 +70,7 @@
 ## Software Development
 
 - [Neovim](https://github.com/neovim/neovim)
-- [Bpython](https://github.com/bpython/bpython) - python interactive interpreter shell
+- [Vscodium-bin](https://github.com/VSCodium/vscodium)
 - Color-picker - A color picker for Elementary OS
 - [Figma-linux](https://www.figma.com/) - Interface design tool
 - [Lazygit](https://github.com/jesseduffield/lazygit) - git gui

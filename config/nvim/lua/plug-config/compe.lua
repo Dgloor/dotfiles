@@ -1,6 +1,6 @@
 require'compe'.setup {
   enabled = true;
-  autocomplete = true;
+  autocomplete = false;
   debug = false;
   min_length = 1;
   preselect = 'enable';

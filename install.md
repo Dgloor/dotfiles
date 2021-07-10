@@ -375,7 +375,7 @@ paru -S lf dragon-drag-and-drop
 
 ```bash
 sudo pacman -S python-pip bpython clang lazygit gnome-keyring
-paru -S visual-studio-code-bin neovim-git
+paru -S neovim-git vscodium-bin vscodium-bin-marketplace
 paru -S color-picker figma-linux
 ```
 

@@ -17,6 +17,6 @@ vim.cmd [[colorscheme dracula]]
 -- Gruvbox Theme
 -- vim.g.gruvbox_bold = false
 -- vim.g.gruvbox_italic = true
--- vim.g.gruvbox_underline = true
--- vim.g.gruvbox_contrast_dark = 'medium'
+-- vim.g.gruvbox_underline = false
+-- vim.g.gruvbox_contrast_dark = 'hard'
 -- vim.g.gruvbox_italicize_comments = true
