@@ -38,20 +38,16 @@ require('packer').startup(function()
   -- Auto pairs
   use 'windwp/nvim-autopairs'
 
-  -- Focus mode
-  use 'junegunn/goyo.vim'
-  use 'junegunn/limelight.vim'
+  -- Cool Icons
+  use 'kyazdani42/nvim-web-devicons'
+
+  -- Themes
+  use {'dracula/vim', as = 'dracula'}
 
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
-  }
-
-  -- Tabsss
-  use {
-    'akinsho/nvim-bufferline.lua',
-    requires = {'kyazdani42/nvim-web-devicons'}
   }
 
   -- Git
@@ -66,9 +62,6 @@ require('packer').startup(function()
     run = 'make'
   }
 
-  -- Themes
-  use {'dracula/vim', as='dracula'}
-
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
@@ -78,13 +71,32 @@ require('packer').startup(function()
     }
   }
 
-  --   -- Nah
-  --   use 'glepnir/dashboard-nvim'
-  --   use 'kyazdani42/nvim-web-devicons'
-  --   use 'navarasu/onedark.nvim'
-  --   use 'Mofiqul/vscode.nvim'
-  --   use { 'npxbr/gruvbox.nvim', requires = { 'rktjmp/lush.nvim' } } 
-  --   use { 'hoob3rt/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  ------------------------------ NAH
+
+  -- -- Home screen
+  -- use 'glepnir/dashboard-nvim'
+
+  -- -- Themes
+  -- use 'navarasu/onedark.nvim'
+  -- use 'Mofiqul/vscode.nvim'
+  -- use { 'npxbr/gruvbox.nvim', requires = { 'rktjmp/lush.nvim' } }
+
+  -- -- Status line
+  -- use {
+  --   'hoob3rt/lualine.nvim',
+  --   requires = {
+  --     'kyazdani42/nvim-web-devicons', opt = true
   --   }
+  -- }
+
+  -- -- Tabsss
+  -- use {
+  --   'akinsho/nvim-bufferline.lua',
+  --   requires = {'kyazdani42/nvim-web-devicons'}
+  -- }
+
+  -- -- Focus mode
+  -- use 'junegunn/goyo.vim'
+  -- use 'junegunn/limelight.vim'
 
 end)
