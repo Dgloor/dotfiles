@@ -31,3 +31,6 @@ selection:
 cursor:
   unfocused_hollow: true
   vi_mode_style: Block
+  style:
+    blinking: Never
+  blink_interval: 400

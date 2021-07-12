@@ -77,6 +77,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/dgloor/.local/share/nvim/site/pack/packer/start/nvim-autopairs"

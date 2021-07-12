@@ -44,6 +44,12 @@ require('packer').startup(function()
   -- Themes
   use {'dracula/vim', as = 'dracula'}
 
+	-- Markdown Preview
+	use {
+		'iamcco/markdown-preview.nvim',
+		run = 'cd app && yarn install',
+	}
+
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',

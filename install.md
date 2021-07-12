@@ -422,13 +422,12 @@ sudo pacman -S numlockx
 ```bash
 sudo pacman -S dunst lsd neofetch redshift screenkey
 sudo pacman -S speedtest-cli xwallpaper wget
-sudo pacman -S lxappearance pacman-contrib sysstat
+sudo pacman -S pacman-contrib sysstat
 paru -S bottom cpufetch-git duf pfetch unclutter-xfixes-git
 ```
 
 ### Theme
 
 ```bash
-sudo pacman -S kvantum-qt5
-paru -S ant-dracula-kvantum-theme-git
+sudo pacman -S lxappearance
 ```
