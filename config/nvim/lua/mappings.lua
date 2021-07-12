@@ -64,6 +64,7 @@ map('n', '<F8>', ':%s/\\s\\+$//<CR>', noremap)
 map('n', '<F5>', ':set'
 ..' number!'
 ..' relativenumber!'
+..' signcolumn=no'
 ..' <CR>'
 , snoremap)
 
