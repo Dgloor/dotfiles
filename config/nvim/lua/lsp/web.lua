@@ -1,12 +1,3 @@
--- C/C++
-require'lspconfig'.clangd.setup{}
-
--- Bash
-require'lspconfig'.bashls.setup{}
-
--- Python
-require'lspconfig'.pyright.setup{}
-
 -- Vuejs
 require'lspconfig'.vuels.setup{}
 

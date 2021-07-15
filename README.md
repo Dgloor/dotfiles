@@ -86,6 +86,7 @@
 
 - [Anki](https://apps.ankiweb.net/) - flashcards & space repetition
 - [Obsidian](https://obsidian.md/) - markdown note taking app
+- Simple-note-electron-bin
 - [Crow-translate](https://crow-translate.github.io/es/) - ligthweight translator
 
 ## Office

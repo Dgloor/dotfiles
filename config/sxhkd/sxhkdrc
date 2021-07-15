@@ -50,9 +50,13 @@ XF86Mail
 XF86Tools
 	killall -q screenkey || screenkey
 
-# Quick screenshot
+# Quick Screenshot
 Print
 	flameshot full -p ~/Images/screenshots
+
+# Note Taking App
+super + ctrl + o 
+  obsidian
 
 
 #

@@ -1,6 +1,6 @@
 require'compe'.setup {
   enabled = true;
-  autocomplete = false;
+  autocomplete = true;
   debug = false;
   min_length = 1;
   preselect = 'enable';
@@ -19,9 +19,9 @@ require'compe'.setup {
     min_height = 1,
   };
   source = {
-    path = true;
-    nvim_lsp = true;
-    -- buffer = true;
+    path = true,
+    nvim_lsp = true,
+    -- buffer = true,
   };
 }
 
@@ -46,6 +46,7 @@ _G.tab_complete = function()
     return vim.fn['compe#complete']()
   end
 end
+
 _G.s_tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-p>"

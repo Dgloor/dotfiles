@@ -52,9 +52,10 @@ set guioptions v
 # Basic config
 #
 set selection-clipboard "clipboard"
-set sandbox none
-
 set font "FiraCode Nerd Font 10"
+
+set sandbox none
+set synctex true
 
 set statusbar-h-padding 0
 set statusbar-v-padding 0

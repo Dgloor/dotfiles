@@ -14,6 +14,8 @@ require('plug-config/comments')
 require('plug-config/compe')
 require('plug-config/floaterm')
 require('plug-config/git')
-require('plug-config/lsp')
 require('plug-config/telescope')
 require('plug-config/treesitter')
+
+-- LSP
+require('lsp')

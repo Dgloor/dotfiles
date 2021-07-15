@@ -38,6 +38,10 @@ map('n','<M-k>', ':resize +2<CR>', snoremap)
 map('n','<M-h>', ':vertical resize -2<CR>', snoremap)
 map('n','<M-l>', ':vertical resize +2<CR>', snoremap)
 
+-- Navigate visual lines rather than logical ones
+map('n','j', 'gj', snoremap)
+map('n','k', 'gk', snoremap)
+
 -- Better indenting
 map('v','<', '<gv', noremap)
 map('v','>', '>gv', noremap)
@@ -111,3 +115,6 @@ map('n', '<C-p>', ':Telescope buffers<CR>', snoremap)
 -- Floaterm
 map('n', '<leader>e', ':FloatermNew lf<CR>', snoremap)
 map('n', '<leader>gg', ':FloatermNew lazygit<CR>', snoremap)
+
+-- Colorizer
+map('n', '<F9>', ':ColorizerToggle<CR>', snoremap)
