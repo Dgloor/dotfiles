@@ -1,6 +1,3 @@
--- Vuejs
-require'lspconfig'.vuels.setup{}
-
 -- HTML & CSS
 -- Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -13,6 +10,9 @@ require'lspconfig'.html.setup{
 require'lspconfig'.cssls.setup {
   capabilities = capabilities,
 }
+
+-- Vuejs
+require'lspconfig'.vuels.setup{}
 
 -- JS & TS
 -- require'lspconfig'.denols.setup{}
