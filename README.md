@@ -120,7 +120,6 @@
 
 - [Alacritty](https://github.com/alacritty/alacritty) - terminal emulator
 - [Bottom](https://github.com/ClementTsang/bottom) - graphical process/system monitor
-- [Cpufetch](https://github.com/Dr-Noob/cpufetch) - cpu info
 - [Dunst](https://github.com/dunst-project/dunst) - notifications
 - [Duf](https://github.com/muesli/duf) - disk usage
 - [Bat](https://github.com/sharkdp/bat) - modern cat with wings

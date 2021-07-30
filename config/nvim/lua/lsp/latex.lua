@@ -7,7 +7,7 @@ require'lspconfig'.texlab.setup{
       bibtexFormatter = 'texlab',
       build = {
         executable = 'latexmk',
-        args = { '-pdf', '-interaction=nonstopmode', '-synctex=0', '%f' },
+        args = { '-pdf', '-outdir=build', '-interaction=nonstopmode', '-synctex=0', '%f' },
         forwardSearchAfter = false,
         onSave = true,
       },

@@ -428,7 +428,7 @@ sudo pacman -S numlockx
 sudo pacman -S dunst lsd neofetch redshift screenkey
 sudo pacman -S speedtest-cli xwallpaper wget
 sudo pacman -S pacman-contrib sysstat
-paru -S bottom cpufetch-git duf pfetch unclutter-xfixes-git
+paru -S bottom duf pfetch unclutter-xfixes-git
 ```
 
 ### Theme

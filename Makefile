@@ -18,7 +18,7 @@ APPS        = zsh scriptsdir \
 							mimeapps.list screenkey.json starship.toml
 
 install: $(APPS)
-	echo "Now you can 4rch in peace."
+	@echo "Now you can 4rch in peace."
 
 zsh:
 	ln -sf $(DOTCONFIGSF)/.zshrc $(HOME)/.zshrc

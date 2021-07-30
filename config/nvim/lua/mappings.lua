@@ -17,6 +17,16 @@ map('c', 'ññ', '<Esc>', noremap)
 map('n', 'Q', '<nop>', noremap)
 map('n', 'q:', '<nop>', noremap)
 
+-- Keeping it centerd
+map('n', 'n', 'nzzzv', noremap)
+map('n', 'N', 'Nzzzv', noremap)
+
+-- Moving text
+map('n', '<leader>j', ':m .+1<CR>', noremap)
+map('n', '<leader>k', ':m .-2<CR>', noremap)
+map('v', 'J', ":m '>+1<CR>gv=gv", noremap)
+map('v', 'K', ":m '<-2<CR>gv=gv", noremap)
+
 -- Quickly remove search highlights
 map ('n', '<C-n>', ':set hlsearch!<CR>', snoremap)
 
@@ -59,7 +69,7 @@ map('n', '<leader>v', ':vsplit<CR>', noremap)
 map('n', '<leader>h', ':split<CR>', noremap)
 
 -- Fix identation
-map('n', '<F7>', 'gg=G<C-o>', noremap)
+map('n', '<F7>', 'gg=G', noremap)
 
 -- Remove whitespaces
 map('n', '<F8>', ':%s/\\s\\+$//<CR>', noremap)
