@@ -55,6 +55,12 @@ require('packer').startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  
+	-- Tabsss
+  use {
+    'akinsho/nvim-bufferline.lua',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
 
   -- Git
   use {
@@ -93,12 +99,6 @@ require('packer').startup(function()
   --   requires = {
   --     'kyazdani42/nvim-web-devicons', opt = true
   --   }
-  -- }
-
-  -- -- Tabsss
-  -- use {
-  --   'akinsho/nvim-bufferline.lua',
-  --   requires = {'kyazdani42/nvim-web-devicons'}
   -- }
 
   -- -- Focus mode

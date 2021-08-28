@@ -36,6 +36,9 @@ map('n','<C-s>', ':w<CR>', snoremap)
 -- Alternate way to quit
 map('n','<C-Q>', ':wq!<CR>', snoremap)
 
+-- Better copy
+map('n', 'Y', 'y$', snoremap)
+
 -- Better window navigation
 map('n','<C-h>', '<C-w>h', snoremap)
 map('n','<C-j>', '<C-w>j', snoremap)
@@ -69,7 +72,7 @@ map('n', '<leader>v', ':vsplit<CR>', noremap)
 map('n', '<leader>h', ':split<CR>', noremap)
 
 -- Fix identation
-map('n', '<F7>', 'gg=G', noremap)
+map('n', '<F7>', 'gg=G<C-o>', noremap)
 
 -- Remove whitespaces
 map('n', '<F8>', ':%s/\\s\\+$//<CR>', noremap)
