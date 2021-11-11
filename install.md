@@ -374,7 +374,7 @@ paru -S lf dragon-drag-and-drop
 ### Software development
 
 ```bash
-sudo pacman -S python-pip bpython lazygit gnome-keyring nodejs
+sudo pacman -S python-pip bpython lazygit gnome-keyring nodejs npm
 paru -S neovim-git vscodium-bin vscodium-bin-marketplace
 paru -S color-picker figma-linux
 
@@ -392,15 +392,15 @@ paru -S discord whatsdesk-bin telegram-desktop-bin zoom
 ### Education
 
 ```bash
-paru -S anki obsidian
+paru -S anki obsidian notion
 ```
 
 ### Documents
 
 ```bash
 sudo pacman -S zathura zathura-pdf-mupdf
-sudo pacman -S wps-office wps-office-mime ttf-wps-fonts
 sudo pacman -S texlive-most texlive-lang biber
+paru -S wps-office wps-office-mime ttf-wps-fonts
 ```
 
 ### Search

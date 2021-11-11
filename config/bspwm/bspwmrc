@@ -6,11 +6,13 @@ bspc rule -r "*"
 setxkbmap latam &
 numlockx &
 xset r rate 200 30 &
+# xset s off &
 unclutter --timeout 3 &
 
 xwallpaper --zoom ~/.config/wall.jpg &
 picom &
 copyq &
+# mailspring &
 #udiskie &
 #nm-applet &
 

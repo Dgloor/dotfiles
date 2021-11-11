@@ -1,9 +1,9 @@
 local u = require('utils')
 
--- -- Just to show off my wallpaper
--- u.create_augroup('ChangeBackgroundColour' , {
--- 	{ 'colorscheme * :hi normal guibg=NONE' },
--- })
+-- Just to show off my wallpaper
+u.create_augroup('ChangeBackgroundColour' , {
+	{ 'colorscheme * :hi normal guibg=NONE' },
+})
 
 -- ColorScheme
 vim.cmd [[colorscheme dracula]]

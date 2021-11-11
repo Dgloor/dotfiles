@@ -6,7 +6,9 @@ set icons true
 set ignorecase true
 #set hidden true
 
-set previewer ~/.scripts/lf/preview
+set previewer preview
+#set previewer lf-ueberzug-previewer
+#set cleaner lf-ueberzug-cleaner
 
 
 # ========== Custom Functions ========== #
