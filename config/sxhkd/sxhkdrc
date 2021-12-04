@@ -23,8 +23,8 @@ super + w
 	$BROWSER
 
 # Music Player
-XF86HomePage
-	spotify
+# XF86HomePage
+	# spotify
 
 # Clipboard
 super + shift + i
@@ -48,7 +48,8 @@ XF86Mail
 
 # Toggle Screenkey
 XF86Tools
-	killall -q screenkey || screenkey
+  spotify
+#killall -q screenkey || screenkey
 
 # Quick Screenshot
 Print

@@ -262,8 +262,8 @@ cd ..
 
 ```bash
 sudo pacman -S pulseaudio pavucontrol pulseaudio-alsa pulseaudio-equalizer
-sudo pacman -S playerctl pamixer mpv mpv-mpris
-paru -S spotify spotify-adblock
+sudo pacman -S playerctl pamixer mpv
+paru -S mpv-mpris spotify spotify-adblock
 ```
 
 ### Archivers
@@ -375,7 +375,7 @@ paru -S lf dragon-drag-and-drop
 
 ```bash
 sudo pacman -S python-pip bpython lazygit gnome-keyring nodejs npm
-paru -S neovim-git vscodium-bin vscodium-bin-marketplace
+paru -S neovim vscodium-bin vscodium-bin-marketplace
 paru -S color-picker figma-linux
 
 # LSP

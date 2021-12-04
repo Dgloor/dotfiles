@@ -13,7 +13,7 @@ _rofi() {
         "$@"
 }
 
-options="Restart|Log out|Suspend|Power off"
+options="Restart|Log out|Suspend|Shutdown"
 choice=$(echo "$options" | _rofi)
 
 if [ "$choice" = "Restart" ]; then
@@ -25,7 +25,7 @@ elif [ "$choice" = "Log out" ]; then
 elif [ "$choice" = "Suspend" ]; then
     $TERMINAL -e systemctl suspend
 
-elif [ "$choice" = "Power off" ]; then
+elif [ "$choice" = "Shutdown" ]; then
     $TERMINAL -e sudo poweroff
 
 else

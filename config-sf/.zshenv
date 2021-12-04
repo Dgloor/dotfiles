@@ -12,7 +12,7 @@ export FZF_DEFAULT_OPTS="--ansi"
 
 # Deafult Apps
 export FILE_EXPLORER="thunar"
-export BROWSER="brave"
+export BROWSER="google-chrome-stable"
 export TERMINAL="alacritty"
 export READER="zathura"
 export EDITOR="nvim"

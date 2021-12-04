@@ -149,6 +149,7 @@ alias gor='go run '
 
 # Git
 alias gs='git status -s '
+alias gp='git push '
 alias glog='git log --oneline --decorate --graph '
 
 # Apps
@@ -156,7 +157,7 @@ alias b='btm '
 alias gccw='gcc -Wall '
 alias gccws='gcc -Wall -fsanitize=address,undefined '
 alias gpp='g++ -std=c++11 -O2 -Wall '
-alias lf='lf-ueberzug '
+#alias lf='lf-ueberzug '
 alias lg='lazygit '
 alias n='nvim '
 alias neofetch='neofetch --ascii ~/.config/neofetch/ascii'
